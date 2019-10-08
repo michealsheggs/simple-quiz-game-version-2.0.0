@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css_lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../cascade/css/styles.css">
+    <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
+    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
+    <title> simple quiz game</title>
+</head>
+<body>
+
+    <div class="body-of-the-page">
+        <!-- The navigation section -->
+         <nav id="main-nav" class="navbar navbar-dark bg-dark">
+                <!-- Navbar content -->
+                 <ul class="nav-link">Sheggs Quiz Game</ul>
+                <ul class="nav-link active">Dashboard</ul>
+              <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="create.html">Create</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="archieve.html">archieve</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="../forms/signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../forms/login.html">Login</a>
+                    </li>
+                    
+                  </ul>
+
+         </nav> 
+         
+         <div class="col-md-4 container">
+          <form id="c" action="">
+              <p id="display_alert"></p>
+          <div class="form-group">
+                 <label for="createquestion">create question</label>
+                 <textarea class="form-control" name="question" id="createquestion" cols="10" rows="2" 
+                 placeholder="enter your question"></textarea>
+          </div>
+          <div class="input-group mb-2 mr-sm-2">
+                 <div class="input-group-prepend">
+                   <div class="input-group-text">A</div>
+                 </div>
+                 <input type="text" class="form-control" id="option_one" name="option_one" placeholder="option one">
+          </div>
+          <div class="input-group mb-2 mr-sm-2">
+                 <div class="input-group-prepend">
+                   <div class="input-group-text">B</div>
+                 </div>
+                 <input type="text" class="form-control" id="option_two" name="option_two" placeholder="option two">
+          </div>
+          <div class="input-group mb-2 mr-sm-2">
+                 <div class="input-group-prepend">
+                   <div class="input-group-text">C</div>
+                 </div>
+                 <input type="text" class="form-control" id="option_three" name="option_three" placeholder="option three">
+          </div>
+          <div class="input-group mb-2 mr-sm-2">
+                 <div class="input-group-prepend">
+                   <div class="input-group-text">D</div>
+                 </div>
+                 <input type="text" class="form-control" id="option_four" name="option_four" placeholder="option four">
+          </div>
+
+          <!-- the section for the answers -->
+          <h4>give the answer to the questions</h4>
+          <div class="form-group form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="options" id="option_A" value="A">A
+          </div>
+          <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="options" id="option_B" value="B">B
+         </div>
+          <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="options" id="option_C" value="C">C
+          </div>
+          <div class="form-check form-check-inline">
+                 <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
+          </div>
+          
+         <button id="createbtn" class="btn btn-primary form-control" name="createButton">create question</button>
+      </form>
+     </div>
+        
+    </div>
+    <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
+
+    <!-- the script section -->
+
+    <script type="text/javascript" src="../js/jquery/dist/jquery.min.js"></script>
+    <script src="js/createLogic.js"></script>
+    <script src="js/view_quest.js"></script>    
+
+</body>
+</html>
