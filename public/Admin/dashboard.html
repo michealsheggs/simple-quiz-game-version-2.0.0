@@ -12,8 +12,6 @@
     <title> simple quiz game</title>
 </head>
 <body>
-
-    <div class="body-of-the-page">
         <!-- The navigation section -->
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
@@ -41,13 +39,87 @@
          </nav> 
 
          <!-- <button id="viw_quiz">view quiz</button> -->
-         <div class="quiz"></div>
-    </div>
+         <div class="container">
+            <div class="row">
+             <div class="col-md-8">     
+              
+                   <table class="table table-hover table-bordered table-stripped table-condensed">
+                       <thead>
+                         <tr>
+                           <th scope="col">no</th>
+                           <th scope="col">Question</th>
+                           <th scope="col">Action</th>
+                         </tr>
+                       </thead>
+                       <tbody class="questionContent">
+                     
+                       </tbody>
+                     </table>
+                         
+              </div>                        
+             <div class="col-md-4">
+               <form id="c" action="">
+                  <p id="display_alert"></p>
+              
+                    <div class="form-group">
+                              <label for="createquestion"> Edit question</label>
+                              <textarea class="form-control" name="question" id="createquestion" cols="10" rows="2" 
+                              placeholder="enter your question"></textarea>
+                       </div>
+                       <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">A</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_one" name="option_one" placeholder="option one">
+                       </div>
+                       <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">B</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_two" name="option_two" placeholder="option two">
+                       </div>
+                       <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">C</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_three" name="option_three" placeholder="option three">
+                       </div>
+                       <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">D</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_four" name="option_four" placeholder="option four">
+                       </div> 
+                  
+          
+              <!-- the section for the answers -->
+                <h4>give the answer to the questions</h4>
+                <div class="form-group form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="options" id="option_A" value="A">A
+                </div>
+                <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="options" id="option_B" value="B">B
+              </div>
+                <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="options" id="option_C" value="C">C
+                </div>
+                <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
+                </div>
+                
+             <button id="createbtn" class="btn btn-primary form-control">edit question</button>
+          </form>
+         </div>
+         </div>
+      </div>
+
     <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
 
     <!-- the script section -->
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
     <script src="js/createLogic.js"></script>
     <script src="js/view_quest.js"></script>
+    <!-- <script src="js/update.js"></script>     -->
+
 </body>
 </html>
