@@ -51,48 +51,65 @@
                         <th scope="col">Action</th>
                       </tr>
                     </thead>
-                    <tbody class="contentTable">                   
+                    <tbody class="contentTable"> 
+                      <template id="templatetable">
+                          <tr>
+                              <th scope="row">{{id}}</th>
+                              <td>{{added_question}}</td>
+                              <td>
+                                  <button id="edit" data-id="{{id}}" class="btn btn-xs" >pen</button>
+                                  <button id="remove" data-id="{{id}}" class="btn btn-xs" >X</button>                             
+                              </td>
+                              </tr>                              
+                      </template>                  
                     </tbody>
                   </table> 
-                  <div class="try">
-
-                  </div>
+                  <div class="try"></div>
               </div>                        
              <div class="col-md-4">
                <form id="c" action="">
                   <p id="display_alert"></p>
               
-                    <div class="form-group">
-                              <label for="createquestion"> Edit question</label>
-                              <input class="form-control" type="text" value="" placeholder="question id">
-                              <textarea class="form-control" name="question" id="createquestion" cols="10" rows="2" 
-                              placeholder="enter your question"></textarea>
-                       </div>
-                       <div class="input-group mb-2 mr-sm-2">
-                              <div class="input-group-prepend">
-                                <div class="input-group-text">A</div>
-                              </div>
-                              <input type="text" class="form-control" id="option_one" name="option_one" placeholder="option one">
-                       </div>
-                       <div class="input-group mb-2 mr-sm-2">
-                              <div class="input-group-prepend">
-                                <div class="input-group-text">B</div>
-                              </div>
-                              <input type="text" class="form-control" id="option_two" name="option_two" placeholder="option two">
-                       </div>
-                       <div class="input-group mb-2 mr-sm-2">
-                              <div class="input-group-prepend">
-                                <div class="input-group-text">C</div>
-                              </div>
-                              <input type="text" class="form-control" id="option_three" name="option_three" placeholder="option three">
-                       </div>
-                       <div class="input-group mb-2 mr-sm-2">
-                              <div class="input-group-prepend">
-                                <div class="input-group-text">D</div>
-                              </div>
-                              <input type="text" class="form-control" id="option_four" name="option_four" placeholder="option four">
-                       </div> 
-                  
+                  <div class="editdisplay">
+                    
+                    <template id="editTemplate">
+                        <div class="form-group">
+                            <label for="createquestion"> Edit question</label>
+                            <textarea class="form-control" name="question" id="createquestion" cols="10" rows="2" 
+                            placeholder="enter your question">{{added_question}}</textarea>
+                            </div>
+                            <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">A</div>
+                            </div>
+                            <input type="text" class="form-control" id="option_one" name="option_one" placeholder="option one"
+                             value="{{option_one}}">
+                            </div>
+                            <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">B</div>
+                            </div>
+                            <input type="text" class="form-control" id="option_two" name="option_two" placeholder="option two" 
+                            value="{{option_two}}">
+                            </div>
+                            <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">C</div>
+                            </div>
+                            <input type="text" class="form-control" id="option_three" name="option_three" placeholder="option three"
+                             value="{{option_three}}">
+                            </div>
+                            <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">D</div>
+                            </div>
+                            <input type="text" class="form-control" id="option_four" name="option_four" placeholder="option four"
+                             value="{{option_four}}">
+                            </div> 
+                            
+                                
+                    </template>
+                  </div>
           
               <!-- the section for the answers -->
                 <h4>give the answer to the questions</h4>

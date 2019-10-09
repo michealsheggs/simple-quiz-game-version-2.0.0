@@ -40,21 +40,9 @@ $.getJSON('http://localhost:3000/questions', function(data){
 //display the questions on the admin page
 $.getJSON('http://localhost:3000/questions', function(quizQuestions){
   $.each(quizQuestions, function(key,value){
-    const populateData = `
-    <tr>
-    <th scope="row">${value.id}</th>
-    <td>${value.added_question}</td>
-    <td>
-        <button id="edit" data-id="${value.id}" class="btn btn-xs" >pen</button>
-        <button id="remove" data-id="${value.id}" class="btn btn-xs" >X</button>
-    
-    </td>
-    </tr>
-    <button id="trythis" data-id="${value.id}">${value.added_question}</button>
-    
-    `
+    const populateData = $("#templatetable").html()
         
-      $(".contentTable").append(populateData, value);
+      $(".contentTable").append(Mustache.render(populateData, value));
 
     });
 
@@ -82,6 +70,13 @@ $(".contentTable").delegate('#remove', 'click', function(){
 //updating
 
 $(".contentTable").delegate('#edit', 'click', function(){
-  alert('woooo');
+  $.getJSON('http://localhost:3000/questions/' + $(this).attr('data-id'), function(editQuestion){
+      const questionTemp = $("#editTemplate").html()
+             
+            $(".editdisplay").append(Mustache.render(questionTemp, editQuestion));      
+  });
 
 });
+
+
+
