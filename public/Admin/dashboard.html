@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
     <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
     <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
+
     <title> simple quiz game</title>
 </head>
 <body>
@@ -41,21 +42,21 @@
          <!-- <button id="viw_quiz">view quiz</button> -->
          <div class="container">
             <div class="row">
-             <div class="col-md-8">     
-              
-                   <table class="table table-hover table-bordered table-stripped table-condensed">
-                       <thead>
-                         <tr>
-                           <th scope="col">no</th>
-                           <th scope="col">Question</th>
-                           <th scope="col">Action</th>
-                         </tr>
-                       </thead>
-                       <tbody class="questionContent">
-                     
-                       </tbody>
-                     </table>
-                         
+             <div class="col-md-8">              
+                <table class="table table-hover table-bordered table-stripped table-condensed">
+                    <thead>
+                      <tr>
+                        <th scope="col">no</th>
+                        <th scope="col">Question</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="contentTable">                   
+                    </tbody>
+                  </table> 
+                  <div class="try">
+
+                  </div>
               </div>                        
              <div class="col-md-4">
                <form id="c" action="">
@@ -63,6 +64,7 @@
               
                     <div class="form-group">
                               <label for="createquestion"> Edit question</label>
+                              <input class="form-control" type="text" value="" placeholder="question id">
                               <textarea class="form-control" name="question" id="createquestion" cols="10" rows="2" 
                               placeholder="enter your question"></textarea>
                        </div>
@@ -107,7 +109,7 @@
                       <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
                 </div>
                 
-             <button id="createbtn" class="btn btn-primary form-control">edit question</button>
+             <button id="editButton" class="btn btn-primary form-control">edit question</button>
           </form>
          </div>
          </div>
@@ -117,6 +119,8 @@
 
     <!-- the script section -->
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/mustache/mustache.min.js"></script>
+
     <script src="js/createLogic.js"></script>
     <script src="js/view_quest.js"></script>
     <!-- <script src="js/update.js"></script>     -->

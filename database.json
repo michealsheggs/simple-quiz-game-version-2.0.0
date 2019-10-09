@@ -1,26 +1,33 @@
 {
-    "Admin" :[],
-    "user" :[
-        
-    ],
-    "questions": [
-        {
-          "added_question": "Pine, fir, spruce, cedar, larch and cypress are the famous timber-yielding plants of which several also occur widely in the hilly regions of India. All these belong to",
-          "option_one": "angiosperms",
-          "option_two": "gymnosperms",
-          "option_three": "monocotyledons",
-          "option_four": "dicotyledons",
-          "answer": "B",
-          "id": 1
-        },
-        {
-            "added_question": "Pine, fir, spruce, cedar, larch and cypress are the famous timber-yielding plants of which several also occur widely in the hilly regions of India. All these belong to",
-            "option_one": "angiosperms",
-            "option_two": "gymnosperms",
-            "option_three": "monocotyledons",
-            "option_four": "dicotyledons",
-            "answer": "B",
-            "id": 2
-          }
-      ]
+  "Admin": [],
+  "user": [],
+  "questions": [
+    {
+      "added_question": "dsfhfhsgfhh",
+      "option_one": "dfhsfhfhhhsgh",
+      "option_two": "dfshhahfah",
+      "option_three": "dsfhaffh",
+      "option_four": "dffhhh",
+      "answer": "C",
+      "id": 1
+    },
+    {
+      "added_question": "dsfhfhsgfhh",
+      "option_one": "dfhsfhfhhhsgh",
+      "option_two": "dfshhahfah",
+      "option_three": "dsfhaffh",
+      "option_four": "dffhhh",
+      "answer": "C",
+      "id": 5
+    },
+    {
+      "added_question": "dsfhfhsgfhh",
+      "option_one": "dfhsfhfhhhsgh",
+      "option_two": "dfshhahfah",
+      "option_three": "dsfhaffh",
+      "option_four": "dffhhh",
+      "answer": "C",
+      "id": 6
+    }
+  ]
 }

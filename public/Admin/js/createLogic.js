@@ -5,7 +5,6 @@ $('#createbtn').on('click',function(e){
     let option_two = $('#option_two').val();
     let option_three = $('#option_three').val();    
     let option_four = $('#option_four').val(); 
-g
     e.preventDefault();
   
 //check if the radio box
