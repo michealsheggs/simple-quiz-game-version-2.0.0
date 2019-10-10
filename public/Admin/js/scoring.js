@@ -16,34 +16,15 @@ $("#submitAnswerButon").on('click', function(e){
         const htmlscore = `<span>The total score is:  ${correctScores}</span>`
                 $("#totalScore").append(htmlscore);
 
-                $.getJSON('http://localhost:3000/questions', function(quizQuestions){
-        $.each(quizQuestions, function(key, value){
-            const populateData = 
-            `
-            <table class="table table-border table-striped">
-            <thead>
-            <tr>
-                <th>no</th<th></th><th>the correct answer</th>
-                </tr>
-            </thead>
-            <tbody>
-            <tr> 
-                <td class="">${value.id}</td> 
-              
-                <td class="bg-success">${value.answer}</td>         
+      $.getJSON('http://localhost:3000/questions', function(quizQuestions){
+         $.each(quizQuestions, function(key, value){
+            const populateData = $("#showscore").html();
             
-            </tr>                        
-            </tbody>
-        </table>
-            `
-            ;
-            $(".tableContent").append(populateData);
+            $(".showAnserContent").append(Mustache.render(populateData, value));
         });
     
-    }
-    );
-  
+    });
 
-        });
+  });
 
 }); 

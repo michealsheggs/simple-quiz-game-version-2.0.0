@@ -13,10 +13,9 @@ $('#createbtn').on('click',function(e){
     for(i = 0; i < answerChecked.length; i++) { 
       if(answerChecked[i].checked){ 
       answer = answerChecked[i].value;
-      // console.log(answer);  
       }
     }
-    if (!added_question && !option_one && !option_two && !option_three && !option_four) {
+    if (!added_question || !option_one || !option_two || !option_three || !option_four || !answer) {
         $('#display_alert').html('please fill all the empty fields');
         return;
       }else{
@@ -33,6 +32,9 @@ $('#createbtn').on('click',function(e){
             },
             success: function() {
               $('#display_alert').html('created question successfully');
+            },
+            error: function() {
+              $('#display_alert').html('error creating question');
             },
           })
         }

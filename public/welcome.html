@@ -31,9 +31,6 @@
                       <a class="nav-link active" href="Admin/create.html">Submit Question</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="test.html">test</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="frontend/showscores.html">show answer</a>
                       </li>
                     <li class="nav-item signupbtn">
@@ -62,7 +59,38 @@
                           <p>General questions:  the following quiz questiion contains option A - D , chose an answer option an click submit to see your scores</p>
                          <form action="">
                            
-                            <div id=Thequestionsection></div>
+                            <div id=Thequestionsection>
+
+                              <template id="displayQuestion">
+                                  <p class="question text-primary">question {{id}}</p>
+                                  <h4> {{added_question}}</h4><br/> 
+                                 <div class="option">
+                                     <div class='form-check'>
+                                     <input class='form-check-input' type="radio" name="optiontype{{id}}" id="optiontype" 
+                                     value="A">{{option_one}}
+                            
+                                       </div>
+                                       <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="optiontype{{id}}" id="optiontype" 
+                                       value="B">{{option_two}}
+                                     
+                                       </div>
+                                      
+                                       <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="optiontype{{id}}" id="optiontype" 
+                                       value="C">{{option_three}}
+                                           
+                                         </div>
+                                         <div class="form-check">
+                                         <input class="form-check-input" type="radio" name="optiontype{{id}}" id="optiontype" 
+                                         value="D">{{option_four}}
+                                           
+                                         </div>            
+                                      </div>
+                                    </div>
+                                  </div>
+                              </template>
+                            </div>
                             <div>
                                 <button style="margin-top:20px;" id="submitAnswerButon" class="btn btn-primary" type="button">Submit</button>
                           
@@ -73,10 +101,28 @@
 
 
                   <div class="col-md-3">
-                    <p class="testing"> say something</p>
                                       <!-- display the results -->
 
-                      <div class="tableContent"></div>
+                      <div >
+                            <table class="table table-border table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">no</th>
+                                    <th scope="col">the correct answer</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="showAnserContent">
+                                    <template id ="showscore">
+
+                                <tr> 
+                                    <th scope="row">{{id}}</th>                                
+                                    <td class="bg-success">{{answer}}</td>                                        
+                                </tr>  
+                              </template>
+                      
+                                </tbody>
+                            </table>
+                      </div>
                       <h4 id="totalScore" class="text-danger"></h4>
                   </div>
                   <!-- the right sidebar -->
@@ -92,10 +138,6 @@
     <script src="Admin/js/view_quest.js"></script>
     <script src="Admin/js/scoring.js"></script>
     <script src="Users/validation.js"></script>
-    <script type="text/javascript">
-      $(".testing").on('click',function(){
-         alert('poo')
-      });
-  </script>
+
 </body>
 </html>

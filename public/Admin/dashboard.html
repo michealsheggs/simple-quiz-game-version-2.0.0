@@ -29,7 +29,7 @@
                       <a class="nav-link" href="archieve.html">archieve</a>
                     </li> -->
                     <li class="nav-item">
-                      <a class="nav-link" href="../signup.html">Sign Up</a>
+                      <a class="nav-link" href="update.html">update</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="../login.html">Login</a>
@@ -67,15 +67,16 @@
                   <div class="try"></div>
               </div>                        
              <div class="col-md-4">
-               <form id="c" action="">
+               <form method="">
                   <p id="display_alert"></p>
               
                   <div class="editdisplay">
                     
-                    <template id="editTemplate">
+                      <template id="editTemplate">
                         <div class="form-group">
-                            <label for="createquestion"> Edit question</label>
-                            <textarea class="form-control" name="question" id="createquestion" cols="10" rows="2" 
+                          <input id="data_id" type="hidden" value="{{id}}" name="edit-id">
+                            <label for="editquestion"> Edit question</label>
+                            <textarea class="form-control" name="question" id="editquestion" cols="10" rows="2" 
                             placeholder="enter your question">{{added_question}}</textarea>
                             </div>
                             <div class="input-group mb-2 mr-sm-2">
@@ -107,8 +108,8 @@
                              value="{{option_four}}">
                             </div> 
                             
-                                
-                    </template>
+                      </template>          
+                    
                   </div>
           
               <!-- the section for the answers -->
@@ -137,10 +138,9 @@
     <!-- the script section -->
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../../node_modules/mustache/mustache.min.js"></script>
-
-    <script src="js/createLogic.js"></script>
     <script src="js/view_quest.js"></script>
-    <!-- <script src="js/update.js"></script>     -->
+    <script src="js/delete.js"></script>    
+    <script src="js/update.js"></script>    
 
 </body>
 </html>
