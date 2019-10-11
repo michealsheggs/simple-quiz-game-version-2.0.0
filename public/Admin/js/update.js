@@ -2,8 +2,8 @@
 //updating
 //first pull the question to be edited into the edit form
 $(".contentTable").delegate('#edit', 'click', function(){
-  let close =  $(this).attr('data-id');
-  close.addClass('hide-content');
+  // let close =  $(this).attr('data-id');
+  // close.addClass('hide-content');
         $.getJSON('http://localhost:3000/questions/' + $(this).attr('data-id'), function(editQuestion){
             const questionTemp = $("#editTemplate").html()
                    

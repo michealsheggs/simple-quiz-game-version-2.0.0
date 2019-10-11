@@ -61,7 +61,7 @@ $('#sign-up-btn').on("click",function(e) {
 $(document).ready(function() {
   //Check if there is any user data stored in the local storage
   //because user data is stored in localstorage at login
-  let user = window.localStorage.getItem('email');
+  let user = window.sessionStorage.getItem('email');
     // If no user data, redirect to signup/login page, anyone you like
     $('.login_btn').on('click',function(e){
       e.stopPropagation();
@@ -104,7 +104,7 @@ $('#login-btn').on('click',function(e) {
     },
     success: function(response) {
       if (response.length) {
-        localStorage.setItem('email', loginEmail);
+        sessionStorage.setItem('email', loginEmail);
         $('#display_alert').html('Login sucessful');
         $('.checkLogin').html('You are logged in');
         //redirect to home page if the login is successfull
@@ -123,6 +123,6 @@ $('.logoutBtn').click(function() {
     //clear the localstorage and redirect to signup page
     $('.checkLogin').html('Kindly login');
     // window.location.assign('signup.html');
-    localStorage.clear();
+    sessionStorage.clear();
     window.location = "Users/login.html";
   });

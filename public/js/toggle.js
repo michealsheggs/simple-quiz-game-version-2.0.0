@@ -1,7 +1,7 @@
 
   ///logic toggle for login and logout
 
-  const isloggedIn = window.localStorage.getItem('email');
+  const isloggedIn = window.sessionStorage.getItem('email');
     if(isloggedIn){
       $("#login-link, #signup-link").hide();
       $("li.dropdown").show();
@@ -12,7 +12,23 @@
 
     //log out
     $("#logout-link").on('click',function(){
-        localStorage.clear();
+        sessionStorage.clear();
         window.location = "../index.html";
 
     });
+
+
+    //check if logged in
+
+    $("#playgame").on('click',function(){
+  
+        if(!isloggedIn){
+            window.location = "Users/signup.html";
+            // return;
+        }else{
+            window.location = "frontend/welcome.html";
+ 
+        }  
+    });
+
+    

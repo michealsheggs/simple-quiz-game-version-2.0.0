@@ -7,10 +7,16 @@
     margin-left: 50px;
 }
 .form{
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
  .form_notice{
     padding: 0px 80px;
     margin-left: 150px;
 } 
+.playmsg{
+    margin-top: 50px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
