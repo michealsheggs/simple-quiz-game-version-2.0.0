@@ -1,5 +1,20 @@
 {
-  "admin": [],
+  "admin": [
+    {
+      "first_name": "emma",
+      "last_name": "daunca",
+      "email": "admin@admin.com",
+      "password": "Elmichealus@49",
+      "id": 1
+    },
+    {
+      "first_name": "ddd",
+      "last_name": "dd",
+      "email": "admin@admin.com",
+      "password": "Password1",
+      "id": 2
+    }
+  ],
   "users": [
     {
       "first_name": "hhknkj",

@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="../css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../cascade/styles.css">
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
-    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
-    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
 
     <title> simple quiz game</title>
 </head>
@@ -31,12 +29,26 @@
                     <li class="nav-item">
                       <a class="nav-link" href="update.html">update</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <!-- <a class="nav-link" href="../login.html">Login</a> -->
+
                       <a class="nav-link" href="../login.html">Login</a>
                     </li>
-                    
+                    <!-- dropdown  menue -->
+                    <li class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         user menu
+                       </button>
+                       <div class="dropdown-menu" aria-labelledby="userMenu">
+                         <a class="dropdown-item" href="#">Action</a>
+                         <a class="dropdown-item" href="#">Setting</a>
+                         <a id="logout-link" class="dropdown-item" href="#">Logout</a>
+                       </div> 
+                   </li> 
+                   <!-- end here -->
                   </ul>
-
+             
          </nav> 
 
          <!-- <button id="viw_quiz">view quiz</button> -->
@@ -56,7 +68,8 @@
                           <tr>
                               <th scope="row">{{id}}</th>
                               <td>{{added_question}}</td>
-                              <td>
+                              <td data-id="to">
+
                                   <button id="edit" data-id="{{id}}" class="btn btn-xs" >pen</button>
                                   <button id="remove" data-id="{{id}}" class="btn btn-xs" >X</button>                             
                               </td>
@@ -64,7 +77,16 @@
                       </template>                  
                     </tbody>
                   </table> 
-                  <div class="try"></div>
+                  <div class="try">
+                    <ul>
+                      <li>
+                        <p>thfdhadhdshad</p>
+                        <button id="btn-test">click</button>
+
+                      </li>
+                    </ul>
+                  </div>
+                 
               </div>                        
              <div class="col-md-4">
                <form method="">
@@ -113,21 +135,22 @@
                   </div>
           
               <!-- the section for the answers -->
-                <h4>give the answer to the questions</h4>
-                <div class="form-group form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="options" id="option_A" value="A">A
-                </div>
-                <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="options" id="option_B" value="B">B
-              </div>
-                <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="options" id="option_C" value="C">C
-                </div>
-                <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
-                </div>
-                
-             <button id="editButton" class="btn btn-primary form-control">edit question</button>
+                <div id="toggle_content">
+                    <h4>give the answer to the questions</h4>
+                    <div class="form-group form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="options" id="option_A" value="A">A
+                    </div>
+                    <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="options" id="option_B" value="B">B
+                  </div>
+                    <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="options" id="option_C" value="C">C
+                    </div>
+                    <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
+                    </div>
+                    <button id="editButton" class="btn btn-primary form-control">edit question</button>
+                </div>               
           </form>
          </div>
          </div>
@@ -137,10 +160,13 @@
 
     <!-- the script section -->
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
+    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
     <script src="js/view_quest.js"></script>
     <script src="js/delete.js"></script>    
     <script src="js/update.js"></script>    
+    <script src="../js/toggle.js"></script>
 
 </body>
 </html>

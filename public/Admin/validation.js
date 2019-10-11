@@ -1,15 +1,15 @@
 
-//  USER SIGN-UP
-$('#sign-up-btn').on("click",function(e) {
+//  ADMIN SIGN-UP
+$('#admin_signup_btn').on("click",function(e) {
   
   e.preventDefault();
   let passwordformat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 
   let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  const first_name = $('#firstname').val();
-  const last_name = $('#lastname').val();
-  const password = $('#password').val();
-  const email = $('#email').val();
+  const first_name = $('#admin_firstname').val();
+  const last_name = $('#admin_lastname').val();
+  const password = $('#admin_password').val();
+  const email = $('#admin_email').val();
   //Check if user did not fill all the field
   if (!first_name || !last_name || !password || !email) {
     $('#display_alert').html('please fill all the empty fields');
@@ -84,18 +84,22 @@ $(document).ready(function() {
 
 
 //Login Function
-$('#login-btn').click(function(e) {
+$('#admin_login_btn').click(function(e) {
   e.preventDefault();
-  const loginPassword = $('#loginpassword').val();
-  const loginEmail = $('#loginemail').val();
+  const loginMailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const loginPassword = $('#admin_loginpassword').val();
+  const loginEmail = $('#admin_loginemail').val();
   if (!loginPassword || !loginEmail) {
-    $('.#display_alert').html('Kindly fill in all fields');
+    $('#display_alert').html('Kindly fill in all fields');
+    return;
+  }else if(!loginEmail.match(loginMailformat)){
+    $("#display_alert").html('You have entered an invalid email address!');
     return;
   }
   //Check if the user is in the database
   $.ajax({
     method: 'GET',
-    url: `http://localhost:3000/users?email=${loginEmail}&password=${loginPassword}`,
+    url: `http://localhost:3000/admin?email=${loginEmail}&password=${loginPassword}`,
     data: {
       email: loginEmail,
       password: loginPassword,
@@ -106,7 +110,7 @@ $('#login-btn').click(function(e) {
         $('.checkLogin').html('You are logged in');
         localStorage.setItem('email', loginEmail);
         //redirect to home page if the login is successfull
-        window.location.assign('../index.html');
+        window.location.assign('dashboard.html');
         $('.loginbtn, signupbtn').set('display:none');;
       } else {
         $('#display_alert').html('Username or password Incorrect');
@@ -123,5 +127,8 @@ $('.logoutBtn').click(function() {
     $('.checkLogin').html('Kindly login');
     // window.location.assign('signup.html');
     // sessionStorage.clear();
-    window.location = "forms/login.html";
+    window.location = "login.html";
   });
+
+
+

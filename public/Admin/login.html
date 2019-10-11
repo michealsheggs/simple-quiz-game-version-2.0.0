@@ -8,10 +8,7 @@
     <link rel="stylesheet" href="../cascade/styles.css">
     <link rel="stylesheet" href="../cascade/form.css">
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
-    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
-    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
-
+   
 
     <title> simple quiz game</title>
 </head >
@@ -55,21 +52,21 @@
                       <div class="input-group-prepend">
                         <div class="input-group-text">@</div>
                       </div>
-                      <input type="email" class="form-control" id="loginemail" name="loginemail" placeholder="enter your email" required>
+                      <input type="email" class="form-control" id="admin_loginemail" name="loginemail" placeholder="enter your email" required>
                     </div>
                     <div class="input-group mb-2 mr-sm-2">
                         <div class="input-group-prepend">
                           <div class="input-group-text">P</div>
                         </div>
-                        <input type="password" class="form-control" id="loginpassword" name="loginpassword" placeholder="enter your password">
+                        <input type="password" class="form-control" id="admin_loginpassword" name="loginpassword" placeholder="enter your password">
                      </div>
-                    <button id ="login-btn" type="submit" class="btn btn-primary mb-2">Login</button>               
+                    <button id ="admin_login_btn" type="submit" class="btn btn-primary mb-2">Login</button>               
                   </div>     
-              </form>
-              <div class="form_notice">
-                <p>If you not an admin yet sign up to become an admin <a href="signup.html">register here </a></p>
-              </div>
+              </form>             
              </div>
+             <div class="form_notice">
+                <p>If you are not an admin yet sign up to become an admin <a href="signup.html">register here </a></p>
+              </div>
              <div-col-md-2></div-col-md-2>
            </div>
          </div>
@@ -83,8 +80,12 @@
 <!-- all the js scripts -->
     <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
     <script src="validation.js"></script>
- 
+    <script src="../js/toggle.js"></script>
+
 
 </body>
 </html>

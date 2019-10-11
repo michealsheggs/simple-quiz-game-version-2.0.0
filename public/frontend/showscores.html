@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="../css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../cascade/styles.css">
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
-    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
-    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
-
+   
     <title> simple quiz game</title>
 </head>
 <body>
 
-    <div class="body-of-the-page">
         <!-- The navigation section -->
          <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
@@ -34,21 +31,50 @@
                     <li class="nav-item">
                       <a class="nav-link" href="../Users/login.html">Login</a>
                     </li>
-                    
+                     <!-- dropdown menu -->
+                     <li class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         user menu
+                       </button>
+                       <div class="dropdown-menu" aria-labelledby="userMenu">
+                         <a class="dropdown-item" href="#">Action</a>
+                         <a class="dropdown-item" href="#">Setting</a>
+                         <a id="logout-link" class="dropdown-item" href="#">Logout</a>
+                       </div> 
+                   </li> 
+               <!--- end here -->
                   </ul>
-
+                
          </nav>              
             <div class="container">
                 <div class="row">
                     <div class="col-md-3"></div>
                     <div class="col-md-6">
                           <h4 id="totalScore" class=""></h4>
-                        <div class="tableContent"></div>
+                        <div>
+                            <table class="table table-border table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">no</th>
+                                  <th scope="col">the correct answer</th>
+                                </tr>
+                              </thead>
+                              <tbody class="tableContent">
+                                <template class="tableContentTemp">
+                                    <tr> 
+                                        <th scope="row">{{id}}</th>
+                                        <td class="bg-success">{{answer}}</td>         
+                                    </tr> 
+                                  </template>                           
+                              </tbody>
+                          </table>
+                        </div>
                     </div>
                     <div class="col-md-3"></div>
                 </div>
             </div>
-         </div>
+       
         
     <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
 
@@ -56,11 +82,15 @@
 
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
+    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
+
     <script src="../Admin/js/createLogic.js"></script>
     <script src="../Admin/js/view_quest.js"></script>    
     <script src="show.js"></script> 
     <script src="../Admin/js/scoring.js"></script> 
-    
+    <script src="../js/toggle.js"></script>
+
     <!-- session scripts --
 
 

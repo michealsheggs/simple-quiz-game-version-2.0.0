@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="../cascade/styles.css">
     <link rel="stylesheet" href="../cascade/form.css">
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
-    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
-    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
+
     <title> simple quiz game</title>
 </head>
 <body id="form-background">
@@ -53,32 +51,32 @@
                       <div class="input-group-prepend">
                         <div class="input-group-text">F</div>
                       </div>
-                      <input type="text" class="form-control" id="firstname" name="first_name" placeholder="first name">
+                      <input type="text" class="form-control" id="admin_firstname" name="first_name" placeholder="first name">
                     </div>
                     <div class="input-group mb-2 mr-sm-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text">L</div>
                       </div>
-                      <input type="text" class="form-control" id="lastname" name="last_name" placeholder="last name">
+                      <input type="text" class="form-control" id="admin_lastname" name="last_name" placeholder="last name">
                     </div>
                     <div class="input-group mb-2 mr-sm-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text">@</div>
                       </div>
-                      <input type="email" class="form-control" id="email" name="email" placeholder="enter your email">
+                      <input type="email" class="form-control" id="admin_email" name="email" placeholder="enter your email">
                     </div>
                     <div class="input-group mb-2 mr-sm-2">
                         <div class="input-group-prepend">
                           <div class="input-group-text">P</div>
                         </div>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="enter your password">
+                        <input type="password" class="form-control" id="admin_password" name="password" placeholder="enter your password">
                       </div>
-                    <button id="sign-up-btn" type="submit" class="btn btn-primary mb-2">Register</button>
+                    <button id="admin_signup_btn" type="submit" class="btn btn-primary mb-2">Register</button>
                     </div>
                   </div>     
               </form>
-              <div class="form_notice">
-                  <p>If admin already login here <a href="login.html">Login  here </a></p>
+              <div class="form_notice justify-content-center">
+                  <p>If admin already, login here <a href="login.html">Login  here </a></p>
                 </div>
              </div>
              <div-col-md-2></div-col-md-2>
@@ -93,7 +91,11 @@
 
 <!-- all the js scripts -->
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
     <script src="validation.js"></script>
-    
+    <script src="../js/toggle.js"></script>
+
 </body>
 </html>

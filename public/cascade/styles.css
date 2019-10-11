@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
 #indexpage{
     background-image: url("../img/quizgraphic.jpg");
     background-size: cover;
@@ -16,3 +29,37 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+footer{
+    color:white;
+    margin-top: 100px;
+}
+/* footer.container{
+    margin-top: 150px;
+    margin-left: 25%;
+} */
+#playgame{
+    margin-top:8%;
+    margin-left: 40%;
+}
+.msg{
+    color:white;
+    margin: 10% 10%; 
+} 
+.msg_pre{
+    color:white;
+    margin: -10px 30%;
+} 
+.msg,.msg_pre{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+ /* dashboard css  */
+.hide-content{
+    display: none;
+}
+div.hide-content .edit{
+    display: initial;
+}
+/* dashboard css ends here */

@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="cascade/styles.css">
     <link rel="stylesheet" href="css_lib/fontawesome/css//fontawesome.min.css">
-    <script type="text/javascript" src="css_lib/fontawesome/js/fontawesome.min.js"></script>
-    <script type="text/javascript" src="css_lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
+    
     <title> simple quiz game</title>
 </head>
 <body id="indexpage" background="img/quizgraphic.jpg">
@@ -30,40 +28,57 @@
                   </li>
                 </ul>
               <ul class="nav justify-content-end">
-                  <li class="nav-item">
+                    <li class="nav-item">
                       <a class="nav-link active" href="frontend/welcome.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="Admin/create.html">Submit Question</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="frontend/showscores.html">show answer</a>
-                      </li>
-                    <li class="nav-item signupbtn">
+                    <li id="signup-link" class="nav-item signupbtn">
                       <a class="nav-link" href="Users/signup.html">Sign Up</a>
                     </li>
-                    <li class="nav-item loginbtn">
+                    <li id="login-link" class="nav-item loginbtn">
                       <a class="nav-link" href="Users/login.html">Login</a>
                     </li>
-                    <li class="nav-item logoutBtn">
-                      <a class="nav-link logoutBtn" href="">logout</a>
-                    </li>
-                    
+                     <!-- dropdown menu -->
+                     <li class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         user menu
+                       </button>
+                       <div class="dropdown-menu" aria-labelledby="userMenu">
+                         <a class="dropdown-item" href="#">Action</a>
+                         <a class="dropdown-item" href="#">Setting</a>
+                         <a id="logout-link" class="dropdown-item" href="#">Logout</a>
+                       </div> 
+                   </li> 
+               <!--- end here -->                  
                   </ul>
 
          </nav> 
          <div class="container">
-                <a href="frontend/welcome.html"><button class="btn btn-primary">play quiz game</button></a>
+           <div class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-8">
+               <p class="msg">You are welcome to sheggs quiz app, this game app is about anwering questions 
+                 on a specific topic and you get to see your scores after taking the quiz </p>
+                 <p class="msg_pre">have fun playing it... </p>
+                <a href="frontend/welcome.html"><button class="btn btn-primary" id="playgame">play quiz now</button></a>
+                
+             </div>
+             <div class="col-md-2"></div>
+           </div>
          </div>
         
     <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
 
 
     <script type="text/javascript" src="js_lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="css_lib/fontawesome/js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="css_lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
     <script src="Admin/js/createLogic.js"></script>
     <script src="Admin/js/view_quest.js"></script>
     <script src="Admin/js/scoring.js"></script>
-    <script src="Users/validation.js"></script>
+    <script src="js/toggle.js"></script>
+
 
 </body>
 </html>

@@ -7,14 +7,11 @@
     <link rel="stylesheet" href="../css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../cascade/styles.css">
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
-    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
-    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
-
+    
     <title> simple quiz game</title>
 </head>
 <body>
 
-    <div class="body-of-the-page">
         <!-- The navigation section -->
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
@@ -27,15 +24,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="dashboard.html">Dashboard</a>
                       </li>
-                    <li class="nav-item">
+                    <li id="signup-link" class="nav-item">
                       <a class="nav-link" href="../signup.html">Sign Up</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="login-link" class="nav-item">
                       <a class="nav-link" href="../login.html">Login</a>
                     </li>
-                    
+                    <!-- dropdown menu -->
+                     <li class="dropdown">
+                         <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          user menu
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="userMenu">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Setting</a>
+                          <a id="logout-link" class="dropdown-item" href="#">Logout</a>
+                        </div> 
+                    </li> 
+                <!--- end here -->
                   </ul>
-
          </nav> 
          <div class="container">
              <div class="row">
@@ -96,13 +104,16 @@
 
          </div>
     
-    </div>
     
     <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
 
     <!-- the script section -->
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
+    <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/createLogic.js"></script>
+    <script src="../js/toggle.js"></script>
+
 </body>
 </html>

@@ -1,18 +1,3 @@
-function CheckPassword(inputtxt) 
-{ 
-var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
-if(inputtxt.value.match(passw)) 
-{ 
-alert('Correct, try another...')
-return true;
-}
-else
-{ 
-alert('Wrong...!')
-return false;
-}
-}
-
 
 //  USER SIGN-UP
 $('#sign-up-btn').on("click",function(e) {
@@ -90,7 +75,6 @@ $(document).ready(function() {
       $('.checkLogin').html('You are logged in');
       $(".login_btn").hide();
         // window.location = "../index.html";
-
   }   
 });
 
@@ -137,9 +121,8 @@ $('#login-btn').on('click',function(e) {
 
 $('.logoutBtn').click(function() {
     //clear the localstorage and redirect to signup page
-    localStorage.clear();
     $('.checkLogin').html('Kindly login');
     // window.location.assign('signup.html');
-    // sessionStorage.clear();
+    localStorage.clear();
     window.location = "Users/login.html";
   });

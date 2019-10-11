@@ -3,4 +3,14 @@
 }
 .form_alert{
     color: white;
+    padding: 0px 50px;
+    margin-left: 50px;
 }
+.form{
+    margin-top: 150px;
+}
+
+ .form_notice{
+    padding: 0px 80px;
+    margin-left: 150px;
+} 
