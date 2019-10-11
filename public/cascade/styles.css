@@ -1,0 +1,18 @@
+#indexpage{
+    background-image: url("../img/quizgraphic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#welcomepage{
+    background-image: url("../img/background-dots-pattern.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#form-background{
+    
+    background-image: url("../img/mandala-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

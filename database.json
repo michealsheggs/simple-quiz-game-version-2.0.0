@@ -1,6 +1,28 @@
 {
-  "Admin": [],
-  "user": [],
+  "admin": [],
+  "users": [
+    {
+      "first_name": "hhknkj",
+      "last_name": "ffd",
+      "email": "admin@app.com",
+      "password": "Elmichealus@49",
+      "id": 1
+    },
+    {
+      "first_name": "i",
+      "last_name": "j",
+      "email": "jdhgxg6377@gam.com",
+      "password": "Elmichealus@49",
+      "id": 2
+    },
+    {
+      "first_name": "i",
+      "last_name": "j",
+      "email": "jdhgxg6377@gam.com",
+      "password": "Elmichealus@49",
+      "id": 3
+    }
+  ],
   "questions": [
     {
       "added_question": "mike",
@@ -8,8 +30,17 @@
       "option_two": "dsfzdf",
       "option_three": "dfdvvv",
       "option_four": "dddd",
-      "answer": "D",
+      "answer": "C",
       "id": 2
+    },
+    {
+      "added_question": "fdf",
+      "option_one": "bgxgxb",
+      "option_two": "gxg",
+      "option_three": "gnngg",
+      "option_four": "ggn",
+      "answer": "D",
+      "id": 3
     }
   ]
 }

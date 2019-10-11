@@ -1,7 +1,26 @@
+function CheckPassword(inputtxt) 
+{ 
+var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+if(inputtxt.value.match(passw)) 
+{ 
+alert('Correct, try another...')
+return true;
+}
+else
+{ 
+alert('Wrong...!')
+return false;
+}
+}
+
 
 //  USER SIGN-UP
 $('#sign-up-btn').on("click",function(e) {
+  
     e.preventDefault();
+    let passwordformat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+
+    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const first_name = $('#firstname').val();
     const last_name = $('#lastname').val();
     const password = $('#password').val();
@@ -10,18 +29,28 @@ $('#sign-up-btn').on("click",function(e) {
     if (!first_name || !last_name || !password || !email) {
       $('#display_alert').html('please fill all the empty fields');
       return;
-    }
+      //check if the email is valid
+    }else if(!email.match(mailformat)){
+      $('#display_alert').html('You have entered an invalid email address!');
+      //check
+    }else if(!password.match(passwordformat)){
+      $('#display_alert').html('enter a password between 6 to 20 characters which contain at least one number, one uppercase and one lowercase letter');
+
+    } 
     //ajax request to check if the user has already registered
-    $.ajax({
-      method: 'GET',
-      url: `http://localhost:3000/users?email=${email}`,
-      data: {
-        email,
-      },
-      success: function(response) {
-        if (response.length) {
-          $('#display_alert').html('User already exist');
-        } else {
+    // $.ajax({
+    //   method: 'GET',
+    //   url: `http://localhost:3000/users?email=${email}`,
+    //   data: {
+    //     email,
+    //   },
+    //   success: function(response) {
+    //     if (response.length) {
+    //       $('#display_alert').html('User already exist');
+    //       } 
+    //     }
+    //  }); 
+        else {
           //Submit the user data if the user does not exist
           $.ajax({
             method: 'POST',
@@ -37,8 +66,7 @@ $('#sign-up-btn').on("click",function(e) {
             },
           });
         }
-      },
-    });
+    
   });
 
 
@@ -49,8 +77,8 @@ $(document).ready(function() {
   //Check if there is any user data stored in the local storage
   //because user data is stored in localstorage at login
   let user = window.localStorage.getItem('email');
-    //If no user data, redirect to signup/login page, anyone you like
-    $('.loginbtn').on('click',function(e){
+    // If no user data, redirect to signup/login page, anyone you like
+    $('.login_btn').on('click',function(e){
       e.stopPropagation();
       if (!user) {
       $('.checkLogin').html('Kindly Log in');
@@ -59,9 +87,8 @@ $(document).ready(function() {
     });
   
   if(user){
-    $(".loginbtn").hide();
       $('.checkLogin').html('You are logged in');
-
+      $(".login_btn").hide();
         // window.location = "../index.html";
 
   }   
@@ -71,12 +98,16 @@ $(document).ready(function() {
 
 
 //Login Function
-$('#login-btn').click(function(e) {
+$('#login-btn').on('click',function(e) {
   e.preventDefault();
+  let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   const loginPassword = $('#loginpassword').val();
   const loginEmail = $('#loginemail').val();
   if (!loginPassword || !loginEmail) {
-    $('.#display_alert').html('Kindly fill in all fields');
+    $('#display_alert').html('Kindly fill in all fields');
+    return;
+  }else if(!loginEmail.match(mailformat)){
+    $("#display_alert").html('You have entered an invalid email address!');
     return;
   }
   //Check if the user is in the database
@@ -89,12 +120,12 @@ $('#login-btn').click(function(e) {
     },
     success: function(response) {
       if (response.length) {
+        localStorage.setItem('email', loginEmail);
         $('#display_alert').html('Login sucessful');
         $('.checkLogin').html('You are logged in');
-        localStorage.setItem('email', loginEmail);
         //redirect to home page if the login is successfull
-        window.location.assign('../index.html');
-        $('.loginbtn, signupbtn').set('display:none');;
+        window.location.assign('../frontend/welcome.html');
+        // $('.loginbtn, signupbtn').set('display:none');;
       } else {
         $('#display_alert').html('Username or password Incorrect');
       }
@@ -110,5 +141,5 @@ $('.logoutBtn').click(function() {
     $('.checkLogin').html('Kindly login');
     // window.location.assign('signup.html');
     // sessionStorage.clear();
-    window.location = "forms/login.html";
+    window.location = "Users/login.html";
   });

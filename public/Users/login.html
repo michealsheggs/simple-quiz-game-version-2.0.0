@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css_lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../cascade/css/styles.css">
+    <link rel="stylesheet" href="../cascade/styles.css">
+    <link rel="stylesheet" href="../cascade/form.css">
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
     <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
     <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
 
 
     <title> simple quiz game</title>
 </head>
-<body>
+<body id="form-background">
 
     <div class="">
         <!-- The navigation section -->
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
-                <a href="../welcome.html" ></a><ul class="nav-item">Sheggs Quiz App</ul></a>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="../frontend/welcome.html" >Sheggs Quiz App</a>
+                    </li>
+                </ul>
               <ul class="nav justify-content-end">
                     <li class="nav-item">
-                      <a class="nav-link active" href="../welcome.html">Home</a>
+                      <a class="nav-link active" href="../frontend/welcome.html">Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">About</a>
@@ -44,7 +48,7 @@
              <div class="col-md-8">
               <form class="form" id="signupform">
                   <h2 class="checkLogin"></h2>
-                <p id="display_alert"></p>
+                <p id="display_alert" class="form_alert"></p>
                   <div class="col">
                     <div class="input-group mb-2 mr-sm-2">
                       <div class="input-group-prepend">
@@ -58,18 +62,19 @@
                         </div>
                         <input type="password" class="form-control" id="loginpassword" name="loginpassword" placeholder="enter your password">
                      </div>
-                    <button id ="login-btn" type="submit" class="btn btn-primary mb-2">Login</button>               
-                  </div>     
+                     <button id ="login-btn" type="submit" class="btn btn-primary mb-2">Login</button>                    
+                  </div>
               </form>
              </div>
+             <div class="form_notice">
+                <p>If you have not registered yet register up here <a href="signup.html">register here </a></p>
+              </div>
              <div-col-md-2></div-col-md-2>
            </div>
          </div>
          <!-- sign up form ends -->
     </div>
-    <!-- <div id="quiz"></div>
-<button id="submit">Submit Quiz</button>
-<div id="results"></div> -->
+
 <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
 
 
@@ -77,7 +82,7 @@
 
 <!-- all the js scripts -->
 <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
     <script src="validation.js"></script>
 

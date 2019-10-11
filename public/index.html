@@ -5,27 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css_lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="cascade/css/styles.css">
+    <link rel="stylesheet" href="cascade/styles.css">
     <link rel="stylesheet" href="css_lib/fontawesome/css//fontawesome.min.css">
     <script type="text/javascript" src="css_lib/fontawesome/js/fontawesome.min.js"></script>
     <script type="text/javascript" src="css_lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
+    <script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
     <title> simple quiz game</title>
 </head>
-<body>
+<body id="indexpage" background="img/quizgraphic.jpg">
 
     <div class="">
         <!-- The navigation section -->
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
                 <ul class="nav" >
+                  <!-- admin loginpage -->
+                  <li class="nav-item">
+                    <a href="Admin/login.html">
+                      <img src="img/abstract-shape.jpg" alt="admin page" width="50" height="50">
+                    </a>
+                  </li>
                   <li class="nav-item" style="color: #f1f1f1">
-                    <a  class="nav-link active" href="welcome.html">Sheggs Quiz App</a>
+                    <a  class="nav-link active" href="frontend/welcome.html">Sheggs Quiz App</a>
                   </li>
                 </ul>
               <ul class="nav justify-content-end">
                   <li class="nav-item">
-                      <a class="nav-link active" href="welcome.html">Home</a>
+                      <a class="nav-link active" href="frontend/welcome.html">Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" href="Admin/create.html">Submit Question</a>
@@ -47,7 +53,7 @@
 
          </nav> 
          <div class="container">
-                <a href="welcome.html"><button class="btn btn-primary">play quiz game</button></a>
+                <a href="frontend/welcome.html"><button class="btn btn-primary">play quiz game</button></a>
          </div>
         
     <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>

@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css_lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../cascade/css/styles.css">
+    <link rel="stylesheet" href="../cascade/styles.css">
+    <link rel="stylesheet" href="../cascade/form.css">
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
     <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
     <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
 
     <title> simple quiz game</title>
 </head>
-<body>
+<body id="form-background">
 
     <div class="">
         <!-- The navigation section -->
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
-                <ul class="nav-item">Sheggs Quiz App</ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="../frontend/welcome.html" >Sheggs Quiz App</a>
+                    </li>
+                </ul>
               <ul class="nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active" href="../welcome.html">Home</a>
+                        <a class="nav-link active" href="../frontend/welcome.html">Home</a>
                       </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">About</a>
@@ -41,8 +45,8 @@
            <div class="row">
              <div class="col-md-2"></div>
              <div class="col-md-8">
-              <form class="form" id="signupform">
-                <p id="display_alert"></p>
+              <form class="form" id="user_form">
+                <p id="display_alert" class="form_alert"></p>
                 <h4 class="checkLogin"></h4>
                   <div class="col">
                     <div class="input-group mb-2 mr-sm-2">
@@ -74,6 +78,10 @@
                   </div>     
               </form>
              </div>
+             <div class="form_notice">
+                <p>If already registered, login here <a href="login.html">Login  here </a></p>
+              </div>
+           </div>
              <div-col-md-2></div-col-md-2>
            </div>
          </div>
@@ -86,6 +94,7 @@
 
 <!-- all the js scripts -->
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
     <script src="validation.js"></script>
     
 </body>
