@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../cascade/styles.css">
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
+
     
     <title> simple quiz game</title>
 </head>
@@ -23,23 +24,17 @@
                   <li class="nav-item">
                       <a class="nav-link active" href="welcome.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="submit-link" class="nav-item">
                       <a class="nav-link active" href="../Admin/create.html">Submit Question</a>
                     </li>
-                    <li class="nav-item">
+                    <li id="showscore-link" class="nav-item">
                         <a class="nav-link" href="showscores.html">show answer</a>
                       </li>
-                    <li id="signup-link" class="nav-item signupbtn">
-                      <a class="nav-link" href="../Users/signup.html">Sign Up</a>
-                    </li>
-                    <li id="login-link" class="nav-item loginbtn">
-                      <a class="nav-link" href="../Users/login.html">Login</a>
-                    </li>
                      <!-- dropdown menu -->
                      <li class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         user menu
+                    
                        </button>
                        <div class="dropdown-menu" aria-labelledby="userMenu">
                          <a class="dropdown-item" href="#">Action</a>
@@ -50,59 +45,34 @@
                <!--- end here -->
                   </ul>             
          </nav> 
-         <div class="">
               
                 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-                <div class="row">
-                  <div class="col-md-1"></div>
+            <div class="row">
+                  <div class="col-md-1">
+                  </div>
                   <!-- the quiz section -->
                   <div class="col-md-7">
                         <h2 class="top-heading">This is a quiz game, please take some time to answer some of our
                            questions</h2>    
                           <!-- the question section  -->
                           <p>General questions:  the following quiz questiion contains option A - D , chose an answer option an click submit to see your scores</p>
-                         <form action="">
-                           
+                          <div class="usermenu"></div>
+
                             <div id=Thequestionsection>
-
-                              <template id="displayQuestion">
-                                  <p class="question text-primary">question {{id}}</p>
-                                  <h4> {{added_question}}</h4><br/> 
-                                 <div class="option">
-                                     <div class='form-check'>
-                                     <input class='form-check-input' type="radio" name="optiontype{{id}}" id="optiontype" 
-                                     value="A">{{option_one}}
-                            
-                                       </div>
-                                       <div class="form-check">
-                                       <input class="form-check-input" type="radio" name="optiontype{{id}}" id="optiontype" 
-                                       value="B">{{option_two}}
-                                     
-                                       </div>
-                                      
-                                       <div class="form-check">
-                                       <input class="form-check-input" type="radio" name="optiontype{{id}}" id="optiontype" 
-                                       value="C">{{option_three}}
-                                           
-                                         </div>
-                                         <div class="form-check">
-                                         <input class="form-check-input" type="radio" name="optiontype{{id}}" id="optiontype" 
-                                         value="D">{{option_four}}
-                                           
-                                         </div>            
-                                      </div>
-                                    </div>
-                                  </div>
-                              </template>
+                             
                             </div>
-                            <div>
-                                <button style="margin-top:20px;" id="submitAnswerButon" class="btn btn-primary" type="button">Submit</button>
-                          
-                          </div>
-                         </form>
-                  </div>               
+                            <ul id="frontPagination" class="pagination">
+                                <li class="page-item">
+                                  <button  id="prevPage">Previous</button>
+                                </li>
+                                <li class="page-item">
+                                  <button id="nextPage">Next</button>
+                                 </li>
+                            </ul>
+                          <button style="margin-top:20px;" id="submitAnswerButon" class="btn btn-primary" type="button">Submit</button>
+                  </div>
+                                    
                   <!-- the quiz section ends here -->
-
 
                   <div class="col-md-3">
                                       <!-- display the results -->
@@ -130,10 +100,9 @@
                       <h4 id="totalScore" class="text-danger"></h4>
                   </div>
                   <!-- the right sidebar -->
-                  <div class="col-md-1"></div>
-                </div>
-              </div>
-    </div>
+               <div class="col-md-1"></div>
+            
+          </div>
     <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
 
 
@@ -142,9 +111,10 @@
     <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
     <script type="text/javascript" src="../css_lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="../Admin/js/createLogic.js"></script>
-    <script src="../Admin/js/view_quest.js"></script>
     <script src="../Admin/js/scoring.js"></script>
     <script src="../js/toggle.js"></script>
+    <script src="pagination.js"></script>
+
 
 </body>
 </html>

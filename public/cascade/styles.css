@@ -64,3 +64,11 @@ div.hide-content .edit{
 }
 /* dashboard css ends here */
 
+#frontPagination{
+    margin-left: 50%;
+    margin-top: 20px;
+}
+#backPagination{
+    margin-left: 20%;
+    margin-top: 20px;
+}

@@ -15,7 +15,7 @@
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
                 <ul class="nav-link">Sheggs Quiz  App</ul>
-                <ul class="nav-link active">Dashboard</ul>
+                <ul class="nav-link active"><a class="nav-link active" href="dashboard.html">Dashboard</a></ul>
               <ul class="nav justify-content-end">
                   <li class="nav-item">
                       <a class="nav-link active" href="../frontend/welcome.html">Home</a>
@@ -23,11 +23,11 @@
                     <li class="nav-item">
                       <a class="nav-link active" href="create.html">create</a>
                     </li>
-                    <!-- <li class="nav-item">
-                      <a class="nav-link" href="archieve.html">archieve</a>
-                    </li> -->
                     <li class="nav-item">
-                      <a class="nav-link" href="update.html">update</a>
+                      <a class="nav-link" href="#">View users scores</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../frontend/showscores.html">View answers</a>
                     </li>
                     <!-- dropdown  menue -->
                     <li class="dropdown">
@@ -36,14 +36,13 @@
                          user menu
                        </button>
                        <div class="dropdown-menu" aria-labelledby="userMenu">
-                         <a class="dropdown-item" href="#">Action</a>
+                         <a class="dropdown-item" href="#"><i class="fa ">Action</i></a>
                          <a class="dropdown-item" href="#">Setting</a>
                          <a id="logout-link" class="dropdown-item" href="#">Logout</a>
                        </div> 
                    </li> 
                    <!-- end here -->
-                  </ul>
-             
+                  </ul>           
          </nav> 
 
          <!-- <button id="viw_quiz">view quiz</button> -->
@@ -59,20 +58,14 @@
                       </tr>
                     </thead>
                     <tbody class="contentTable"> 
-                      <template id="templatetable">
-                          <tr>
-                              <th scope="row">{{id}}</th>
-                              <td>{{added_question}}</td>
-                              <td data-id="to">
-
-                                  <button id="edit" data-id="{{id}}" class="btn btn-xs" >pen</button>
-                                  <button id="remove" data-id="{{id}}" class="btn btn-xs" >X</button>                             
-                              </td>
-                              </tr>                              
-                      </template>                  
+                                       
                     </tbody>
                   </table> 
-                 
+                  <!-- pagination -->
+                  <ul id="backPagination" class="pagination">
+                      <li id="prevPage" class="page-item"><a class="page-link" >Previous</a></li>
+                      <li id="nextPage" class="page-item"><a class="page-link">Next</a></li>
+                  </ul>
               </div>                        
              <div class="col-md-4">
                <form method="">
@@ -119,7 +112,7 @@
                       </template>          
                     
                   </div>
-          
+  
               <!-- the section for the answers -->
                 <div id="toggle_content">
                     <h4>give the answer to the questions</h4>
@@ -153,6 +146,8 @@
     <script src="js/delete.js"></script>    
     <script src="js/update.js"></script>    
     <script src="../js/toggle.js"></script>
+    <!-- <script src="../js/pagination.js"></script> -->
+
 
 </body>
 </html>
