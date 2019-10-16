@@ -17,9 +17,9 @@ fetchData();
 
 // handling the prev-btn
 $("#prevPage").on("click", function(){
-  if(page==1){
-      $("prevPage").addAttr('disabled');
-  }else
+  // if(page==1){
+  //     $("prevPage").addAttr('disabled');
+  // }else
   if (page > 1) {
       page--;
       fetchData();
@@ -29,6 +29,9 @@ $("#prevPage").on("click", function(){
 
 // handling the next-btn
 $("#nextPage").on("click", function(){
+//   if(page * pagelimit >=totalrecord){
+//     $("#submitAnswerButon").hide();
+//  }
   if (page * pagelimit < totalrecord) {
       page++;
       fetchData();

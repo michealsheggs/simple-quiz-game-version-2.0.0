@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css_lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cascade/styles.css">
+    <link rel="stylesheet" href="css_lib/fontawesome/css//fontawesome.min.css">
+
+    
+    <title> simple quiz game</title>
+</head>
+<body id="welcomepage">
+        <!-- The navigation section -->
+        <nav id="main-nav" class="navbar navbar-dark bg-dark">
+                <!-- Navbar content -->
+                <ul class="nav" >
+                    <li class="nav-item">
+                        <a href="index.html">
+                          <img src="img/abstract-shape.jpg" alt="admin page" width="50" height="50">
+                        </a>
+                      </li>
+                  <li class="nav-item" style="color: #f1f1f1">
+                    <a  class="nav-link active" href="index.html">Sheggs Quiz App</a>
+                  </li>
+                </ul>
+              <ul class="nav justify-content-end">
+                  <!-- <li class="nav-item">
+                      <a class="nav-link active" href="welcome.html">Home</a>
+                    </li> -->
+                    <li id="random-link" class="nav-item">
+                            <a class="nav-link active" href="categories/random.html">Random</a>
+                        </li>
+                     <li id="maths-link" class="nav-item">
+                            <a class="nav-link active" href="categories/mathematics.html">Mathematics</a>
+                        </li>
+                     <li id="chemistry-link" class="nav-item">
+                            <a class="nav-link active" href="categories/chemistry.html">Chemistry</a>
+                     </li>
+                     <li id="biology-link" class="nav-item">
+                        <a class="nav-link active" href="categories/biology.html">Biology</a>
+                     </li>
+                     <li id="physics-link" class="nav-item">
+                         <a class="nav-link active" href="categories/physics.html" >Physics</a>
+                     </li>
+                     <li id="sport-link" class="nav-item">
+                             <a class="nav-link active" href="categories/sports.html">Sports</a>
+                     </li>
+               
+                     <!-- dropdown menu -->
+                     <li class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
+                       </button>
+                       <div class="dropdown-menu" aria-labelledby="userMenu">
+                         <a class="dropdown-item" href="#">Action</a>
+                         <a class="dropdown-item" href="#">Setting</a>
+                         <a id="logout-link" class="dropdown-item">Logout</a>
+                       </div> 
+                   </li> 
+               <!--- end here -->
+                  </ul>             
+         </nav> 
+              
+            <div class="row">
+                   
+            </div>
+    <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
+
+
+    <script type="text/javascript" src="js_lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
+    <script type="text/javascript" src="css_lib/fontawesome/js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="css_lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="Admin/js/createLogic.js"></script>
+    <!-- <script src="../Admin/js/scoring.js"></script> -->
+    <!-- <script src="../js/toggle.js"></script> -->
+    <!-- <script src="pagination.js"></script> -->
+   
+</body>
+</html>

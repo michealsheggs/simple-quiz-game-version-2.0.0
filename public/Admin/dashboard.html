@@ -14,7 +14,16 @@
         <!-- The navigation section -->
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
-                <ul class="nav-link">Sheggs Quiz  App</ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                       <a href="../frontend/welcome.html">
+                         <img src="../img/abstract-shape.jpg" alt="admin page" width="50" height="50">
+                       </a>
+                     </li>
+                 <li class="nav-item" style="color: #f1f1f1">
+                   <a  class="nav-link active" href="../frontend/welcome.html">Sheggs Quiz App</a>
+                 </li>
+               </ul>
                 <ul class="nav-link active"><a class="nav-link active" href="dashboard.html">Dashboard</a></ul>
               <ul class="nav justify-content-end">
                   <li class="nav-item">
@@ -24,7 +33,7 @@
                       <a class="nav-link active" href="create.html">create</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">View users scores</a>
+                      <a class="nav-link" href="user_score.html">View users scores</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="../frontend/showscores.html">View answers</a>
@@ -33,7 +42,7 @@
                     <li class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         user menu
+                
                        </button>
                        <div class="dropdown-menu" aria-labelledby="userMenu">
                          <a class="dropdown-item" href="#"><i class="fa ">Action</i></a>
@@ -63,8 +72,9 @@
                   </table> 
                   <!-- pagination -->
                   <ul id="backPagination" class="pagination">
-                      <li id="prevPage" class="page-item"><a class="page-link" >Previous</a></li>
-                      <li id="nextPage" class="page-item"><a class="page-link">Next</a></li>
+
+                      <li id="prevPage" class="page-item"><button class="btn">Previous</button></li>
+                      <li id="nextPage" class="page-item"><button class="btn">Next</button></li>
                   </ul>
               </div>                        
              <div class="col-md-4">

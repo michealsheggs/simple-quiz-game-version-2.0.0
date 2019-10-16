@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="css_lib/fontawesome/css//fontawesome.min.css">
     
     <title> simple quiz game</title>
+    <style>
+    .appen{
+      margin-top: 50px;
+      color: white;
+    }
+    .getdate{
+      color:white;
+    }
+    </style>
 </head>
 <body id="indexpage">
 
@@ -41,7 +50,7 @@
                      <li class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         user menu
+                     
                        </button>
                        <div class="dropdown-menu" aria-labelledby="userMenu">
                          <a class="dropdown-item" href="#">Action</a>
@@ -63,7 +72,10 @@
                 <button class="btn btn-primary" id="playgame">play quiz now</button>
                 
              </div>
-             <div class="col-md-2"></div>
+             <div class="col-md-2">
+               <h5  class="appen"></h5>
+               <p  class="getdate">getdate</p>
+             </div>
            </div>
          </div>
         
@@ -76,7 +88,17 @@
     <script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
     <script src="Admin/js/createLogic.js"></script>
     <script src="Admin/js/view_quest.js"></script>
-    <script src="Admin/js/scoring.js"></script>
+    <!-- <script src="Admin/js/scoring.js"></script> -->
     <script src="js/toggle.js"></script>
+    <script type="text/javascript">
+
+      let today = new Date();
+      let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+      let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+      let dateTime = date+' '+time;
+       $(".getdate").on('click', function(){
+        $(".appen").html(dateTime);
+      });
+    </script>
 </body>
 </html>

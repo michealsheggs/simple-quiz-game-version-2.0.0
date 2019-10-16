@@ -93,3 +93,7 @@ let	pagelimit = 4;
     }
 
 
+// $("$").on('click', function(){
+//     let answerChosen= $(`input[name=optiontype${value.id}]:checked`).val()
+
+// });

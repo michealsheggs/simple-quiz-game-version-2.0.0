@@ -38,123 +38,193 @@
       "id": 3
     }
   ],
-  "questions": [
+  "Random": [
     {
-      "added_question": "mike",
-      "option_one": "CSDDD",
-      "option_two": "dsfzdf",
-      "option_three": "dfdvvv",
-      "option_four": "dddd",
+      "added_question": "adfafaf",
+      "option_one": "dsfdsdfs",
+      "option_two": "el;d;e;efmljldn",
+      "option_three": "dfkkdlll;",
+      "option_four": "efwgrwere",
+      "answer": "B",
+      "id": 1
+    }
+  ],
+  "Biology": [
+    {
+      "added_question": "weaadf",
+      "option_one": "erhf",
+      "option_two": "fsf",
+      "option_three": "yjko",
+      "option_four": "klkd",
+      "answer": "B",
+      "id": 1
+    }
+  ],
+  "Chemistry": [
+    {
+      "added_question": "adfafaf",
+      "option_one": "dsfdsdfs",
+      "option_two": "el;d;e;efmljldn",
+      "option_three": "dfkkdlll;",
+      "option_four": "efwgrwere",
+      "answer": "D",
+      "id": 1
+    }
+  ],
+  "Maths": [
+    {
+      "added_question": "weaadf",
+      "option_one": "erhf",
+      "option_two": "fsf",
+      "option_three": "yjko",
+      "option_four": "klkd",
+      "answer": "D",
+      "id": 1
+    }
+  ],
+  "Physics": [
+    {
+      "added_question": "weaadf",
+      "option_one": "erhf",
+      "option_two": "fsf",
+      "option_three": "yjko",
+      "option_four": "klkd",
       "answer": "C",
+      "id": 1
+    },
+    {
+      "added_question": "weaadf",
+      "option_one": "erhf",
+      "option_two": "fsf",
+      "option_three": "yjko",
+      "option_four": "klkd",
+      "answer": "B",
+      "id": 2
+    }
+  ],
+  "Sports": [
+    {
+      "added_question": "weaadf",
+      "option_one": "erhf",
+      "option_two": "fsf",
+      "option_three": "yjko",
+      "option_four": "klkd",
+      "answer": "B",
+      "id": 1
+    },
+    {
+      "added_question": "weaadf",
+      "option_one": "erhf",
+      "option_two": "fsf",
+      "option_three": "yjko",
+      "option_four": "klkd",
+      "answer": "B",
+      "id": 2
+    }
+  ],
+  "players_scores": [
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
       "id": 2
     },
     {
-      "added_question": "fdf",
-      "option_one": "bgxgxb",
-      "option_two": "gxg",
-      "option_three": "gnngg",
-      "option_four": "ggn",
-      "answer": "D",
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "12",
       "id": 3
     },
     {
-      "added_question": "sfg",
-      "option_one": "fdgd",
-      "option_two": "fdgx",
-      "option_three": "hhgxf",
-      "option_four": "gxhxgh",
-      "answer": "B",
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
       "id": 4
     },
     {
-      "added_question": "sfg",
-      "option_one": "fdgd",
-      "option_two": "fdgx",
-      "option_three": "hhgxf",
-      "option_four": "gxhxgh",
-      "answer": "D",
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
       "id": 5
     },
     {
-      "added_question": "sfg",
-      "option_one": "fdgd",
-      "option_two": "fdgx",
-      "option_three": "hhgxf",
-      "option_four": "gxhxgh",
-      "answer": "A",
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
       "id": 6
     },
     {
-      "added_question": "sfg",
-      "option_one": "fdgd",
-      "option_two": "fdgx",
-      "option_three": "hhgxf",
-      "option_four": "gxhxgh",
-      "answer": "C",
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
       "id": 7
     },
     {
-      "added_question": "sfgsdzjslflkzsfd",
-      "option_one": "fdgddkdjjfsfdsf",
-      "option_two": "fdgx",
-      "option_three": "jhdsifndsfsjkf",
-      "option_four": "gxhxgh",
-      "answer": "B",
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
       "id": 8
     },
     {
-      "added_question": "sfgsdzjslflkzsfd",
-      "option_one": "fdgddkdjjfsfdsf",
-      "option_two": "fdgx",
-      "option_three": "jhdsifndsfsjkf",
-      "option_four": "gxhxgh",
-      "answer": "D",
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
       "id": 9
     },
     {
-      "added_question": "sfgsdzjslflkzsfd",
-      "option_one": "fdgddkdjjfsfdsf",
-      "option_two": "fdgx",
-      "option_three": "jhdsifndsfsjkf",
-      "option_four": "gxhxgh",
-      "answer": "A",
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
       "id": 10
     },
     {
-      "added_question": "sfgsdzjslflkzsfd",
-      "option_one": "fdgddkdjjfsfdsf",
-      "option_two": "fdgx",
-      "option_three": "jhdsifndsfsjkf",
-      "option_four": "gxhxgh",
-      "answer": "D",
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
       "id": 11
     },
     {
-      "added_question": "rerr",
-      "option_one": "rreg",
-      "option_two": "trrtg",
-      "option_three": "tgtrgtr",
-      "option_four": "tgtt",
-      "answer": "C",
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
       "id": 12
     },
     {
-      "added_question": "rerr",
-      "option_one": "rreg",
-      "option_two": "trrtg",
-      "option_three": "tgtrgtr",
-      "option_four": "tgtt",
-      "answer": "C",
-      "id": 13
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
+      "id": 19
     },
     {
-      "added_question": "rerr",
-      "option_one": "rreg",
-      "option_two": "trrtg",
-      "option_three": "tgtrgtr",
-      "option_four": "tgtt",
-      "answer": "D",
-      "id": 14
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
+      "id": 20
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
+      "id": 21
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
+      "id": 22
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "totalScore": "0",
+      "id": 23
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "played_time": "2019-10-15 13:20:25",
+      "totalScore": "0",
+      "id": 24
     }
   ]
 }

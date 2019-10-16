@@ -15,7 +15,16 @@
         <!-- The navigation section -->
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
-                <ul class="nav-link">Sheggs Quiz Game</ul>
+                <ul class="nav">
+                    <li class="nav-item">
+                       <a href="../frontend/welcome.html">
+                         <img src="../img/abstract-shape.jpg" alt="admin page" width="50" height="50">
+                       </a>
+                     </li>
+                 <li class="nav-item" style="color: #f1f1f1">
+                   <a  class="nav-link active" href="../frontend/welcome.html">Sheggs Quiz App</a>
+                 </li>
+               </ul>
                 <ul class="nav-link active">Dashboard</ul>
               <ul class="nav justify-content-end">
                   <li class="nav-item">
@@ -28,7 +37,7 @@
                      <li class="dropdown">
                          <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          user menu
+                        
                         </button>
                         <div class="dropdown-menu" aria-labelledby="userMenu">
                           <a class="dropdown-item" href="#">Action</a>
@@ -45,8 +54,19 @@
                      <form id="c" action="">
                          <p id="display_alert"></p>
                       <div id="">
+                          <label for="createquestion">create question</label>
+                          <div class="form-group">
+                            <label for="gameselection">choose a quiz subject</label>
+                              <select class="form-control" name="" id="gameselection">
+                                <option id="random" value="Random">Random</option>
+                                <option id="biology" value="Biology">Biology</option>
+                                <option id="chemistry" value="Chemistry">Chemistry</option>
+                                <option id="physics" value="Physics">Physics</option>
+                                <option id="maths" value="Maths">Maths</option>
+                                 <option id="sports" value="Sports">Football</option>
+                              </select>
+                         </div>
                          <div class="form-group">
-                              <label for="createquestion">create question</label>
                               <textarea class="form-control" name="question" id="createquestion" cols="10" rows="2" 
                               placeholder="enter your question"></textarea>
                        </div>
