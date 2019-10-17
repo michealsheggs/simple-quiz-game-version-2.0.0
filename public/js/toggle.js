@@ -25,7 +25,7 @@
             window.location = "Users/signup.html";
             // return;
         }else{
-            window.location = "frontend/welcome.html";
+            window.location = "games/index.html";
         }  
     });
 

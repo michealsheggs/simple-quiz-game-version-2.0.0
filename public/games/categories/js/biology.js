@@ -265,8 +265,7 @@ const htmlscore = `<span>The total score is:  ${correctScores}</span>`
                     
                 },
                 error:function(err){
-                    console.log(err);
-                    
+                   return err; 
                 }
             });
 

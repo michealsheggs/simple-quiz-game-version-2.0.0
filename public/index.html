@@ -69,12 +69,10 @@
                <p class="msg">You are welcome to sheggs quiz app, this game app is about anwering questions 
                  on a specific topic and you get to see your scores after taking the quiz </p>
                  <p class="msg_pre">have fun playing it... </p>
-                <button class="btn btn-primary" id="playgame">play quiz now</button>
+                <button class="btn btn-primary" id="playgame">Get Started</button>
                 
              </div>
              <div class="col-md-2">
-               <h5  class="appen"></h5>
-               <p  class="getdate">getdate</p>
              </div>
            </div>
          </div>
@@ -86,19 +84,6 @@
     <script type="text/javascript" src="css_lib/fontawesome/js/fontawesome.min.js"></script>
     <script type="text/javascript" src="css_lib/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
-    <script src="Admin/js/createLogic.js"></script>
-    <script src="Admin/js/view_quest.js"></script>
-    <!-- <script src="Admin/js/scoring.js"></script> -->
     <script src="js/toggle.js"></script>
-    <script type="text/javascript">
-
-      let today = new Date();
-      let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-      let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-      let dateTime = date+' '+time;
-       $(".getdate").on('click', function(){
-        $(".appen").html(dateTime);
-      });
-    </script>
 </body>
 </html>
