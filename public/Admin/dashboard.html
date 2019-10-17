@@ -16,22 +16,36 @@
                 <!-- Navbar content -->
                 <ul class="nav">
                     <li class="nav-item">
-                       <a href="../frontend/welcome.html">
+                       <a href="../games/index.html">
                          <img src="../img/abstract-shape.jpg" alt="admin page" width="50" height="50">
                        </a>
                      </li>
                  <li class="nav-item" style="color: #f1f1f1">
-                   <a  class="nav-link active" href="../frontend/welcome.html">Sheggs Quiz App</a>
+                   <a  class="nav-link active" href="../games/index.html">Sheggs Quiz App</a>
                  </li>
                </ul>
                 <ul class="nav-link active"><a class="nav-link active" href="dashboard.html">Dashboard</a></ul>
               <ul class="nav justify-content-end">
                   <li class="nav-item">
-                      <a class="nav-link active" href="../frontend/welcome.html">Home</a>
+                      <a class="nav-link active" href="../games/index.html">Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" href="create.html">create</a>
                     </li>
+                    <li class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="categories" 
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                       Update Quizzies              
+                       </button>
+                       <div class="dropdown-menu" aria-labelledby="categories">
+                         <a class="dropdown-item" href="modify/chemistry.html">Chemistry</a>
+                         <a class="dropdown-item" href="modify/random.html">Random</a>
+                         <a class="dropdown-item" href="modify/physics.html">Physics</a>
+                         <a class="dropdown-item" href="modify/biology.html">Biology</a>
+                         <a class="dropdown-item" href="modify/maths.html">Mathematics</a>
+                         <a class="dropdown-item" href="modify/sports.html">Sports</a>
+                       </div> 
+                   </li> 
                     <li class="nav-item">
                       <a class="nav-link" href="user_score.html">View users scores</a>
                     </li>
@@ -57,91 +71,168 @@
          <!-- <button id="viw_quiz">view quiz</button> -->
          <div class="container">
             <div class="row">
-             <div class="col-md-8">              
-                <table class="table table-hover table-bordered table-stripped table-condensed">
-                    <thead>
-                      <tr>
-                        <th scope="col">no</th>
-                        <th scope="col">Question</th>
-                        <th scope="col">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody class="contentTable"> 
-                                       
-                    </tbody>
-                  </table> 
-                  <!-- pagination -->
-                  <ul id="backPagination" class="pagination">
+             <div class="col-md-11">  
+                <div id="cat-1">
+                  <h3>All Quizzies</h3>
+                    <h5 class="quiz-category"> category : Random Quizzies</h5>
+                    <table class="table table-hover table-bordered table-stripped table-condensed">
+                        <thead>
+                          <tr>
+                            <th scope="col">no</th>
+                            <th>Question</th>
+                            <th>Option 1</th>
+                            <th>Option 2</th>
+                            <th>Option 3</th>
+                            <th>Option 4</th>
+                            <th>Answer</th>
+                          </tr>
+                        </thead>
+                        <tbody class="randomTable"> 
+                                           
+                        </tbody>
+                      </table> 
+                      <!-- pagination -->
+                      <ul id="backPagination" class="pagination">
+    
+                          <li id="randPrevPage" class="page-item"><button class="btn">Previous</button></li>
+                          <li id="randNextPage" class="page-item"><button class="btn">Next</button></li>
+                      </ul>
+                </div>
 
-                      <li id="prevPage" class="page-item"><button class="btn">Previous</button></li>
-                      <li id="nextPage" class="page-item"><button class="btn">Next</button></li>
-                  </ul>
+                <div class="cat-2">
+                    <h5 class="quiz-category"> category : Chemistry Quizzies</h5>
+                    <table class="table table-hover table-bordered table-stripped table-condensed">
+                        <thead>
+                          <tr>
+                            <th scope="col">no</th>
+                            <th>Question</th>
+                            <th>Option 1</th>
+                            <th>Option 2</th>
+                            <th>Option 3</th>
+                            <th>Option 4</th>
+                            <th>Answer</th>
+                          </tr>
+                        </thead>
+                        <tbody class="chemistryTable"> 
+                                           
+                        </tbody>
+                      </table> 
+                      <!-- pagination -->
+                      <ul id="backPagination" class="pagination">
+    
+                          <li id="chemPrevPage" class="page-item"><button class="btn">Previous</button></li>
+                          <li id="chemNextPage" class="page-item"><button class="btn">Next</button></li>
+                      </ul>
+                </div>
+
+                <div class="cat-3">
+                    <h5 class="quiz-category"> category : Physics Quizzies</h5>
+                    <table class="table table-hover table-bordered table-stripped table-condensed">
+                        <thead>
+                          <tr>
+                            <th scope="col">no</th>
+                            <th>Question</th>
+                            <th>Option 1</th>
+                            <th>Option 2</th>
+                            <th>Option 3</th>
+                            <th>Option 4</th>
+                            <th>Answer</th>
+                          </tr>
+                        </thead>
+                        <tbody class="physicsTable"> 
+                                           
+                        </tbody>
+                      </table> 
+                      <!-- pagination -->
+                      <ul id="backPagination" class="pagination">
+    
+                          <li id="phyPrevPage" class="page-item"><button class="btn">Previous</button></li>
+                          <li id="phyNextPage" class="page-item"><button class="btn">Next</button></li>
+                      </ul>
+                </div>
+                <div class="cat-4">
+                    <h5 class="quiz-category"> category : Biology Quizzies</h5>
+                    <table class="table table-hover table-bordered table-stripped table-condensed">
+                        <thead>
+                          <tr>
+                            <th scope="col">no</th>
+                            <th>Question</th>
+                            <th>Option 1</th>
+                            <th>Option 2</th>
+                            <th>Option 3</th>
+                            <th>Option 4</th>
+                            <th>Answer</th>
+                          </tr>
+                        </thead>
+                        <tbody class="biologyTable"> 
+                                           
+                        </tbody>
+                      </table> 
+                      <!-- pagination -->
+                      <ul id="backPagination" class="pagination">
+    
+                          <li id="bioPrevPage" class="page-item"><button class="btn">Previous</button></li>
+                          <li id="bioNextPage" class="page-item"><button class="btn">Next</button></li>
+                      </ul>
+                </div>
+
+                <div class="cat-4">
+                    <h5 class="quiz-category">category : Mathematics Quizzies</h5>
+                    <table class="table table-hover table-bordered table-stripped table-condensed">
+                        <thead>
+                          <tr>
+                            <th scope="col">no</th>
+                            <th>Question</th>
+                            <th>Option 1</th>
+                            <th>Option 2</th>
+                            <th>Option 3</th>
+                            <th>Option 4</th>
+                            <th>Answer</th>
+                          </tr>
+                        </thead>
+                        <tbody class="mathsTable"> 
+                                           
+                        </tbody>
+                      </table> 
+                      <!-- pagination -->
+                      <ul id="backPagination" class="pagination">
+    
+                          <li id="mathPrevPage" class="page-item"><button class="btn">Previous</button></li>
+                          <li id="mathNextPage" class="page-item"><button class="btn">Next</button></li>
+                      </ul>
+                </div>
+
+                <div class="cat-4">
+                    <h5 class="quiz-category"> category : Sports Quizzies</h5>
+                    <table class="table table-hover table-bordered table-stripped table-condensed">
+                        <thead>
+                          <tr>
+                            <th scope="col">no</th>
+                            <th>Question</th>
+                            <th>Option 1</th>
+                            <th>Option 2</th>
+                            <th>Option 3</th>
+                            <th>Option 4</th>
+                            <th>Answer</th>
+                          </tr>
+                        </thead>
+                        <tbody class="sportsTable"> 
+                                           
+                        </tbody>
+                      </table> 
+                      <!-- pagination -->
+                      <ul id="backPagination" class="pagination">
+    
+                          <li id="sportPrevPage" class="page-item"><button class="btn">Previous</button></li>
+                          <li id="sportNextPage" class="page-item"><button class="btn">Next</button></li>
+                      </ul>
+                </div>
+             
               </div>                        
-             <div class="col-md-4">
-               <form method="">
-                  <p id="display_alert"></p>
-              
-                  <div class="editdisplay">
-                    
-                      <template id="editTemplate">
-                        <div class="form-group">
-                          <input id="data_id" type="hidden" value="{{id}}" name="edit-id">
-                            <label for="editquestion"> Edit question</label>
-                            <textarea class="form-control" name="question" id="editquestion" cols="10" rows="2" 
-                            placeholder="enter your question">{{added_question}}</textarea>
-                            </div>
-                            <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">A</div>
-                            </div>
-                            <input type="text" class="form-control" id="option_one" name="option_one" placeholder="option one"
-                             value="{{option_one}}">
-                            </div>
-                            <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">B</div>
-                            </div>
-                            <input type="text" class="form-control" id="option_two" name="option_two" placeholder="option two" 
-                            value="{{option_two}}">
-                            </div>
-                            <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">C</div>
-                            </div>
-                            <input type="text" class="form-control" id="option_three" name="option_three" placeholder="option three"
-                             value="{{option_three}}">
-                            </div>
-                            <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">D</div>
-                            </div>
-                            <input type="text" class="form-control" id="option_four" name="option_four" placeholder="option four"
-                             value="{{option_four}}">
-                            </div> 
-                            
-                      </template>          
-                    
-                  </div>
-  
-              <!-- the section for the answers -->
-                <div id="toggle_content">
-                    <h4>give the answer to the questions</h4>
-                    <div class="form-group form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="options" id="option_A" value="A">A
-                    </div>
-                    <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="options" id="option_B" value="B">B
-                  </div>
-                    <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="options" id="option_C" value="C">C
-                    </div>
-                    <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
-                    </div>
-                    <button id="editButton" class="btn btn-primary form-control">edit question</button>
-                </div>               
-          </form>
-         </div>
+             <div class="col-md-1">
+               
+                
+            </div>
          </div>
       </div>
 
@@ -153,8 +244,6 @@
     <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
     <script type="text/javascript" src="../css_lib/fontawesome/js/fontawesome.min.js"></script>
     <script src="js/view_quest.js"></script>
-    <script src="js/delete.js"></script>    
-    <script src="js/update.js"></script>    
     <script src="../js/toggle.js"></script>
     <!-- <script src="../js/pagination.js"></script> -->
 

@@ -17,19 +17,20 @@ console.log(totalrecord);
     fetchData();
 
     // handling the prev-page
-    if(page == 1){
-        $("#prev_btn").attr("disabled", true);
+    // if(page == 1){
+    //     $("#prev_btn").attr("disabled", true);
         
-    }else if(page >1){
+    // }else 
+    if(page >1){
         $("#prev_btn").attr("disabled", false); 
     }
 
     
     //last page
-    if(page * pagelimit >= totalrecord){
-        $("#next_btn").attr("disabled", true);
+    // if(page * pagelimit >= totalrecord){
+    //     $("#next_btn").attr("disabled", true);
      
-    }
+    // }
 
     $("#prev_Page").on("click", function(){
         if (page > 1) {

@@ -45,18 +45,18 @@
       "option_two": "el;d;e;efmljldn",
       "option_three": "dfkkdlll;",
       "option_four": "efwgrwere",
-      "answer": "B",
+      "answer": "D",
       "id": 1
     }
   ],
   "Biology": [
     {
-      "added_question": "weaadf",
+      "added_question": "doe is a boy",
       "option_one": "erhf",
       "option_two": "fsf",
       "option_three": "yjko",
       "option_four": "klkd",
-      "answer": "B",
+      "answer": "D",
       "id": 1
     }
   ],
@@ -174,57 +174,32 @@
     {
       "player_email": "pastadmin@admin.com",
       "player_userName": "emma daunca",
-      "totalScore": "0",
-      "id": 10
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "totalScore": "0",
-      "id": 11
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "totalScore": "0",
-      "id": 12
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "totalScore": "0",
-      "id": 19
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "totalScore": "0",
-      "id": 20
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "totalScore": "0",
-      "id": 21
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "totalScore": "0",
-      "id": 22
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "totalScore": "0",
-      "id": 23
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
       "played_time": "2019-10-15 13:20:25",
       "totalScore": "0",
       "id": 24
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "played_time": "17:19:6 16/10/2019",
+      "totalScore": "0",
+      "id": 25
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Physics",
+      "played_time": "17:26:48 16/10/2019",
+      "totalScore": "0",
+      "id": 26
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Random",
+      "played_time": "17:28:12 16/10/2019",
+      "totalScore": "0",
+      "id": 27
     }
   ]
 }
