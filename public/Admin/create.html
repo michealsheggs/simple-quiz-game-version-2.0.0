@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../cascade/styles.css">
+    <link rel="stylesheet" href="../cascade/radio-btn.css">
+
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
     
     <title> simple quiz game</title>
@@ -40,8 +42,8 @@
                         
                         </button>
                         <div class="dropdown-menu" aria-labelledby="userMenu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Setting</a>
+                            <a id="damin-panel" class="dropdown-item" href="dashboard.html">Dashboard</a>
+                            <a class="dropdown-item" href="#">Setting</a>
                           <a id="logout-link" class="dropdown-item" href="#">Logout</a>
                         </div> 
                     </li> 
@@ -52,9 +54,9 @@
              <div class="row">
                  <div class="col-md-4 container">
                      <form id="c" action="">
-                         <p id="display_alert"></p>
+                        <p id="display_alert"></p>
                       <div id="">
-                          <label for="createquestion">create question</label>
+                          <label id="submitquestion">Create Question</label>
                           <div class="form-group">
                             <label for="gameselection">choose a quiz subject</label>
                               <select class="form-control" name="" id="gameselection">
@@ -99,20 +101,35 @@
                      <!-- the section for the answers -->
                      <h4>give the answer to the questions</h4>
                      <div class="form-group form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="options" id="option_A" value="A">A
+                        <label class="contain">A
+                            <input class="form-check-input" type="radio" name="options" id="option_A" value="A">
+                                <span class="checkmark"></span>
+                          </label>
                      </div>
                      <div class="form-check form-check-inline">
-                           <input class="form-check-input" type="radio" name="options" id="option_B" value="B">B
+                        <label class="contain">B
+                            <input class="form-check-input" type="radio" name="options" id="option_B" value="B">
+                            <span class="checkmark"></span>
+                          </label>
                     </div>
                      <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="options" id="option_C" value="C">C
+                        <label class="contain">C
+                            <input class="form-check-input" type="radio" name="options" id="option_C" value="C">
+                                <span class="checkmark"></span>
+                          </label>
                      </div>
                      <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
+                        <label class="contain">D
+                            <input class="form-check-input" type="radio" name="options" id="option_D" value="D">
+                                <span class="checkmark"></span>
+                          </label> 
                      </div>
                      
                     <button id="createbtn" class="btn btn-primary form-control" name="createButton">create question</button>
                  </form>
+                </div>
+                <div>
+
                 </div>
              </div>
 

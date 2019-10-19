@@ -25,7 +25,7 @@ $('#createbtn').on('click',function(e){
     let option_three = $('#option_three').val();    
     let option_four = $('#option_four').val(); 
   
-//check if the radio box
+//check if the radio box is checked
     
     let answerChecked = document.getElementsByName('options'); 
     for(i = 0; i < answerChecked.length; i++) { 
@@ -34,7 +34,7 @@ $('#createbtn').on('click',function(e){
       }
     }
     if (!added_question || !option_one || !option_two || !option_three || !option_four || !answer || !selectedOption) {
-        $('#display_alert').html('please fill all the empty fields');
+        $('#display_alert').html('<li class="text-danger">please fill all the empty fields</li>');
         return;
       }else{
         $.ajax({
@@ -49,10 +49,10 @@ $('#createbtn').on('click',function(e){
                 answer,
             },
             success: function() {
-              $('#display_alert').html('created question successfully');
+              $('#display_alert').html('<li class="text-success">created question successfully</li>');
             },
             error: function() {
-              $('#display_alert').html('error creating question');
+              $('#display_alert').html('<li class="text-danger"> error creating question</li>');
             },
           })
         }

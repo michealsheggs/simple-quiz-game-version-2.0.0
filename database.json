@@ -9,7 +9,188 @@
     }
   ],
   "users": [],
-  "Random": [],
+  "Random": [
+    {
+      "added_question": "Which of these is the winning hand in a game of poker?",
+      "option_one": "7♠ 7♥ Q♣ Q♦ Q♥",
+      "option_two": "4♠ 8♠ 9♠ K♠ A♠",
+      "option_three": "2♣ 2♥ 3♥ 4♥ J♠",
+      "option_four": "5♣ 7♠ 10♦ 10♥ A♦",
+      "answer": "A",
+      "id": 1
+    },
+    {
+      "added_question": "Which of the following 'Scrabble' tiles has the highest value?",
+      "option_one": "X",
+      "option_two": "K ",
+      "option_three": "J",
+      "option_four": "Q ",
+      "answer": "D",
+      "id": 2
+    },
+    {
+      "added_question": "Which game in the 'Final Fantasy' franchise was the first to spawn a direct sequel?",
+      "option_one": "Final Fantasy XII",
+      "option_two": "Final Fantasy X",
+      "option_three": "Final Fantasy V",
+      "option_four": "Final Fantasy VII ",
+      "answer": "B",
+      "id": 3
+    },
+    {
+      "added_question": "Which of the following nations (all of which are currently part of a larger sovereign state) has never been an independent sovereign state?",
+      "option_one": "Tibet",
+      "option_two": "Scotland",
+      "option_three": "Hawaii",
+      "option_four": "Faroe Islands",
+      "answer": "D",
+      "id": 4
+    },
+    {
+      "added_question": "Whose autobiography was titled 'Long Walk to Freedom'?",
+      "option_one": "Thomas Jefferson ",
+      "option_two": "Mahatma Gandhi  ",
+      "option_three": "Nelson Mandela ",
+      "option_four": "Aung San Suu Kyi",
+      "answer": "C",
+      "id": 5
+    },
+    {
+      "added_question": "Who is the only person to have served as both US Vice President and President without being elected to either office?",
+      "option_one": "Lyndon B. Johnson",
+      "option_two": "Gerald Ford",
+      "option_three": "George Washington ",
+      "option_four": "Harry Truman",
+      "answer": "B",
+      "id": 6
+    },
+    {
+      "added_question": "RELIGION: Who released the single Jesus, Take the Wheel in 2005?",
+      "option_one": "Carrie Underwood",
+      "option_two": "Mariah Carey",
+      "option_three": "Kelly Clarkson",
+      "option_four": "Faith Hill",
+      "answer": "A",
+      "id": 7
+    },
+    {
+      "added_question": "GEOGRAPHY: The national anthem of which of these countries has no official lyrics?",
+      "option_one": "Brazil",
+      "option_two": "United Kingdom",
+      "option_three": "Canada",
+      "option_four": "Spain",
+      "answer": "D",
+      "id": 8
+    },
+    {
+      "added_question": "MOVIES: Which of these is not an Oscar winner for Best Song?",
+      "option_one": "Can't Stop the Feeling!",
+      "option_two": "My Heart Will Go On ",
+      "option_three": "Can You Feel the Love Tonight",
+      "option_four": "A Whole New World",
+      "answer": "A",
+      "id": 9
+    },
+    {
+      "added_question": "Which letter represents 500 in Roman numerals?",
+      "option_one": "D",
+      "option_two": "A",
+      "option_three": "D",
+      "option_four": "A",
+      "answer": "C",
+      "id": 10
+    },
+    {
+      "added_question": "Which of these letters is a programming language developed by Dennis Ritchie at Bell Labs?",
+      "option_one": "C",
+      "option_two": "D",
+      "option_three": "A",
+      "option_four": "B",
+      "answer": "A",
+      "id": 11
+    },
+    {
+      "added_question": "choose the correct company slogan?Finger Lickin’ Good",
+      "option_one": "Chick-fil-A",
+      "option_two": "Popeyes",
+      "option_three": "KFC",
+      "option_four": "Boston Market",
+      "answer": "C",
+      "id": 12
+    },
+    {
+      "added_question": "choose the correct company slogan? Love, Sleep & Play",
+      "option_one": "Pampers",
+      "option_two": "Huggies",
+      "option_three": "Depend",
+      "option_four": " Luvs",
+      "answer": "A",
+      "id": 13
+    },
+    {
+      "added_question": "choose the correct company slogan?  Let's Go Places",
+      "option_one": "Honda",
+      "option_two": "Toyota ",
+      "option_three": " Lincoln",
+      "option_four": "Aston Martin",
+      "answer": "B",
+      "id": 14
+    },
+    {
+      "added_question": "What restaurant franchise advises you to 'Eat Fresh'?",
+      "option_one": "KFC",
+      "option_two": "Taco Bell",
+      "option_three": "Subway",
+      "option_four": "McDonald's",
+      "answer": "C",
+      "id": 15
+    },
+    {
+      "added_question": "What is the largest country, by area, that has only one time zone?",
+      "option_one": "Turkey",
+      "option_two": "China",
+      "option_three": " Australia",
+      "option_four": "Russiaey",
+      "answer": "B",
+      "id": 16
+    },
+    {
+      "added_question": "What is the largest planet in our Solar System?",
+      "option_one": "Jupiter",
+      "option_two": "Earth",
+      "option_three": "Pluto",
+      "option_four": "Saturn",
+      "answer": "A",
+      "id": 17
+    },
+    {
+      "added_question": "Which country hosted the Summer Olympics in 2016?",
+      "option_one": "China  ",
+      "option_two": "Brazil",
+      "option_three": "Spain",
+      "option_four": "Greece",
+      "answer": "B",
+      "id": 18
+    },
+    {
+      "added_question": "How many blue stripes does the United States of America national flag have?",
+      "option_one": "6",
+      "option_two": "13",
+      "option_three": "7",
+      "option_four": "0",
+      "answer": "D",
+      "id": 19
+    },
+    {
+      "added_question": "What religion is the most practiced one in India?",
+      "option_one": "Shinto",
+      "option_two": "Sikhism",
+      "option_three": "Hinduism",
+      "option_four": "Islam",
+      "answer": "C",
+      "id": 20
+    }
+  ],
   "Biology": [
     {
       "added_question": "The DNA strands are held to each other by:",
@@ -920,5 +1101,150 @@
       "id": 20
     }
   ],
-  "players_scores": []
+  "players_scores": [
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Random",
+      "played_time": "12:17:45 19/10/2019",
+      "totalScore": "2",
+      "id": 1
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Chemistry",
+      "played_time": "12:18:54 19/10/2019",
+      "totalScore": "4",
+      "id": 2
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "12:19:38 19/10/2019",
+      "totalScore": "2",
+      "id": 3
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Mathematics",
+      "played_time": "12:20:40 19/10/2019",
+      "totalScore": "1",
+      "id": 4
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Physics",
+      "played_time": "12:21:46 19/10/2019",
+      "totalScore": "4",
+      "id": 5
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Sports",
+      "played_time": "12:22:28 19/10/2019",
+      "totalScore": "2",
+      "id": 6
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "12:46:9 19/10/2019",
+      "totalScore": "7",
+      "id": 7
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "12:46:35 19/10/2019",
+      "totalScore": "0",
+      "id": 8
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "12:47:6 19/10/2019",
+      "totalScore": "0",
+      "id": 9
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "12:47:8 19/10/2019",
+      "totalScore": "0",
+      "id": 10
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:28:29 19/10/2019",
+      "totalScore": "0",
+      "id": 11
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:45:51 19/10/2019",
+      "totalScore": "2",
+      "id": 12
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:47:22 19/10/2019",
+      "totalScore": "2",
+      "id": 13
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:48:50 19/10/2019",
+      "totalScore": "0",
+      "id": 14
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:51:42 19/10/2019",
+      "totalScore": "0",
+      "id": 15
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:55:33 19/10/2019",
+      "totalScore": "0",
+      "id": 16
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "14:3:34 19/10/2019",
+      "totalScore": "0",
+      "id": 17
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "14:12:19 19/10/2019",
+      "totalScore": "0",
+      "id": 18
+    }
+  ]
 }

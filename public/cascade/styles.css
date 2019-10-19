@@ -72,3 +72,52 @@ div.hide-content .edit{
     margin-left: 20%;
     margin-top: 20px;
 }
+
+/* the game categories index page */
+p#msg{
+    margin-top: 25px;
+  }
+  #img{
+    float: right;
+    margin-top: 25px;
+    
+  }
+  span{
+    color: rgb(140,67,255);
+  }
+h3.top-story{
+    margin-top: 50px;
+    color:red;
+}
+/* end */
+
+
+/* radio button */
+#optiontype{
+    size: 4rem;
+    color: aqua;
+}
+
+/*create questions  */
+#submitquestion{
+    /* margin-top: 10px; */
+    font-size: 1.8rem;
+    color:#3c40c6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#createbtn{
+    margin-top: 25px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(140,67,255);
+}
+
+#createbtn:hover{
+    background-color: white;
+    color:black;
+}
+#display_alert{
+    font-size: 1rem;
+    margin-top:  10px;
+}

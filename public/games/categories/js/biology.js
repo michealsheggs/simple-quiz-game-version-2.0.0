@@ -101,7 +101,9 @@ if(isloggedIn === userCacheDetail[0]){
   $("#userMenu").html('Guest');
 }
 
-const setdata =   $.ajax({
+
+
+    const setdata =   $.ajax({
         url: "http://localhost:3000/Biology",
         type: "GET",
         global: false,
@@ -112,74 +114,46 @@ const setdata =   $.ajax({
     }).responseJSON;
 
 let totalrecord = setdata.length;
-let page = 1;
-let	pagelimit = 4;
-
-    fetchData();
-
-    // handling the prev-btn
-    $("#prevPage").on("click", function(){
-        // if(page==1){
-        //     $("prevPage").addAttr('disabled');
-        // }else
-        if (page > 1) {
-            page--;
-            fetchData();
-        }
-        // console.log("Prev Page: " + page);
-    });
-
-    // handling the next-btn
-    $("#nextPage").on("click", function(){
-        if (page * pagelimit < totalrecord) {
-            page++;
-            fetchData();
-        }
-        // console.log("Next Page: " + page);
-    });
-
-    function fetchData() {
         // ajax() method to make api calls
         $.ajax({
             url: "http://localhost:3000/Biology",
             type: "GET",
-            data: {
-                _page: page,
-                _limit: pagelimit
-            },
             success: function(dataArr) {
                 console.log(dataArr);
 
                 if (dataArr) {
-                    // const totalFetched = dataArr.length;
-                    // console.log(totalFetched);
-                    
-                    let fetchData = "";
-                 
+                    let fetchData = "";              
                     dataArr.forEach((item)=>{
-                      fetchData += `<p class="question text-primary">question ${item.id}</p>
-                        <h4> ${item.added_question}</h4><br/> 
+                        fetchData += `<p class="question">question <span class="number">${item.id}</span></p>
+                        <h4 class="question-no"> ${item.added_question}</h4><br/> 
                         <div class="option">
-                        <div class='form-check'>
-                        <input class='form-check-input' type="radio" name="optiontype${item.id}" id="optiontype" 
-                        value="A">${item.option_one}
-
+                          <div class='form-check'>
+                           <label class="contain">${item.option_one}
+                              <input class='form-check-input' type="radio" name="optiontype${item.id}" id="optiontype" 
+                              value="A">
+                                  <span class="checkmark"></span>
+                            </label>                      
+                          </div>
+                            <div class="form-check">
+                            <label class="contain">${item.option_two}
+                                  <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
+                                  value="B">
+                                  <span class="checkmark"></span>
+                              </label>                         
+                            </div>                          
+                            <div class="form-check">
+                               <label class="contain">${item.option_three}
+                                  <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
+                                  value="C">
+                                  <span class="checkmark"></span>
+                              </label>                            
                             </div>
                             <div class="form-check">
-                            <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
-                            value="B">${item.option_two}
-                        
-                            </div>
-                            
-                            <div class="form-check">
-                            <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
-                            value="C">${item.option_three}
-                                
-                            </div>
-                            <div class="form-check">
-                            <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
-                            value="D">${item.option_four}
-                                
+                              <label class="contain">${item.option_four}
+                              <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
+                              value="D">
+                                <span class="checkmark"></span>
+                             </label>                                                                           
                             </div>            
                         </div>`;
 
@@ -192,56 +166,49 @@ let	pagelimit = 4;
                 return err;
             }
         });
-    }
-
-
-// $("$").on('click', function(){
-//     let answerChosen= $(`input[name=optiontype${value.id}]:checked`).val()
-
-// });
 
 
 //on submit
 //get the answers
+//first declare the correct score
 
-
-//first declare the correct scores
 let correctScores =0;
 let answerChosen;
 let correctAnswer;
+console.log('outside:' + correctScores);
+$("#submitAnswerButon").on('click', function(e){
+  $(this).hide();
+  $()
+  //check if the radio box is checked
+  // let answer ="";
+  // let answerChecked = document.getElementById('optiontype'); 
+  //   for(let i = 0; i <=answerChecked.length; i++) { 
+  //     if(answerChecked[i].checked){ 
+  //       console.log(answerChecked[i].value);    
+  //     answer += answerChecked[i].value;
+  //     }
+  //   }
+  //   console.log(answer.length);
+  //     if(!answer){
+  //       alert('answer all questions');        
+  //     }else{
+      //answers declaration
+      e.stopPropagation();    
+      $.getJSON(`http://localhost:3000/Biology`, function(data){
+        $.each(data, function(key, value){
+        answerChosen= $(`input[name=optiontype${value.id}]:checked`).val()
+        correctAnswer = value.answer;
+          if(answerChosen == correctAnswer){
+          correctScores++;
+         }
+      }) ;
+    //populate the result on the ui
+    const htmlscore = `<span>The total score is:  ${correctScores}</span>`
+      $("#totalScore").append(htmlscore);
+      console.log('inside populate:' + correctScores);
 
-$("#nextPage").on('click', function(e){
-//answers declaration
-e.stopPropagation(); 
-$.getJSON(`http://localhost:3000/Biology`, function(data){
-$.each(data, function(key, value){
- answerChosen= $(`input[name=optiontype${value.id}]:checked`).val()
-    correctAnswer = value.answer;
-   if(answerChosen == correctAnswer){
-       correctScores++;
-   }
-}) ;
 
-});
-
-}); 
-
-
-//populate the result on the ui
-$("#submitAnswerButon").on('click', function(){
-const htmlscore = `<span>The total score is:  ${correctScores}</span>`
-   $("#totalScore").append(htmlscore);
-
-   $.getJSON('http://localhost:3000/Biology', function(quizQuestions){
-        $.each(quizQuestions, function(key, value){
-            const populateData = $("#showscore").html();
-       
-            $(".showAnserContent").append(Mustache.render(populateData, value));
-    });
-
-   });
-
-   console.log(player);
+           let totalScore = correctScores;           
             let game_played= "Biology";
             let today = new Date();
             let date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
@@ -249,7 +216,6 @@ const htmlscore = `<span>The total score is:  ${correctScores}</span>`
             let played_time = time +' '+ date;
             let player_email = player[0];
             let player_userName = player[1] + " " + player[2];
-            let totalScore = correctScores;
             $.ajax({
                 type: "POST",
                 url: `http://localhost:3000/players_scores`,
@@ -265,11 +231,13 @@ const htmlscore = `<span>The total score is:  ${correctScores}</span>`
                     
                 },
                 error:function(err){
-                   return err; 
+                    console.log(err);
+                    
                 }
             });
+       });
 
-    })
+})
 
 
 $.getJSON('http://localhost:3000/Biology', function(quizQuestions){
@@ -279,3 +247,5 @@ $.getJSON('http://localhost:3000/Biology', function(quizQuestions){
         $(".tableContent").append(Mustache.render(populateData, value));
     });    
 });
+
+$("#")

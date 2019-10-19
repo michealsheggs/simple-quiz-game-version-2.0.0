@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../cascade/styles.css">
+    <link rel="stylesheet" href="../../cascade/radio-btn.css">
+
     <link rel="stylesheet" href="../../css_lib/fontawesome/css//fontawesome.min.css">
 
     
@@ -27,7 +29,7 @@
                 </ul>
               <ul class="nav justify-content-end">
                   <li class="nav-item">
-                      <a class="nav-link active" href="welcome.html">Home</a>
+                      <a class="nav-link active" href="../index.html">Home</a>
                     </li>
                     <li id="submit-link" class="nav-item">
                       <a class="nav-link active" href="../../Admin/create.html">Submit Question</a>
@@ -42,7 +44,7 @@
                     
                        </button>
                        <div class="dropdown-menu" aria-labelledby="userMenu">
-                         <a class="dropdown-item" href="#">Action</a>
+                         <a id="damin-panel" class="dropdown-item" href="../../Admin/dashboard.html">Dashboard</a>
                          <a class="dropdown-item" href="#">Setting</a>
                          <a id="logout-link" class="dropdown-item">Logout</a>
                        </div> 
@@ -64,17 +66,13 @@
                           <div class="usermenu"></div>
 
                             <div id=Thequestionsection>
-                             
+                              
                             </div>
-                            <ul id="frontPagination" class="pagination">
-                                <li class="page-item">
-                                  <button  id="prevPage">Previous</button>
-                                </li>
-                                <li class="page-item">
-                                  <button id="nextPage">Next</button>
-                                 </li>
-                            </ul>
-                          <button style="margin-top:20px;" id="submitAnswerButon" class="btn btn-primary" type="button">Submit</button>
+                            
+                          <button id="submitAnswerButon" class="btn btn-lg" type="button">Submit</button>
+                          <div>
+                              <h4 id="totalScore" class="text-danger"></h4>
+                          </div>
                   </div>
                                     
                   <!-- the quiz section ends here -->

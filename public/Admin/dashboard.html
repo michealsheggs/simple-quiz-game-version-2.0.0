@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../cascade/styles.css">
+    <link rel="stylesheet" href="../cascade/admin.css">
     <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
 
     <title> simple quiz game</title>
@@ -50,7 +51,7 @@
                       <a class="nav-link" href="user_score.html">View users scores</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../frontend/showscores.html">View answers</a>
+                      <a class="nav-link" href="showscores.html">View answers</a>
                     </li>
                     <!-- dropdown  menue -->
                     <li class="dropdown">
@@ -59,8 +60,8 @@
                 
                        </button>
                        <div class="dropdown-menu" aria-labelledby="userMenu">
-                         <a class="dropdown-item" href="#"><i class="fa ">Action</i></a>
-                         <a class="dropdown-item" href="#">Setting</a>
+                          <a id="damin-panel" class="dropdown-item" href="dashboard.html">Dashboard</a>
+                          <a class="dropdown-item" href="#">Setting</a>
                          <a id="logout-link" class="dropdown-item" href="#">Logout</a>
                        </div> 
                    </li> 
@@ -73,10 +74,10 @@
             <div class="row">
              <div class="col-md-11">  
                 <div id="cat-1">
-                  <h3>All Quizzies</h3>
+                  <h3 class="headline">All Quizzies</h3>
                     <h5 class="quiz-category"> category : Random Quizzies</h5>
                     <table class="table table-hover table-bordered table-stripped table-condensed">
-                        <thead>
+                        <thead class="viewTable">
                           <tr>
                             <th scope="col">no</th>
                             <th>Question</th>
@@ -94,15 +95,15 @@
                       <!-- pagination -->
                       <ul id="backPagination" class="pagination">
     
-                          <li id="randPrevPage" class="page-item"><button class="btn">Previous</button></li>
-                          <li id="randNextPage" class="page-item"><button class="btn">Next</button></li>
+                          <li id="randPrevPage" class="page-item"><button class="btn prevdesign">Previous</button></li>
+                          <li id="randNextPage" class="page-item"><button class="btn nextdesign">Next</button></li>
                       </ul>
                 </div>
 
                 <div class="cat-2">
                     <h5 class="quiz-category"> category : Chemistry Quizzies</h5>
                     <table class="table table-hover table-bordered table-stripped table-condensed">
-                        <thead>
+                        <thead class="viewTable">
                             <tr>
                                 <th scope="col">no</th>
                                 <th>Question</th>
@@ -120,15 +121,15 @@
                       <!-- pagination -->
                       <ul id="backPagination" class="pagination">
     
-                          <li id="chemPrevPage" class="page-item"><button class="btn">Previous</button></li>
-                          <li id="chemPextPage" class="page-item"><button class="btn">Next</button></li>
+                          <li id="chemPrevPage" class="page-item"><button class="btn prevdesign">Previous</button></li>
+                          <li id="chemPextPage" class="page-item"><button class="btn nextdesign">Next</button></li>
                       </ul>
                 </div>
 
                 <div class="cat-3">
                     <h5 class="quiz-category"> category : Physics Quizzies</h5>
                     <table class="table table-hover table-bordered table-stripped table-condensed">
-                        <thead>
+                        <thead class="viewTable">
                             <tr>
                                 <th scope="col">no</th>
                                 <th>Question</th>
@@ -146,14 +147,14 @@
                       <!-- pagination -->
                       <ul id="backPagination" class="pagination">
     
-                          <li id="phyPrevPage" class="page-item"><button class="btn">Previous</button></li>
-                          <li id="phyNextPage" class="page-item"><button class="btn">Next</button></li>
+                          <li id="phyPrevPage" class="page-item"><button class="btn prevdesign">Previous</button></li>
+                          <li id="phyNextPage" class="page-item"><button class="btn nextdesign">Next</button></li>
                       </ul>
                 </div>
                 <div class="cat-4">
                     <h5 class="quiz-category"> category : Biology Quizzies</h5>
                     <table class="table table-hover table-bordered table-stripped table-condensed">
-                        <thead>
+                        <thead class="viewTable">
                             <tr>
                                 <th scope="col">no</th>
                                 <th>Question</th>
@@ -171,15 +172,15 @@
                       <!-- pagination -->
                       <ul id="backPagination" class="pagination">
     
-                          <li id="bioPrevPage" class="page-item"><button class="btn">Previous</button></li>
-                          <li id="bioNextPage" class="page-item"><button class="btn">Next</button></li>
+                          <li id="bioPrevPage" class="page-item"><button class="btn prevdesign">Previous</button></li>
+                          <li id="bioNextPage" class="page-item"><button class="btn nextdesign">Next</button></li>
                       </ul>
                 </div>
 
                 <div class="cat-4">
                     <h5 class="quiz-category">category : Mathematics Quizzies</h5>
                     <table class="table table-hover table-bordered table-stripped table-condensed">
-                        <thead>
+                        <thead class="viewTable">
                           <tr>
                             <th scope="col">no</th>
                             <th>Question</th>
@@ -197,15 +198,15 @@
                       <!-- pagination -->
                       <ul id="backPagination" class="pagination">
     
-                          <li id="mathPrevPage" class="page-item"><button class="btn">Previous</button></li>
-                          <li id="mathNextPage" class="page-item"><button class="btn">Next</button></li>
+                          <li id="mathPrevPage" class="page-item"><button class="btn prevdesign">Previous</button></li>
+                          <li id="mathNextPage" class="page-item"><button class="btn nextdesign">Next</button></li>
                       </ul>
                 </div>
 
                 <div class="cat-4">
                     <h5 class="quiz-category"> category : Sports Quizzies</h5>
                     <table class="table table-hover table-bordered table-stripped table-condensed">
-                        <thead>
+                        <thead class="viewTable">
                             <tr>
                                 <th scope="col">no</th>
                                 <th>Question</th>
@@ -223,8 +224,8 @@
                       <!-- pagination -->
                       <ul id="backPagination" class="pagination">
     
-                          <li id="sportPrevPage" class="page-item"><button class="btn">Previous</button></li>
-                          <li id="sportNextPage" class="page-item"><button class="btn">Next</button></li>
+                          <li id="sportPrevPage" class="page-item"><button class="btn prevdesign">Previous</button></li>
+                          <li id="sportNextPage" class="page-item"><button class="btn nextdesign">Next</button></li>
                       </ul>
                 </div>
              

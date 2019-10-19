@@ -114,74 +114,46 @@ if(isloggedIn === userCacheDetail[0]){
     }).responseJSON;
 
 let totalrecord = setdata.length;
-let page = 1;
-let	pagelimit = 4;
-
-    fetchData();
-
-    // handling the prev-btn
-    $("#prevPage").on("click", function(){
-        if(page==1){
-            $("prevPage").addAttr('disabled');
-        }else
-        if (page > 1) {
-            page--;
-            fetchData();
-        }
-        // console.log("Prev Page: " + page);
-    });
-
-    // handling the next-btn
-    $("#nextPage").on("click", function(){
-        if (page * pagelimit < totalrecord) {
-            page++;
-            fetchData();
-        }
-        // console.log("Next Page: " + page);
-    });
-
-    function fetchData() {
         // ajax() method to make api calls
         $.ajax({
             url: "http://localhost:3000/Chemistry",
             type: "GET",
-            data: {
-                _page: page,
-                _limit: pagelimit
-            },
             success: function(dataArr) {
                 console.log(dataArr);
 
                 if (dataArr) {
-                    // const totalFetched = dataArr.length;
-                    // console.log(totalFetched);
-                    
-                    let fetchData = "";
-                 
+                    let fetchData = "";              
                     dataArr.forEach((item)=>{
-                      fetchData += `<p class="question text-primary">question ${item.id}</p>
-                        <h4> ${item.added_question}</h4><br/> 
+                        fetchData += `<p class="question">question <span class="number">${item.id}</span></p>
+                        <h4 class="question-no"> ${item.added_question}</h4><br/> 
                         <div class="option">
-                        <div class='form-check'>
-                        <input class='form-check-input' type="radio" name="optiontype${item.id}" id="optiontype" 
-                        value="A">${item.option_one}
-
+                          <div class='form-check'>
+                           <label class="contain">${item.option_one}
+                              <input class='form-check-input' type="radio" name="optiontype${item.id}" id="optiontype" 
+                              value="A">
+                                  <span class="checkmark"></span>
+                            </label>                      
+                          </div>
+                            <div class="form-check">
+                            <label class="contain">${item.option_two}
+                                  <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
+                                  value="B">
+                                  <span class="checkmark"></span>
+                              </label>                         
+                            </div>                          
+                            <div class="form-check">
+                               <label class="contain">${item.option_three}
+                                  <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
+                                  value="C">
+                                  <span class="checkmark"></span>
+                              </label>                            
                             </div>
                             <div class="form-check">
-                            <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
-                            value="B">${item.option_two}
-                        
-                            </div>
-                            
-                            <div class="form-check">
-                            <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
-                            value="C">${item.option_three}
-                                
-                            </div>
-                            <div class="form-check">
-                            <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
-                            value="D">${item.option_four}
-                                
+                              <label class="contain">${item.option_four}
+                              <input class="form-check-input" type="radio" name="optiontype${item.id}" id="optiontype" 
+                              value="D">
+                                <span class="checkmark"></span>
+                             </label>                                                                           
                             </div>            
                         </div>`;
 
@@ -194,64 +166,41 @@ let	pagelimit = 4;
                 return err;
             }
         });
-    }
 
 
-// $("$").on('click', function(){
-//     let answerChosen= $(`input[name=optiontype${value.id}]:checked`).val()
-
-// });
 //on submit
 //get the answers
-
-
 //first declare the correct scores
 let correctScores =0;
 let answerChosen;
 let correctAnswer;
+console.log('outside:' + correctScores);
 
-$("#nextPage").on('click', function(e){
-//answers declaration
-e.stopPropagation(); 
-$.getJSON(`http://localhost:3000/Chemistry`, function(data){
-$.each(data, function(key, value){
- answerChosen= $(`input[name=optiontype${value.id}]:checked`).val()
-    correctAnswer = value.answer;
-   if(answerChosen == correctAnswer){
-       correctScores++;
-   }
-}) ;
+$("#submitAnswerButon").on('click', function(e){
+      //answers declaration
+      e.stopPropagation();    
+      $.getJSON(`http://localhost:3000/Chemistry`, function(data){
+        $.each(data, function(key, value){
+        answerChosen= $(`input[name=optiontype${value.id}]:checked`).val()
+        correctAnswer = value.answer;
+          if(answerChosen == correctAnswer){
+          correctScores++;
+         }
+      }) ;
+    //populate the result on the ui
+    const htmlscore = `<span>The total score is:  ${correctScores}</span>`
+      $("#totalScore").append(htmlscore);
+      console.log('inside populate:' + correctScores);
 
-});
 
-}); 
-
-
-//populate the result on the ui
-$("#submitAnswerButon").on('click', function(){
-const htmlscore = `<span>The total score is:  ${correctScores}</span>`
-   $("#totalScore").append(htmlscore);
-
-   $.getJSON('http://localhost:3000/Chemistry', function(quizQuestions){
-        $.each(quizQuestions, function(key, value){
-            const populateData = $("#showscore").html();
-       
-            $(".showAnserContent").append(Mustache.render(populateData, value));
-    });
-
-   });
-
-   
-   console.log(player);
+           let totalScore = correctScores;           
             let game_played= "Chemistry";
-
             let today = new Date();
             let date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
             let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
             let played_time = time +' '+ date;
             let player_email = player[0];
             let player_userName = player[1] + " " + player[2];
-            let totalScore = correctScores;
             $.ajax({
                 type: "POST",
                 url: `http://localhost:3000/players_scores`,
@@ -271,6 +220,7 @@ const htmlscore = `<span>The total score is:  ${correctScores}</span>`
                     
                 }
             });
+       });
 })
 
 
