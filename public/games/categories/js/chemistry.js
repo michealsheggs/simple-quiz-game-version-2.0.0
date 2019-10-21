@@ -101,8 +101,6 @@ if(isloggedIn === userCacheDetail[0]){
   $("#userMenu").html('Guest');
 }
 
-
-
     const setdata =   $.ajax({
         url: "http://localhost:3000/Chemistry",
         type: "GET",

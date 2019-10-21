@@ -20,7 +20,7 @@
 
     //check if logged in
 
-    $("#playgame").on('click',function(){
+    $("#getstarted").on('click',function(){
         if(!isloggedIn){
             window.location = "Users/signup.html";
             // return;
@@ -55,7 +55,8 @@
        }
      });   
      if(isloggedIn.indexOf(userCacheDetail)){
-      $("#submit-link, #showscore-link").hide();
+      $("#submit-link, #showscore-link, #damin-panel").hide();
+    
      }
   
 
@@ -83,7 +84,9 @@
     });
 
 console.log(adminCacheDetail);
-
+    // if(!isloggedIn.indexOf(userCacheDetail) || !isloggedIn.indexOf(adminCacheDetail)){
+    //   window.location = "../index.html";
+    // }
 
     if(isloggedIn === userCacheDetail[0]){
       //do this

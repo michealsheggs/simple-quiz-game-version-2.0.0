@@ -6,9 +6,25 @@
       "email": "pastadmin@admin.com",
       "password": "Elmichealus@49",
       "id": 1
+    },
+    {
+      "first_name": "jshdjadjasf",
+      "last_name": "ajsasddam",
+      "email": "pastadmin@admin.com",
+      "password": "Elmichealus@49",
+      "id": 2
+    }
+    
+  ],
+  "users": [
+    {
+      "first_name": "iluore ",
+      "last_name": "emmanuel",
+      "email": "michealsheggs@gmail.com",
+      "password": "Password1",
+      "id": 1
     }
   ],
-  "users": [],
   "Random": [
     {
       "added_question": "Which of these is the winning hand in a game of poker?",
@@ -1437,6 +1453,22 @@
       "played_time": "16:19:10 20/10/2019",
       "totalScore": "0",
       "id": 42
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Chemistry",
+      "played_time": "22:12:4 20/10/2019",
+      "totalScore": "0",
+      "id": 43
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Random",
+      "played_time": "9:42:10 21/10/2019",
+      "totalScore": "0",
+      "id": 44
     }
   ]
 }
