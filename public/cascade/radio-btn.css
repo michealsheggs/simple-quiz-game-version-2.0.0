@@ -1,6 +1,7 @@
 /* Buton */
 button#submitAnswerButon{
     width: 100px;
+    margin-left: 20%;
     margin-top: 25px;
     border-radius: 25px;
     color: white;

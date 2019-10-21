@@ -77,14 +77,10 @@ div.hide-content .edit{
 p#msg{
     margin-top: 25px;
   }
-  #img{
-    float: right;
-    margin-top: 25px;
-    
-  }
-  span{
+  
+  /* span{
     color: rgb(140,67,255);
-  }
+  } */
 h3.top-story{
     margin-top: 50px;
     color:red;
@@ -121,3 +117,79 @@ h3.top-story{
     font-size: 1rem;
     margin-top:  10px;
 }
+/* index game image */
+.img-hover-zoom img{
+    transform-origin: 50% 65%;
+    transition: transform 5s, filter 3s ease-in-out;
+    filter: brightness(150%);
+}
+
+  .img-container {
+    /* height: 300px; */
+    float: right;
+    margin-top: 25px;
+    overflow: hidden; 
+  }
+  .img-hover-zoom:hover img{
+    filter: brightness(100%);
+    transform: scale(1.2);
+}
+/* game styling */
+.totalscore{
+    margin-left: 50%;
+    margin-top: 15px;
+}
+.total{
+    margin-left: 50%;
+
+}
+#outcome{
+    margin-top: 30px;
+    margin-left: 30%;
+}
+
+
+
+
+/* sidebar */
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    overflow-x: hidden;
+  }
+
+
+  .sider {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  /* .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+   */
+  /* When you mouse over the navigation links, change their color */
+  /* .sidenav a:hover {
+    color: #f1f1f1;
+  }
+   */
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebr {padding-top: 15px;}
+    /* .sidenav a {font-size: 18px;} */
+  }

@@ -174,9 +174,9 @@ let totalrecord = setdata.length;
 let correctScores =0;
 let answerChosen;
 let correctAnswer;
-console.log('outside:' + correctScores);
 
 $("#submitAnswerButon").on('click', function(e){
+  $(this).fadeOut(4000).hide();
       //answers declaration
       e.stopPropagation();    
       $.getJSON(`http://localhost:3000/Sports`, function(data){
@@ -187,11 +187,24 @@ $("#submitAnswerButon").on('click', function(e){
           correctScores++;
          }
       }) ;
-    //populate the result on the ui
-    const htmlscore = `<span>The total score is:  ${correctScores}</span>`
-      $("#totalScore").append(htmlscore);
-      console.log('inside populate:' + correctScores);
+   //populate the result on the ui
+   let displayOutcome =`
+   <li id="playagain" class="page-item"><a href="biology.html"><button class="btn prevdesign">play again</button></a></li>
+   <li id="playanother" class="page-item"><a href="../index.html"><button class="btn nextdesign">play another quiz</button></a></li>
+ `;
+ let total = `<span> you  scored : ${correctScores}</span>`;
+ let htmlscore;
+ if(correctScores < 10){
+   htmlscore = `<span>your high score : <stron> ${correctScores} </strong> is below average, you can do better next time. </br> click on play again button to try again!</span>`;
+ }else if(correctScores <= 15){
+   htmlscore = `<span>your high score : <stron> ${correctScores} </strong> is above  average, well done!. </br> click on play again button to try again! or play the next quiz</span>`;
 
+ }else{
+   htmlscore = `<span>your total score is:  <stron> ${correctScores} </strong>. bravo, paky another game</span>`
+ }
+   $(".totalscore").append(htmlscore);
+   $(".total").append(total);
+   $("#outcome").append(displayOutcome);
 
            let totalScore = correctScores;           
             let game_played= "Sports";

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css_lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../cascade/styles.css">
+    <link rel="stylesheet" href="bitz.css">
+    <link rel="stylesheet" href="../../css_lib/fontawesome/css//fontawesome.min.css">
+
+    <style>
+  
+    </style>
+    <title> simple quiz game</title>
+</head>
+<body>
+        <!-- The navigation section -->
+        <nav id="main-nav" class="navbar navbar-dark bg-dark">
+                <!-- Navbar content -->
+                <ul class="nav" >
+                    <li class="nav-item">
+                        <a href="../index.html">
+                          <img src="../../img/abstract-shape.jpg" alt="admin page" width="50" height="50">
+                        </a>
+                      </li>
+                  <li class="nav-item" style="color: #f1f1f1">
+                    <a  class="nav-link active" href="../index.html">Sheggs Quiz App</a>
+                  </li>
+                </ul>
+              <ul class="nav justify-content-end">
+                  <!-- <li class="nav-item">
+                      <a class="nav-link active" href="welcome.html">Home</a>
+                    </li> -->
+                    <li id="random-link" class="nav-item">
+                            <a class="nav-link active" href="bitzrd.html">Random</a>
+                        </li>
+                     <li id="maths-link" class="nav-item">
+                            <a class="nav-link active" href="bitzmt.html">Mathematics</a>
+                        </li>
+                     <li id="chemistry-link" class="nav-item">
+                            <a class="nav-link active" href="bitzch.html">Chemistry</a>
+                     </li>
+                     <li id="biology-link" class="nav-item">
+                        <a class="nav-link active" href="bitzbi.html">Biology</a>
+                     </li>
+                     <li id="physics-link" class="nav-item">
+                         <a class="nav-link active" href="bitzpy.html" >Physics</a>
+                     </li>
+                     <li id="sport-link" class="nav-item">
+                             <a class="nav-link active" href="bitzsp.html">Sports</a>
+                     </li>
+               
+               
+                     <!-- dropdown menu -->
+                     <li class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    
+                       </button>
+                       <div class="dropdown-menu" aria-labelledby="userMenu">
+                          <a id="damin-panel" class="dropdown-item" href="../../Admin/dashboard.html">Dashboard</a>
+                          <a class="dropdown-item" href="#">Setting</a>
+                         <a id="logout-link" class="dropdown-item">Logout</a>
+                       </div> 
+                   </li> 
+               <!--- end here -->
+                  </ul>             
+         </nav> 
+           <div class="container"> 
+                <div class="somemsg">
+                        <h5>The Quiz</h5>
+                        <p>
+                           The quiz contains 20 questions and there is no time limit. 
+                        </p> 
+                      <p>
+                      The quiz is not official, it's just a nice way to see how much you know, or don't know, about Physics.  
+                     </p>
+                     <h4>Count Your Score</h4>
+                       <p>
+                           You will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed. Maximum score is 20 points.  
+                       </p>  
+                   </div>  
+                      
+                    <div class="start-quiz">
+                        <h4 class="text-center">
+                            Start the Quiz
+                        </h4>
+                        <p class="text-center">  Good luck!
+                            </p>
+                        <a href="../categories/physics.html"><button class="btn btn-primary" id="playgame">Play Quiz</button></a>
+                    </div>
+        </div>        
+    <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
+
+
+    <script type="text/javascript" src="../../js_lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/mustache/mustache.min.js"></script>
+    <script type="text/javascript" src="../../css_lib/fontawesome/js/fontawesome.min.js"></script>
+    <script type="text/javascript" src="../../css_lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../js/toggle.js"></script>
+    <script src="../categories/js/biology.js"></script>
+
+</body>
+</html>

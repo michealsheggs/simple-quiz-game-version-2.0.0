@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../cascade/styles.css">
     <link rel="stylesheet" href="../../cascade/radio-btn.css">
+    <link rel="stylesheet" href="../../cascade/admin.css">
+
 
     <link rel="stylesheet" href="../../css_lib/fontawesome/css//fontawesome.min.css">
 
@@ -59,8 +61,9 @@
                   </div>
                   <!-- the quiz section -->
                   <div class="col-md-7">
-                        <h2 class="top-heading">This is a quiz game, please take some time to answer some of our
-                           questions</h2>    
+                        <h2 class="top-heading">
+                            Can you choose the correct answers to these questions that cover a range of Biology topics?
+                        </h2>    
                           <!-- the question section  -->
                           <p>General questions:  the following quiz questiion contains option A - D , chose an answer option an click submit to see your scores</p>
                           <div class="usermenu"></div>
@@ -71,8 +74,12 @@
                             
                           <button id="submitAnswerButon" class="btn btn-lg" type="button">Submit</button>
                           <div>
-                              <h4 id="totalScore" class="text-danger"></h4>
+                              <p class="total text-danger"></p>
+                              <h5 class="totalscore"></h5>
                           </div>
+                          <ul id="outcome" class="pagination">
+                             
+                          </ul>
                   </div>
                                     
                   <!-- the quiz section ends here -->
@@ -80,8 +87,7 @@
                   <div class="col-md-3">
                                       <!-- display the results -->
 
-                      <div >
-                            <table class="table table-border table-striped">
+                            <!-- <table class="table table-border table-striped">
                                 <thead>
                                   <tr>
                                     <th scope="col">no</th>
@@ -96,12 +102,10 @@
                                     <td class="bg-success">{{answer}}</td>                                        
                                 </tr>  
                               </template>
-                      
+                              
                                 </tbody>
-                            </table>
-                      </div>
-                      <h4 id="totalScore" class="text-danger"></h4>
-                  </div>
+                            </table> -->
+                      </div>                    
                   <!-- the right sidebar -->
                <div class="col-md-1"></div>
             

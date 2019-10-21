@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../cascade/styles.css">
     <link rel="stylesheet" href="../../cascade/radio-btn.css">
+    <link rel="stylesheet" href="../../cascade/admin.css">
     <link rel="stylesheet" href="../../css_lib/fontawesome/css//fontawesome.min.css">
 
     
@@ -68,10 +69,14 @@
                              
                             </div>
                            
-                          <button style="margin-top:20px;" id="submitAnswerButon" class="btn btn-primary" type="button">Submit</button>
-                          <div>
-                              <h4 id="totalScore" class="text-danger"></h4>
-                          </div>
+                            <button id="submitAnswerButon" class="btn btn-lg" type="button">Submit</button>
+                            <div>
+                                <p class="total text-danger"></p>
+                                <h5 class="totalscore"></h5>
+                            </div>
+                          <ul id="outcome" class="pagination">
+                             
+                          </ul>
                        </div>
                                     
                   <!-- the quiz section ends here -->
@@ -79,27 +84,7 @@
                   <div class="col-md-3">
                                       <!-- display the results -->
 
-                      <div >
-                            <table class="table table-border table-striped">
-                                <thead>
-                                  <tr>
-                                    <th scope="col">no</th>
-                                    <th scope="col">the correct answer</th>
-                                  </tr>
-                                </thead>
-                                <tbody class="showAnserContent">
-                                    <template id ="showscore">
-
-                                <tr> 
-                                    <th scope="row">{{id}}</th>                                
-                                    <td class="bg-success">{{answer}}</td>                                        
-                                </tr>  
-                              </template>
-                      
-                                </tbody>
-                            </table>
-                      </div>
-                      <h4 id="totalScore" class="text-danger"></h4>
+                   
                   </div>
                   <!-- the right sidebar -->
                <div class="col-md-1"></div>

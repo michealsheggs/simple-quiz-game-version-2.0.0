@@ -70,6 +70,7 @@ console.log(totalrecord);
                          <td>${item.id}</td>
                          <td>${item.player_userName}</td>
                          <td>${item.played_time}</td>
+                         <td>${item.game_played}</td>
                          <td>${item.totalScore}</td>
                      </tr>
                                            
