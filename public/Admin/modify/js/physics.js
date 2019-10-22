@@ -64,8 +64,8 @@ const setdata =   $.ajax({
                   <td>${item.added_question}</td>
                   <td data-id="to">
   
-                      <button id="edit" data-id="${item.id}" class="btn btn-xs" >pen</button>
-                      <button id="remove" data-id="${item.id}" class="btn btn-xs" >X</button>                             
+                  <button id="edit" data-id="${item.id}" class="btn btn-xs btn-secondary" ><i class="fa fa-pencil"></i></button>
+                  <button id="remove" data-id="${item.id}" class="btn btn-xs btn-secondary" ><i class="fa fa-trash"></i></button>                               
                   </td>
                   </tr>
                   
@@ -87,8 +87,8 @@ const setdata =   $.ajax({
 //updating
 //first pull the question to be edited into the edit form
 $(".contentTable").delegate('#edit', 'click', function(){
-    // let close =  $(this).attr('data-id');
-    // close.addClass('hide-content');
+   $(".toggle_content").removeClass();
+
           $.getJSON('http://localhost:3000/Physics/' + $(this).attr('data-id'), function(editQuestion){
               const questionTemp = $("#editTemplate").html()
                      
@@ -96,7 +96,11 @@ $(".contentTable").delegate('#edit', 'click', function(){
           });
         
    });
-        
+        //if the cancel button is click or update is canceled
+   $("#cancelbtn").on('click',function(){
+    $("#edit_form").addClass('toggle_content');
+    location.reload();
+ });
    //this one will actually update the question
   let answer = "";
   $('#editButton').on('click',function(e){
@@ -133,11 +137,21 @@ $(".contentTable").delegate('#edit', 'click', function(){
                   answer,
               },
               success: function() {
-                $('#display_alert').html('created question successfully');
-              },
+                $("#display_alert").append(`<div class="alert alert-success alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Congratulations!</strong> you successfully  updated  quiz!
+                </div>
+                `);
+                location.reload();
+
+              },            
               error: function() {
-                  $('#display_alert').html('error updating questions');
-                },
+                $("#display_alert").append(`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Error!</strong> error in updating quizzie
+                </div>
+                `);  
+              }       
             });
           }
   
@@ -155,12 +169,21 @@ $(".contentTable").delegate('#remove', 'click', function(){
       type: 'DELETE',
       url : 'http://localhost:3000/Physics/'+ $(this).attr('data-id'),
       success: function(){
-       
-        alert('working');
-      },
-      error: function(){
-        alert('no working');
-      }
+        $("#display_alert").append(`<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Congratulations!</strong> you successfully  deleted quiz!
+        </div>
+        `);
+        location.reload();
+
+       },
+       error: function(){
+         $("#display_alert").append(`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+         <strong>Error!</strong> error in deleting quizzie
+         </div>
+         `);
+       }
     });
   });
   

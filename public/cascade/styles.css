@@ -101,15 +101,6 @@ p#msg{
     margin-top: 25px;
   }
   
-  /* span{
-    color: rgb(140,67,255);
-  } */
-h3.top-story{
-    margin-top: 50px;
-    color:red;
-}
-/* end */
-
 
 /* radio button */
 #optiontype{
@@ -212,4 +203,34 @@ h6#quiz-top{
 .sign_footer:hover{
     background: whitesmoke;
     color:black;
+}
+
+h3.top-story{
+    margin-top: 50px;
+    padding: 3px 10px;
+    color:whitesmoke;
+    background: #fd9a00;
+}
+/* end */
+#playbody{
+    background: whitesmoke;
+}
+.msg_head{
+    color:black;
+    text-decoration-style: none
+}
+.first_head{
+    margin-top: 20px;
+}
+
+span.spicies{
+    margin-top: -5px;
+    background: #fd9a00;
+    color: whitesmoke;
+    padding: 0 5px;
+}
+p.author{
+    margin-top: -8px;
+    margin-bottom: -4px;
+
 }

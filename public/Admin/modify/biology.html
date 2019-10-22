@@ -32,19 +32,18 @@
                       <a class="nav-link nav_link_item active" href="../create.html">create</a>
                     </li>
                     <li class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="categories" 
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                       Update Quizzies               
-                       </button>
-                       <div class="dropdown-menu" aria-labelledby="categories">
-                            <a class="dropdown-item" href="chemistry.html">Chemistry</a>
-                            <a class="dropdown-item" href="random.html">Random</a>
-                            <a class="dropdown-item" href="physics.html">Physics</a>
-                            <a class="dropdown-item" href="biology.html">Biology</a>
-                            <a class="dropdown-item" href="maths.html">Mathematics</a>
-                            <a class="dropdown-item" href="sports.html">Sports</a>
-                          </div>
-                   </li> 
+                      <button class="dropbtn">Update Quizzies 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a class="dropdown-item" href="chemistry.html">Chemistry</a>
+                        <a class="dropdown-item" href="random.html">Random</a>
+                        <a class="dropdown-item" href="physics.html">Physics</a>
+                        <a class="dropdown-item" href="biology.html">Biology</a>
+                        <a class="dropdown-item" href="maths.html">Mathematics</a>
+                        <a class="dropdown-item" href="sports.html">Sports</a>
+                      </div>
+                    </li>
                     <li class="nav-item">
                       <a class="nav-link nav_link_item " href="../user_score.html">View users scores</a>
                     </li>
@@ -71,10 +70,11 @@
          <div class="container">
             <div class="row">
 
-              <h5 class="modify">Edit or Delete Quiz questions</h5>
-             <div class="col-md-8">              
+             <div class="col-md-8">  
+                <h5 class="modify">Edit or Delete Quiz questions</h5>
+            
                 <table id="Update" class="table table-hover table-bordered table-stripped table-condensed">
-                    <thead>
+                    <thead class="thead">
                       <tr>
                         <th scope="col">no</th>
                         <th scope="col">Question</th>
@@ -93,69 +93,72 @@
                   </ul>
               </div>                        
              <div class="col-md-4">
-               <form method="">
-                  <p id="display_alert"></p>
-              
-                  <div class="editdisplay">
-                    
-                      <template id="editTemplate">
-                        <div class="form-group">
-                          <input id="data_id" type="hidden" value="{{id}}" name="edit-id">
-                            <label for="editquestion"> Edit question</label>
-                            <textarea class="form-control" name="question" id="editquestion" cols="10" rows="2" 
-                            placeholder="enter your question">{{added_question}}</textarea>
-                            </div>
-                            <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">A</div>
-                            </div>
-                            <input type="text" class="form-control" id="option_one" name="option_one" placeholder="option one"
-                             value="{{option_one}}">
-                            </div>
-                            <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">B</div>
-                            </div>
-                            <input type="text" class="form-control" id="option_two" name="option_two" placeholder="option two" 
-                            value="{{option_two}}">
-                            </div>
-                            <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">C</div>
-                            </div>
-                            <input type="text" class="form-control" id="option_three" name="option_three" placeholder="option three"
-                             value="{{option_three}}">
-                            </div>
-                            <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                              <div class="input-group-text">D</div>
-                            </div>
-                            <input type="text" class="form-control" id="option_four" name="option_four" placeholder="option four"
-                             value="{{option_four}}">
-                            </div> 
-                            
-                      </template>          
-                    
-                  </div>
-  
-              <!-- the section for the answers -->
-                <div id="toggle_content">
-                    <h4>give the answer to the questions</h4>
-                    <div class="form-group form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="options" id="option_A" value="A">A
+                <div id=edit_form>
+                    <div id="display_alert"></div>
+                
+                    <div class="editdisplay">
+                      
+                        <template id="editTemplate">
+                          <div class="form-group">
+                            <input id="data_id" type="hidden" value="{{id}}" name="edit-id">
+                              <label for="editquestion"> Edit question</label>
+                              <textarea class="form-control" name="question" id="editquestion" cols="10" rows="2" 
+                              placeholder="enter your question">{{added_question}}</textarea>
+                              </div>
+                              <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">A</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_one" name="option_one" placeholder="option one"
+                               value="{{option_one}}">
+                              </div>
+                              <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">B</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_two" name="option_two" placeholder="option two" 
+                              value="{{option_two}}">
+                              </div>
+                              <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">C</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_three" name="option_three" placeholder="option three"
+                               value="{{option_three}}">
+                              </div>
+                              <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">D</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_four" name="option_four" placeholder="option four"
+                               value="{{option_four}}">
+                              </div> 
+                              
+                        </template>          
+                      
                     </div>
-                    <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="options" id="option_B" value="B">B
-                  </div>
-                    <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="options" id="option_C" value="C">C
+    
+                <!-- the section for the answers -->
+                  <div id="toggle_edit" class="toggle_content">
+                      <h4>give the answer to the questions</h4>
+                      <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="options" id="option_A" value="A">A
+                      </div>
+                      <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="options" id="option_B" value="B">B
                     </div>
-                    <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
-                    </div>
-                    <button id="editButton" class="btn btn-primary form-control">edit question</button>
-                </div>               
-          </form>
+                      <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="options" id="option_C" value="C">C
+                      </div>
+                      <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
+                      </div>
+                      <div class="wrapper form control">
+                        <button id="editButton" class="btn btn-primary">edit question</button>
+                        <button id="cancelbtn" class="btn btn-secondary">cancel</button>
+                      </div>
+                  </div>               
+                </div>
          </div>
          </div>
       </div>

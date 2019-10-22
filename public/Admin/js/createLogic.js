@@ -48,12 +48,20 @@ $('#createbtn').on('click',function(e){
                 option_four,
                 answer,
             },
-            success: function() {
-              $('#display_alert').html('<li class="text-success">created question successfully</li>');
-            },
-            error: function() {
-              $('#display_alert').html('<li class="text-danger"> error creating question</li>');
-            },
+            success: function(){
+              $("#display_alert").append(`<div class="alert alert-success alert-dismissible fade show" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <strong>Congratulations!</strong> you successfully  created quiz!
+              </div>
+              `);
+             },
+             error: function(){
+               $("#display_alert").append(`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <strong>Error!</strong> error in creating quiz
+               </div>
+               `);
+             }
           })
         }
   })
