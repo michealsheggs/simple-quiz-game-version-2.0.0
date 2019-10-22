@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="../../cascade/styles.css">
     <link rel="stylesheet" href="../../cascade/radio-btn.css">
     <link rel="stylesheet" href="../../cascade/admin.css">
-    <link rel="stylesheet" href="../../css_lib/fontawesome/css//fontawesome.min.css">
-
-    
-    <title> simple quiz game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>sheggsDev Quiz App</title>
 </head>
 <body id="welcomepage">
         <!-- The navigation section -->
@@ -24,18 +22,18 @@
                         </a>
                       </li>
                   <li class="nav-item" style="color: #f1f1f1">
-                    <a  class="nav-link active" href="../../index.html">Sheggs Quiz App</a>
+                    <a  class="nav-link active" href="../../index.html"><strong class="title">sheggsDev Quiz App</strong></a>
                   </li>
                 </ul>
               <ul class="nav justify-content-end">
                   <li class="nav-item">
-                      <a class="nav-link active" href="../index.html">Home</a>
+                      <a class="nav-link nav_link_item active" href="../index.html">Home</a>
                     </li>
                     <li id="submit-link" class="nav-item">
-                      <a class="nav-link active" href="../../Admin/create.html">Submit Question</a>
+                      <a class="nav-link nav_link_item active" href="../../Admin/create.html">Submit Question</a>
                     </li>
                     <li id="showscore-link" class="nav-item">
-                        <a class="nav-link" href="../../Admin/showscores.html">show answer</a>
+                        <a class="nav-link nav_link_item" href="../../Admin/showscores.html">show answer</a>
                       </li>
                      <!-- dropdown menu -->
                      <li class="dropdown">
@@ -46,8 +44,8 @@
                        <div class="dropdown-menu" aria-labelledby="userMenu">
                           <a id="damin-panel" class="dropdown-item" href="../../Admin/dashboard.html">Dashboard</a>
                           <a class="dropdown-item" href="#">Setting</a>
-                         <a id="logout-link" class="dropdown-item">Logout</a>
-                       </div> 
+                          <a id="logout_btn" class="dropdown-item">Logout</a>
+                        </div> 
                    </li> 
                <!--- end here -->
                   </ul>             
@@ -59,13 +57,15 @@
                   </div>
                   <!-- the quiz section -->
                   <div class="col-md-7">
-                        <h2 class="top-heading">
-                            Can you choose the right answers in this pop quiz all about physics?
-                          </h2>    
-                          <!-- the question section  -->
-                          <p>General questions:  the following quiz questiion contains option A - D , chose an answer option an click submit to see your scores</p>
-                          <div class="usermenu"></div>
-
+                      <div class="instruction">
+                          <h4 class="top-heading">T
+                              Can you choose the right answers in this pop quiz .it's all about physics?
+                              
+                          </h4>   
+                          <p class="text-center"> <strong class="text-danger">INSTRUCTIONS: </strong>  the following quiz questiion contains option A - D , 
+                            chose an answer option an click <strong class="text-primary">submit button</strong> to see your scores
+                          </p>
+                      </div>
                             <div id=Thequestionsection>
                              
                             </div>
@@ -90,13 +90,146 @@
                <div class="col-md-1"></div>
             
           </div>
-    <footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
+       <!-- Footer -->
+       <footer class="page-footer font-small mdb-color pt-4" style="background: #232f3e">
 
+          <!-- Footer Links -->
+          <div class="container text-center text-md-left">
+        
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">About Us</h6>
+                <p>
+                   This application a simple quiz game where people can come and answer
+                    questions on a particular topic and after answering, players get to see their scores.
+                  </p>
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="w-100 clearfix d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold" id="quiz-top">Popular Quiz</h6>
+                <p>
+                  <a href="../bitzpl/bitzch.html" class="tending-quiz">Chemistry</a>
+                </p>
+                <p>
+                  <a href="../bitzpl/bitzbi.html" class="tending-quiz">Biology</a>
+                </p>
+                <p>
+                  <a href="../bitzpl/bitzpy.html" class="tending-quiz">Physics Madness</a>
+                </p>
+                <p>
+                  <a href="../bitzpl/bitzsp.html" class="tending-quiz">sports Trivia</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="w-100 clearfix d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold" id="quiz-top">Trending Quizzies</h6>
+                <p>
+                  <a href="../bitzpl/bitzrd.html" class="tending-quiz">Play Random quiz</a>
+                </p>
+                <p>
+                  <a href="../bitzpl/bitzch.html" class="tending-quiz">periodic table</a>
+                </p>
+                <p>
+                  <a href="../bitzpl/bitzmt.html" class="tending-quiz">Maths</a>
+                </p>
+                <p>
+                  <a href="../bitzpl/bitzbi.html" class="tending-quiz">Biological cells</a>
+                </p>
+              </div>
+        
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p>
+                  <i class="fas fa fa-home mr-3"></i> E45 CBN estate phase 1, Satellite Town, Lagos</p>
+                <p>
+                  <i class="fas fa fa-envelope mr-3"></i> michealsheggs@gmail.com</p>
+                <p>
+                  <i class="fas fa fa-phone mr-3"></i>+234-8077694097</p>
+                <p>
+                  <i class="fas fa fa-print mr-3"></i>+234-8058304908</p>
+              </div>
+              <!-- Grid column -->
+        
+            </div>
+            <!-- Footer links -->
+          
+          </div>
+            <!-- Grid row -->
+           <div class="row" style="background: #1c2331">
+              <div class="container d-flex align-items-center" style="background:#1c2331">
+        
+                  <!-- Grid column -->
+                  <div class="col-md-7 col-lg-8" >
+            
+                    <!--Copyright-->
+                    <p class="text-center text-md-center">© 2019 Copyright of <strong style="color: #8c43ff"> sheggsDev</strong>  : all right is reserved for this website
+                       
+                      </a>
+                    </p>
+            
+                  </div>
+                  <!-- Grid column -->
+            
+                  <!-- Grid column -->
+                  <div class="col-md-5 col-lg-4 ml-lg-0">
+            
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                      <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                          <a class=" btn btn-floating btn-sm rgba-white-slight mx-1">
+                            <i class="fab fa fa-facebook-f"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class=" btn btn-floating btn-sm rgba-white-slight mx-1">
+                            <i class="fab fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="btn btn-floating btn-sm rgba-white-slight mx-1">
+                            <i class="fab fa fa-google-plus"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="btn btn-floating btn-sm rgba-white-slight mx-1">
+                            <i class="fab fa fa-linkedin"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+            
+                  </div>
+                  <!-- Grid column -->
+                </div>
+           </div>
+        </footer>
 
     <script type="text/javascript" src="../../js_lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../../node_modules/mustache/mustache.min.js"></script>
-    <script type="text/javascript" src="../../css_lib/fontawesome/js/fontawesome.min.js"></script>
     <script type="text/javascript" src="../../css_lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/physics.js"></script>
+    <script>
+        //log out
+        $("#logout_btn").on('click',function(){
+            sessionStorage.clear();
+            window.location = "../../index.html";
+        });
+    </script>
 </body>
 </html>

@@ -17,7 +17,7 @@ $("#logout-link").on('click',function(){
 
 //check if logged in
 
-$("#playgame").on('click',function(){
+$("#getstarted").on('click',function(){
     if(!isloggedIn){
         window.location = "Users/signup.html";
         // return;
@@ -81,8 +81,6 @@ getAdmin.forEach((adminItem)=>{
   }
 });
 
-// console.log(adminCacheDetail);
-
 
 if(isloggedIn === userCacheDetail[0]){
   //do this
@@ -92,7 +90,6 @@ if(isloggedIn === userCacheDetail[0]){
 
 }else if(isloggedIn === adminCacheDetail[0]){
   //do this
-//   console.log(isloggedIn);
    player.push(adminCacheDetail[0], adminCacheDetail[1], adminCacheDetail[2])
   const adminName= `${adminCacheDetail[1] + " " + adminCacheDetail[2]}`
   $("#userMenu").html(adminName)
@@ -260,5 +257,3 @@ $.getJSON('http://localhost:3000/Biology', function(quizQuestions){
         $(".tableContent").append(Mustache.render(populateData, value));
     });    
 });
-
-$("#")

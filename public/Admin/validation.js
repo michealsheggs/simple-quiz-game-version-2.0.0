@@ -10,6 +10,25 @@ $('#admin_signup_btn').on("click",function(e) {
   const last_name = $('#admin_lastname').val();
   const password = $('#admin_password').val();
   const email = $('#admin_email').val();
+  
+  //get user email from database
+    //ajax request to check if the user has already registered
+  const  checkIfUserExist = $.ajax({
+    type: 'GET',
+    url: `http://localhost:3000/admin`,
+    global:false,
+    async: false,
+    success: function(adminEmail) {
+      return adminEmail;
+      }
+  }).responseJSON; 
+let adminEmails = [];
+checkIfUserExist.forEach((data)=>{
+  adminEmails.push(data.email);
+});
+console.log(adminEmails);
+// console.log(email);
+
   //Check if user did not fill all the field
   if (!first_name || !last_name || !password || !email) {
     $('#display_alert').html('please fill all the empty fields');
@@ -21,21 +40,12 @@ $('#admin_signup_btn').on("click",function(e) {
   }else if(!password.match(passwordformat)){
     $('#display_alert').html('enter a password between 6 to 20 characters which contain at least one number, one uppercase and one lowercase letter');
 
-  } 
-  //ajax request to check if the user has already registered
-  // $.ajax({
-  //   method: 'GET',
-  //   url: `http://localhost:3000/users?email=${email}`,
-  //   data: {
-  //     email,
-  //   },
-  //   success: function(response) {
-  //     if (response.length) {
-  //       $('#display_alert').html('User already exist');
-  //       } 
-  //     }
-  //  }); 
-      else {
+  }
+  else if(email.indexOf(adminEmails)){
+    $('#display_alert').html('email address already exist');
+    console.log(email);   
+
+  }else {
         //Submit the user data if the user does not exist
         $.ajax({
           method: 'POST',

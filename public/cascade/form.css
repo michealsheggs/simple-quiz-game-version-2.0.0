@@ -20,3 +20,21 @@
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+form.form{
+    background: whitesmoke;
+    border-radius: 15px;
+}
+div.wrapper{
+    margin-top: 10px;
+}
+#login-btn,#sign-up-btn, #admin_login_btn, #admin_signup_btn{
+    margin-left: 40%;
+    background: #0984e3;
+    border-radius: 18px;
+    font-size: 1.2rem;
+}
+#login-btn:hover, #sign-up-btn:hover, #admin_login_btn:hover, #admin_signup_btn:hover{
+    background: whitesmoke;
+    font-size: 1.2rem;
+    color: black;
+}

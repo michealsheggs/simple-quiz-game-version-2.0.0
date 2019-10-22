@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="../css_lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../cascade/styles.css">
     <link rel="stylesheet" href="../cascade/form.css">
-    <link rel="stylesheet" href="../css_lib/fontawesome/css//fontawesome.min.css">
-    
-    <title> simple quiz game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>sheggsDev Quiz App</title>
 </head>
 <body id="form-background">
 
@@ -18,22 +17,26 @@
         <nav id="main-nav" class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
                 <ul class="nav">
-                    <li class="nav-item">
-                        <a href="../index.html" >Sheggs Quiz App</a>
-                    </li>
+                    <a href="../index.html">
+                      <img src="../img/abstract-shape.jpg" alt="admin page" width="50" height="50">
+                    </a>
+                  </li>
+              <li class="nav-item" style="color: #f1f1f1">
+                <a  class="nav-link active" href="../index.html"><strong class="title">sheggsDev Quiz App</strong></a>
+              </li>
                 </ul>
               <ul class="nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active" href="../index.html">Home</a>
+                        <a class="nav-link nav_link_item active" href="../index.html">Home</a>
                       </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link nav_link_item" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">contact</a>
+                      <a class="nav-link nav_link_item" href="#">contact</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="login.html">Login</a>
+                      <a class="nav-link nav_link_item" href="login.html">Login</a>
                     </li>
                 </ul>
             
@@ -53,25 +56,25 @@
                   <div class="col">
                     <div class="input-group mb-2 mr-sm-2">
                       <div class="input-group-prepend">
-                        <div class="input-group-text">F</div>
+                        <div class="input-group-text"><i class="fa fa-user"></i></div>
                       </div>
                       <input type="text" class="form-control" id="firstname" name="first_name" placeholder="first name">
                     </div>
                     <div class="input-group mb-2 mr-sm-2">
                       <div class="input-group-prepend">
-                        <div class="input-group-text">L</div>
+                        <div class="input-group-text"><i class="fa fa-user"></i></div>
                       </div>
                       <input type="text" class="form-control" id="lastname" name="last_name" placeholder="last name">
                     </div>
                     <div class="input-group mb-2 mr-sm-2">
                       <div class="input-group-prepend">
-                        <div class="input-group-text">@</div>
+                        <div class="input-group-text"><i class="fa fa-envelope-square"></i> </div>
                       </div>
                       <input type="email" class="form-control" id="email" name="email" placeholder="enter your email">
                     </div>
                     <div class="input-group mb-2 mr-sm-2">
                         <div class="input-group-prepend">
-                          <div class="input-group-text">P</div>
+                          <div class="input-group-text"><i class="fa fa-key"></i></div>
                         </div>
                         <input type="password" class="form-control" id="password" name="password" placeholder="enter your password">
                       </div>
@@ -89,11 +92,26 @@
          </div>
          <!-- sign up form ends -->
     </div>
-<footer class="container">copywrite &copy 2019  all right is reserved for the website</footer>
-
-
-
-
+       <!-- Footer -->
+       <footer class="page-footer font-small unique-color-dark pt-4"  style="background: #232f3e">
+          <!-- Footer Elements -->
+          <div class="container">
+            <ul class="list-unstyled list-inline text-center py-2">
+              <li class="list-inline-item">
+                <h5 class="mb-1">Register for free</h5>
+              </li>
+              <li class="list-inline-item">
+                <a href="signup.html"><button class="btn sign_footer">Sign up!</button></a>
+              </li>
+            </ul>  
+          </div>
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3" style="background: #1c2331">
+            <p class="text-center text-md-center">© 2019 Copyright of <strong style="color: #8c43ff"> sheggsDev</strong> 
+               : all right is reserved for this website
+          </p>
+          </div>  
+        </footer>
 <!-- all the js scripts -->
     <script type="text/javascript" src="../js_lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../node_modules/mustache/mustache.min.js"></script>
