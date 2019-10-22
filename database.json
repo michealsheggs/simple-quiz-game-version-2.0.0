@@ -1,0 +1,1473 @@
+{
+  "admin": [
+    {
+      "first_name": "emma",
+      "last_name": "daunca",
+      "email": "pastadmin@admin.com",
+      "password": "Elmichealus@49",
+      "id": 1
+    },
+    {
+      "first_name": "jshdjadjasf",
+      "last_name": "ajsasddam",
+      "email": "pastadmin@admin.com",
+      "password": "Elmichealus@49",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "first_name": "iluore ",
+      "last_name": "emmanuel",
+      "email": "michealsheggs@gmail.com",
+      "password": "Password1",
+      "id": 1
+    }
+  ],
+  "Random": [
+    {
+      "added_question": "Which of these is the winning hand in a game of poker?",
+      "option_one": "7♠ 7♥ Q♣ Q♦ Q♥",
+      "option_two": "4♠ 8♠ 9♠ K♠ A♠",
+      "option_three": "2♣ 2♥ 3♥ 4♥ J♠",
+      "option_four": "5♣ 7♠ 10♦ 10♥ A♦",
+      "answer": "A",
+      "id": 1
+    },
+    {
+      "added_question": "Which of the following 'Scrabble' tiles has the highest value?",
+      "option_one": "X",
+      "option_two": "K ",
+      "option_three": "J",
+      "option_four": "Q ",
+      "answer": "D",
+      "id": 2
+    },
+    {
+      "added_question": "Which game in the 'Final Fantasy' franchise was the first to spawn a direct sequel?",
+      "option_one": "Final Fantasy XII",
+      "option_two": "Final Fantasy X",
+      "option_three": "Final Fantasy V",
+      "option_four": "Final Fantasy VII ",
+      "answer": "B",
+      "id": 3
+    },
+    {
+      "added_question": "Which of the following nations (all of which are currently part of a larger sovereign state) has never been an independent sovereign state?",
+      "option_one": "Tibet",
+      "option_two": "Scotland",
+      "option_three": "Hawaii",
+      "option_four": "Faroe Islands",
+      "answer": "D",
+      "id": 4
+    },
+    {
+      "added_question": "Whose autobiography was titled 'Long Walk to Freedom'?",
+      "option_one": "Thomas Jefferson ",
+      "option_two": "Mahatma Gandhi  ",
+      "option_three": "Nelson Mandela ",
+      "option_four": "Aung San Suu Kyi",
+      "answer": "C",
+      "id": 5
+    },
+    {
+      "added_question": "Who is the only person to have served as both US Vice President and President without being elected to either office?",
+      "option_one": "Lyndon B. Johnson",
+      "option_two": "Gerald Ford",
+      "option_three": "George Washington ",
+      "option_four": "Harry Truman",
+      "answer": "B",
+      "id": 6
+    },
+    {
+      "added_question": "RELIGION: Who released the single Jesus, Take the Wheel in 2005?",
+      "option_one": "Carrie Underwood",
+      "option_two": "Mariah Carey",
+      "option_three": "Kelly Clarkson",
+      "option_four": "Faith Hill",
+      "answer": "A",
+      "id": 7
+    },
+    {
+      "added_question": "GEOGRAPHY: The national anthem of which of these countries has no official lyrics?",
+      "option_one": "Brazil",
+      "option_two": "United Kingdom",
+      "option_three": "Canada",
+      "option_four": "Spain",
+      "answer": "D",
+      "id": 8
+    },
+    {
+      "added_question": "MOVIES: Which of these is not an Oscar winner for Best Song?",
+      "option_one": "Can't Stop the Feeling!",
+      "option_two": "My Heart Will Go On ",
+      "option_three": "Can You Feel the Love Tonight",
+      "option_four": "A Whole New World",
+      "answer": "A",
+      "id": 9
+    },
+    {
+      "added_question": "Which letter represents 500 in Roman numerals?",
+      "option_one": "D",
+      "option_two": "A",
+      "option_three": "D",
+      "option_four": "A",
+      "answer": "C",
+      "id": 10
+    },
+    {
+      "added_question": "Which of these letters is a programming language developed by Dennis Ritchie at Bell Labs?",
+      "option_one": "C",
+      "option_two": "D",
+      "option_three": "A",
+      "option_four": "B",
+      "answer": "A",
+      "id": 11
+    },
+    {
+      "added_question": "choose the correct company slogan?Finger Lickin’ Good",
+      "option_one": "Chick-fil-A",
+      "option_two": "Popeyes",
+      "option_three": "KFC",
+      "option_four": "Boston Market",
+      "answer": "C",
+      "id": 12
+    },
+    {
+      "added_question": "choose the correct company slogan? Love, Sleep & Play",
+      "option_one": "Pampers",
+      "option_two": "Huggies",
+      "option_three": "Depend",
+      "option_four": " Luvs",
+      "answer": "A",
+      "id": 13
+    },
+    {
+      "added_question": "choose the correct company slogan?  Let's Go Places",
+      "option_one": "Honda",
+      "option_two": "Toyota ",
+      "option_three": " Lincoln",
+      "option_four": "Aston Martin",
+      "answer": "B",
+      "id": 14
+    },
+    {
+      "added_question": "What restaurant franchise advises you to 'Eat Fresh'?",
+      "option_one": "KFC",
+      "option_two": "Taco Bell",
+      "option_three": "Subway",
+      "option_four": "McDonald's",
+      "answer": "C",
+      "id": 15
+    },
+    {
+      "added_question": "What is the largest country, by area, that has only one time zone?",
+      "option_one": "Turkey",
+      "option_two": "China",
+      "option_three": " Australia",
+      "option_four": "Russiaey",
+      "answer": "B",
+      "id": 16
+    },
+    {
+      "added_question": "What is the largest planet in our Solar System?",
+      "option_one": "Jupiter",
+      "option_two": "Earth",
+      "option_three": "Pluto",
+      "option_four": "Saturn",
+      "answer": "A",
+      "id": 17
+    },
+    {
+      "added_question": "Which country hosted the Summer Olympics in 2016?",
+      "option_one": "China  ",
+      "option_two": "Brazil",
+      "option_three": "Spain",
+      "option_four": "Greece",
+      "answer": "B",
+      "id": 18
+    },
+    {
+      "added_question": "How many blue stripes does the United States of America national flag have?",
+      "option_one": "6",
+      "option_two": "13",
+      "option_three": "7",
+      "option_four": "0",
+      "answer": "D",
+      "id": 19
+    },
+    {
+      "added_question": "What religion is the most practiced one in India?",
+      "option_one": "Shinto",
+      "option_two": "Sikhism",
+      "option_three": "Hinduism",
+      "option_four": "Islam",
+      "answer": "C",
+      "id": 20
+    }
+  ],
+  "Biology": [
+    {
+      "added_question": "The DNA strands are held to each other by:",
+      "option_one": "Glucose",
+      "option_two": "Lipids",
+      "option_three": "Hydrogen bonds",
+      "option_four": "Carbon bonds",
+      "answer": "C",
+      "id": 1
+    },
+    {
+      "added_question": "All organisms in the kingdom Animalia are:",
+      "option_one": "Unicellular and autotrophic",
+      "option_two": "Multicellular and heterotrophic",
+      "option_three": "Multicellular and autotrophic",
+      "option_four": "Unicellular and heterotrophic",
+      "answer": "B",
+      "id": 2
+    },
+    {
+      "added_question": "Which of the following groups would contain the largest number of organisms?",
+      "option_one": "Phylum",
+      "option_two": "Class",
+      "option_three": "Order",
+      "option_four": "Family",
+      "answer": "A",
+      "id": 3
+    },
+    {
+      "added_question": "A scientific name contains information about its:",
+      "option_one": "Phylum and order",
+      "option_two": "Family and species",
+      "option_three": "Genus and species",
+      "option_four": "Class and family",
+      "answer": "C",
+      "id": 4
+    },
+    {
+      "added_question": "What do plants and animals have in common?",
+      "option_one": "Both are prokaryotic",
+      "option_two": "Both are eukaryotic",
+      "option_three": "Both are autotrophic",
+      "option_four": "Both are heterotrophic",
+      "answer": "B",
+      "id": 5
+    },
+    {
+      "added_question": "The current taxonomic classification system was devised by:",
+      "option_one": "Aristotle",
+      "option_two": "Darwin",
+      "option_three": "Plato",
+      "option_four": "Linnaeus",
+      "answer": "D",
+      "id": 6
+    },
+    {
+      "added_question": "The number of chromosomes found in an unfertilized human egg cell is:",
+      "option_one": "12.5",
+      "option_two": "23",
+      "option_three": "92",
+      "option_four": "46",
+      "answer": "B",
+      "id": 7
+    },
+    {
+      "added_question": "In eukaryotes, the cell cycle is monitored by:",
+      "option_one": "Fats",
+      "option_two": "Lipids",
+      "option_three": "Carbohydrates",
+      "option_four": "Proteins",
+      "answer": "D",
+      "id": 8
+    },
+    {
+      "added_question": "Normal human males have which of the following sex chromosome combinations?",
+      "option_one": "OO",
+      "option_two": "XO",
+      "option_three": "XX",
+      "option_four": "XY",
+      "answer": "D",
+      "id": 9
+    },
+    {
+      "added_question": "Which of the following groups contains mammals that lay eggs?",
+      "option_one": "Rodentia",
+      "option_two": "Monotreme",
+      "option_three": "Marsupial",
+      "option_four": "Chiroptera",
+      "answer": "B",
+      "id": 10
+    },
+    {
+      "added_question": "Which order of mammals has the largest number of species?\n",
+      "option_one": "Rodentia",
+      "option_two": "Insectivora",
+      "option_three": "Chiroptera",
+      "option_four": "Carnivora",
+      "answer": "A",
+      "id": 11
+    },
+    {
+      "added_question": "Which of the following animals have incisors that continue to grow its entire life?",
+      "option_one": "Elephant",
+      "option_two": "Rhinoceros",
+      "option_three": "Hamster",
+      "option_four": "Walrus",
+      "answer": "C",
+      "id": 12
+    },
+    {
+      "added_question": "Which of these is the primary protein found in hair?",
+      "option_one": "Fibroin",
+      "option_two": "Elastin",
+      "option_three": "Keratin",
+      "option_four": "Collagen",
+      "answer": "C",
+      "id": 13
+    },
+    {
+      "added_question": "Which two biomes are the most similar with regard to rainfall?",
+      "option_one": "Tundra and desert",
+      "option_two": "Rainforest and savanna",
+      "option_three": "Tundra and taiga",
+      "option_four": "Temperate forest and prairie",
+      "answer": "A",
+      "id": 14
+    },
+    {
+      "added_question": "Which biome is characterized by a layer of permafrost?",
+      "option_one": "Savanna",
+      "option_two": "Taiga",
+      "option_three": "Tundra",
+      "option_four": "Chaparral",
+      "answer": "C",
+      "id": 15
+    },
+    {
+      "added_question": "Biodiversity is greatest in what biome?",
+      "option_one": "Taiga",
+      "option_two": "Rainforest",
+      "option_three": "Temperate forest",
+      "option_four": "Savanna",
+      "answer": "B",
+      "id": 16
+    },
+    {
+      "added_question": "What does 'DNA' stand for?",
+      "option_one": "Deoxynucleic acid",
+      "option_two": "Deoxyribonuclear acid",
+      "option_three": "Deribonucleic acid",
+      "option_four": "Deoxyribonucleic acid",
+      "answer": "D",
+      "id": 17
+    },
+    {
+      "added_question": "Adenine always pairs with:",
+      "option_one": "Ribose",
+      "option_two": "Cytosine",
+      "option_three": "Guanine",
+      "option_four": "Thymine",
+      "answer": "D",
+      "id": 18
+    },
+    {
+      "added_question": "The rungs of the DNA ladder are made of:",
+      "option_one": "Sugars and phosphates",
+      "option_two": "Base pairs",
+      "option_three": "Phosphates and hydrogen",
+      "option_four": "Glucose and sugars",
+      "answer": "B",
+      "id": 19
+    },
+    {
+      "added_question": "The twisted ladder shape of DNA is called a:",
+      "option_one": "Double Phosphate",
+      "option_two": "Double Membrane",
+      "option_three": "Double Helix",
+      "option_four": "Double Bond",
+      "answer": "C",
+      "id": 20
+    }
+  ],
+  "Chemistry": [
+    {
+      "added_question": "The products of the fermentation of sugar are ethanol and ____.\n",
+      "option_one": "water",
+      "option_two": "oxygen",
+      "option_three": "carbon dioxide",
+      "option_four": "sulfur dioxide",
+      "answer": "C",
+      "id": 1
+    },
+    {
+      "added_question": "Which element listed has the largest atomic radius?",
+      "option_one": "Li",
+      "option_two": "Ne",
+      "option_three": "Na",
+      "option_four": "Rb",
+      "answer": "D",
+      "id": 2
+    },
+    {
+      "added_question": "What is the name of the compound with molecular formula C6H6?",
+      "option_one": "butene",
+      "option_two": "benzene",
+      "option_three": "butane",
+      "option_four": "butyne",
+      "answer": "B",
+      "id": 3
+    },
+    {
+      "added_question": "Which metal is obtained commercially by the electrolysis of a salt?",
+      "option_one": "K",
+      "option_two": "Zn",
+      "option_three": "Ag",
+      "option_four": "Fe",
+      "answer": "A",
+      "id": 4
+    },
+    {
+      "added_question": "Which polymers occur naturally?",
+      "option_one": "protein and plastic",
+      "option_two": "starch and nylon",
+      "option_three": "protein and nylon",
+      "option_four": "starch and cellulose",
+      "answer": "D",
+      "id": 5
+    },
+    {
+      "added_question": "The temperature levels in a nuclear reactor are maintained primarily by ____.",
+      "option_one": "shielding",
+      "option_two": "heaters",
+      "option_three": "moderators",
+      "option_four": "coolants",
+      "answer": "D",
+      "id": 6
+    },
+    {
+      "added_question": "Which of the following is classified as a metal?",
+      "option_one": "V",
+      "option_two": "As",
+      "option_three": "Ge",
+      "option_four": "At",
+      "answer": "A",
+      "id": 7
+    },
+    {
+      "added_question": "Which element can be found in nature in a free (uncombined) state?",
+      "option_one": "Ba",
+      "option_two": "Au",
+      "option_three": "Al",
+      "option_four": "Ca",
+      "answer": "B",
+      "id": 8
+    },
+    {
+      "added_question": "Which one of these contains the most atoms?",
+      "option_one": "1 mol of NH3",
+      "option_two": "1 mol of CO2 ",
+      "option_three": "1 mol of H2O",
+      "option_four": "1 mol of CH3COCH3",
+      "answer": "D",
+      "id": 9
+    },
+    {
+      "added_question": "Which of the following name/symbol combinations of elements is WRONG?",
+      "option_one": "uranium/U",
+      "option_two": "antimony/Sb",
+      "option_three": "iron/I",
+      "option_four": "helium/He",
+      "answer": "C",
+      "id": 10
+    },
+    {
+      "added_question": "Which of the following has a positive charge?",
+      "option_one": "proton",
+      "option_two": "electron",
+      "option_three": "neutron",
+      "option_four": "anion",
+      "answer": "A",
+      "id": 11
+    },
+    {
+      "added_question": "Arrhenius defined an acid as ____.\n",
+      "option_one": "a source of OH- ions in water",
+      "option_two": "a proton acceptor",
+      "option_three": "a proton donor",
+      "option_four": "a source of H+ ions in water",
+      "answer": "D",
+      "id": 12
+    },
+    {
+      "added_question": "What alkaline earth metal is located in period 3?",
+      "option_one": "Na",
+      "option_two": "Mg",
+      "option_three": "Li",
+      "option_four": "Ca",
+      "answer": "B",
+      "id": 13
+    },
+    {
+      "added_question": "Which of these names for elements was not approved by the IUPAC (the International Union for Pure and Applied Chemistry) in 2016?",
+      "option_one": "Tennessine",
+      "option_two": "Oganesson",
+      "option_three": "Livermorium",
+      "option_four": "Moscovium",
+      "answer": "C",
+      "id": 14
+    },
+    {
+      "added_question": "The limiting reagent in a chemical reaction is one that ___.",
+      "option_one": "has the smallest coefficient",
+      "option_two": "is consumed completely",
+      "option_three": "is in excess",
+      "option_four": "is consumed completely",
+      "answer": "B",
+      "id": 15
+    },
+    {
+      "added_question": "For a gas, which pair of variables are inversely proportional to each other (all other conditions remaining constant)?",
+      "option_one": "P, T",
+      "option_two": "n, V",
+      "option_three": "P, V",
+      "option_four": "n, P",
+      "answer": "C",
+      "id": 16
+    },
+    {
+      "added_question": "Which of these elements are found on Earth in large naturally-occurring amounts rather than in man-made forms?",
+      "option_one": " gadolinium",
+      "option_two": "promethium",
+      "option_three": "rutherfordium",
+      "option_four": "technetium",
+      "answer": "A",
+      "id": 17
+    },
+    {
+      "added_question": "A neutron has approximately the same mass as ____.",
+      "option_one": "an electron ",
+      "option_two": " an alpha particle",
+      "option_three": "a beta particle",
+      "option_four": "a proton ",
+      "answer": "D",
+      "id": 18
+    },
+    {
+      "added_question": "When a catalyst is added to a system at equilibrium, the system will ____.",
+      "option_one": "stay at equilibrium",
+      "option_two": "move quickly to make more products",
+      "option_three": "move quickly to make more reactants",
+      "option_four": "slow down",
+      "answer": "A",
+      "id": 19
+    },
+    {
+      "added_question": "What is the mass number of an atom which contains 28 protons, 28 electrons and 34 neutrons?\n",
+      "option_one": "56",
+      "option_two": "62",
+      "option_three": "28",
+      "option_four": "90",
+      "answer": "B",
+      "id": 20
+    }
+  ],
+  "Maths": [
+    {
+      "added_question": "Ratio of 2km to 600m should be",
+      "option_one": "2 : 7",
+      "option_two": "10 : 7",
+      "option_three": "2 : 3",
+      "option_four": "10 : 3",
+      "answer": "D",
+      "id": 1
+    },
+    {
+      "added_question": "If two quantities are related in such a way that increase in 1 quantity causes increase in other quantity, then this variation is said to be",
+      "option_one": "joint variation",
+      "option_two": "extreme variation",
+      "option_three": "direct variation",
+      "option_four": "inverse variation",
+      "answer": "C",
+      "id": 2
+    },
+    {
+      "added_question": "If x ∝ y² then",
+      "option_one": "x = y²",
+      "option_two": "x = ky²",
+      "option_three": "xy² = 1",
+      "option_four": "xy² = k",
+      "answer": "B",
+      "id": 3
+    },
+    {
+      "added_question": "In a : b = c : d, b and c are called",
+      "option_one": "antecedent",
+      "option_two": "extreme",
+      "option_three": "consequent",
+      "option_four": "mean",
+      "answer": "D",
+      "id": 4
+    },
+    {
+      "added_question": "If u²∝1⁄v³ then value of u² should be",
+      "option_one": "k⁄v³",
+      "option_two": "1⁄v³",
+      "option_three": "v²",
+      "option_four": "kv³",
+      "answer": "A",
+      "id": 5
+    },
+    {
+      "added_question": "According to theorem of invertendo, if a : b = c : d then",
+      "option_one": "b : a = d : c",
+      "option_two": "a : c = b : d",
+      "option_three": "a : d = b : c",
+      "option_four": "a + b = c + d",
+      "answer": "A",
+      "id": 6
+    },
+    {
+      "added_question": " If a cricket team wins 5 matches and losses 7, then ratio of games won to lost is",
+      "option_one": "5 + 7",
+      "option_two": "5-Jul",
+      "option_three": "7",
+      "option_four": "5 : 7",
+      "answer": "D",
+      "id": 7
+    },
+    {
+      "added_question": "A statement which is expressed as an equivalence of two ratios is known as",
+      "option_one": "proportion",
+      "option_two": "variation",
+      "option_three": "ratio",
+      "option_four": "probability",
+      "answer": "A",
+      "id": 8
+    },
+    {
+      "added_question": "If u⁄v = v⁄w = k then",
+      "option_one": "u = wk²",
+      "option_two": "u = vk²",
+      "option_three": "u = w²k",
+      "option_four": "u = v²k",
+      "answer": "A",
+      "id": 9
+    },
+    {
+      "added_question": " Any new equation obtained by raising both members of an equation to same power may have solutions is called",
+      "option_one": "extraneous solutions",
+      "option_two": "absolute value",
+      "option_three": "radical signs",
+      "option_four": "simultaneous equation",
+      "answer": "A",
+      "id": 10
+    },
+    {
+      "added_question": "Two algebric expressions joined by an inequality symbol is known as",
+      "option_one": "inequality statement",
+      "option_two": "equality statement",
+      "option_three": "true statement",
+      "option_four": "false statement",
+      "answer": "A",
+      "id": 11
+    },
+    {
+      "added_question": "Value of ‘x’ in √(x - 1) = 4 should be\n\n",
+      "option_one": "23",
+      "option_two": "17",
+      "option_three": "19",
+      "option_four": "20",
+      "answer": "B",
+      "id": 12
+    },
+    {
+      "added_question": "Value of ‘x’ in 6x - 4 = 3x + 8 should be",
+      "option_one": "3",
+      "option_two": "6",
+      "option_three": "5",
+      "option_four": "4",
+      "answer": "D",
+      "id": 13
+    },
+    {
+      "added_question": "Solution of x + 3 < 9 is",
+      "option_one": "x > 4",
+      "option_two": " x < 6",
+      "option_three": " x < 5",
+      "option_four": "x = 6",
+      "answer": "B",
+      "id": 14
+    },
+    {
+      "added_question": "Two linear equations are said to be equivalent if they have exactly same",
+      "option_one": "inequality signs",
+      "option_two": "coefficient",
+      "option_three": "solution",
+      "option_four": "none of the above",
+      "answer": "C",
+      "id": 15
+    },
+    {
+      "added_question": "Symbol ≤ is used for",
+      "option_one": "less than",
+      "option_two": "greater than",
+      "option_three": " less than and equal to",
+      "option_four": "greater than and equal to",
+      "answer": "C",
+      "id": 16
+    },
+    {
+      "added_question": " Two straight lines in same plane which never meet are called",
+      "option_one": "angles",
+      "option_two": "transversal lines",
+      "option_three": " vertex",
+      "option_four": " parallel lines",
+      "answer": "D",
+      "id": 17
+    },
+    {
+      "added_question": "A tangent line intersects circle at",
+      "option_one": "two points ",
+      "option_two": "three points",
+      "option_three": "single point",
+      "option_four": "no point",
+      "answer": "C",
+      "id": 18
+    },
+    {
+      "added_question": "A line segment joining any 2 points on circumference of a circle is called",
+      "option_one": "arc",
+      "option_two": "chord",
+      "option_three": "segment ",
+      "option_four": "radius",
+      "answer": "B",
+      "id": 19
+    },
+    {
+      "added_question": "Quotient of two numbers or algebraic expressions is called a",
+      "option_one": "proportion",
+      "option_two": "ratio",
+      "option_three": "fraction",
+      "option_four": " variation",
+      "answer": "C",
+      "id": 20
+    }
+  ],
+  "Physics": [
+    {
+      "added_question": "Who received the 1935 Nobel Prize in Physics for the discovery of the neutron?",
+      "option_one": "James Chadwick",
+      "option_two": "Enrico Fermi",
+      "option_three": "Werner Heisenberg",
+      "option_four": "Paul Dirac",
+      "answer": "A",
+      "id": 1
+    },
+    {
+      "added_question": "Which part of the electromagnetic spectrum has the shortest wavelength?",
+      "option_one": "UV rays",
+      "option_two": "infrared",
+      "option_three": " visible light",
+      "option_four": "gamma rays",
+      "answer": "D",
+      "id": 2
+    },
+    {
+      "added_question": "A wave with a relatively long wavelength will also have...?",
+      "option_one": "a small amplitude",
+      "option_two": "a long period",
+      "option_three": "a large amplitude",
+      "option_four": "a high frequency",
+      "answer": "B",
+      "id": 3
+    },
+    {
+      "added_question": "A wave with a relatively long wavelength will also have...?",
+      "option_one": "a small amplitude",
+      "option_two": "a long period",
+      "option_three": "a large amplitude",
+      "option_four": "a high frequency",
+      "answer": "B",
+      "id": 4
+    },
+    {
+      "added_question": "If the current in a wire is 6 amperes, how much charge flows through it in 2 seconds?",
+      "option_one": "3 coulombs",
+      "option_two": "12 coulombs",
+      "option_three": "8 coulombs",
+      "option_four": "6 coulombs",
+      "answer": "B",
+      "id": 5
+    },
+    {
+      "added_question": "What did Galileo define as the property of a moving object continuing to move?",
+      "option_one": "inertia",
+      "option_two": "acceleration ",
+      "option_three": "velocity",
+      "option_four": "direction",
+      "answer": "A",
+      "id": 6
+    },
+    {
+      "added_question": "A newton is equal to which of the following?",
+      "option_one": "kilogram-meter per second squared",
+      "option_two": "meter per second squared",
+      "option_three": "kilogram-meter per second",
+      "option_four": "kilogram per meter-second",
+      "answer": "A",
+      "id": 7
+    },
+    {
+      "added_question": "What is the energy process of our Sun?",
+      "option_one": "nuclear electromagnetic spectrum",
+      "option_two": "nuclear fission",
+      "option_three": "nuclear radioactive decay",
+      "option_four": "nuclear fusion",
+      "answer": "D",
+      "id": 8
+    },
+    {
+      "added_question": "Whose law relates the distance a spring stretches to the force applied to the spring?",
+      "option_one": "Boyle's law",
+      "option_two": "Fermat's principle",
+      "option_three": "Hooke's law",
+      "option_four": "Le Chatelier's principle",
+      "answer": "C",
+      "id": 9
+    },
+    {
+      "added_question": "How is density defined?",
+      "option_one": "mass times volume",
+      "option_two": "volume divided by mass",
+      "option_three": "mass plus volume",
+      "option_four": "mass divided by volume",
+      "answer": "D",
+      "id": 10
+    },
+    {
+      "added_question": "How can a positively charged object be described?",
+      "option_one": "deficient of electrons",
+      "option_two": "deficient of neutrons",
+      "option_three": "excess of electrons",
+      "option_four": "deficient of protons",
+      "answer": "A",
+      "id": 11
+    },
+    {
+      "added_question": "Which one of the following is not a vector quantity?",
+      "option_one": "force",
+      "option_two": "acceleration",
+      "option_three": " velocity",
+      "option_four": "kinetic energy",
+      "answer": "D",
+      "id": 12
+    },
+    {
+      "added_question": "When a car rounds a curve at high speed, the ____ exerts a centripetal force on ____.",
+      "option_one": "tires; road",
+      "option_two": "road; tires",
+      "option_three": "car; road",
+      "option_four": "car; tires",
+      "answer": "B",
+      "id": 13
+    },
+    {
+      "added_question": "Momentum is the product of which two properties?",
+      "option_one": "mass and velocity",
+      "option_two": "mass and acceleration",
+      "option_three": "mass and force",
+      "option_four": "acceleration and force",
+      "answer": "A",
+      "id": 14
+    },
+    {
+      "added_question": "Acceleration due to gravity on or near the surface of Earth is ____ m/s².",
+      "option_one": " 9.11",
+      "option_two": "6.67",
+      "option_three": "6.02",
+      "option_four": "9.81",
+      "answer": "D",
+      "id": 15
+    },
+    {
+      "added_question": "In alpha (α) decay, the proton number of parent nuclide…?",
+      "option_one": "increases by 2 ",
+      "option_two": "increases by 1",
+      "option_three": "decreases by 4 ",
+      "option_four": "decreases by 2",
+      "answer": "D",
+      "id": 16
+    },
+    {
+      "added_question": "Which statement says, 'for every action there is an equal and opposite reaction'?",
+      "option_one": "Newton's second law of motion",
+      "option_two": "Newton's law of universal gravitation",
+      "option_three": "Newton's third law of motion",
+      "option_four": "Kepler's first law of planetary motion",
+      "answer": "C",
+      "id": 17
+    },
+    {
+      "added_question": "Who is the author of The Universe in a Nutshell, On the Shoulders of Giants, and A Brief History of Time?",
+      "option_one": "Stephen Hawking",
+      "option_two": "Carl Sagan",
+      "option_three": "J. Robert Oppenheimer",
+      "option_four": "Richard Feynman",
+      "answer": "A",
+      "id": 18
+    },
+    {
+      "added_question": "Which of the following is a physical quantity that has magnitude but no direction?",
+      "option_one": "vector",
+      "option_two": "scalar",
+      "option_three": " resultant",
+      "option_four": "velocity",
+      "answer": "B",
+      "id": 19
+    },
+    {
+      "added_question": "A period of 0.005 seconds would be equivalent to a frequency of how many Hz?",
+      "option_one": "50",
+      "option_two": "500",
+      "option_three": "20",
+      "option_four": "200",
+      "answer": "D",
+      "id": 20
+    }
+  ],
+  "Sports": [
+    {
+      "added_question": "Which country hosted the 2014 World Cup?",
+      "option_one": "Spain",
+      "option_two": "Argentina",
+      "option_three": "Brazil",
+      "option_four": "Germany ",
+      "answer": "C",
+      "id": 1
+    },
+    {
+      "added_question": "Who was the first person inducted into the WWE Hall of Fame?",
+      "option_one": "Hulk Hogan",
+      "option_two": "Andre the Giant",
+      "option_three": "Randy Savage ",
+      "option_four": "Vince McMahon",
+      "answer": "B",
+      "id": 2
+    },
+    {
+      "added_question": "Which of these football terms is not used to describe a score?\n",
+      "option_one": "Field Goal",
+      "option_two": "Safety",
+      "option_three": "Interception",
+      "option_four": "Touchdown",
+      "answer": "C",
+      "id": 3
+    },
+    {
+      "added_question": "Which player has scored the most goals in league history with 260?",
+      "option_one": "Wayne Rooney",
+      "option_two": "Alan Shearer ",
+      "option_three": " Frank Lampard ",
+      "option_four": "Robbie Fowler",
+      "answer": "B",
+      "id": 4
+    },
+    {
+      "added_question": "How many periods are there in a typical ice hockey game?",
+      "option_one": "4",
+      "option_two": "2",
+      "option_three": "1",
+      "option_four": "3",
+      "answer": "D",
+      "id": 5
+    },
+    {
+      "added_question": "Which country has won the most Rugby Union World Cups?",
+      "option_one": "Australia",
+      "option_two": "England",
+      "option_three": "New Zealand",
+      "option_four": "France",
+      "answer": "C",
+      "id": 6
+    },
+    {
+      "added_question": "Who is the only NASCAR driver to ever win 200 races?",
+      "option_one": "Richard Petty",
+      "option_two": "Jeff Gordon  ",
+      "option_three": "Dale Earnhardt",
+      "option_four": "Jimmie Johnson",
+      "answer": "A",
+      "id": 7
+    },
+    {
+      "added_question": "Which Olympic athlete has won a combined total of 28 medals?",
+      "option_one": "Usain Bolt",
+      "option_two": "Mark Spitz",
+      "option_three": "Carl Lewis",
+      "option_four": "Michael Phelps",
+      "answer": "D",
+      "id": 8
+    },
+    {
+      "added_question": "Which school holds the record for most consecutive NCAA Men's Basketball titles won with 7?",
+      "option_one": "North Carolina",
+      "option_two": "UCLA",
+      "option_three": "Indiana",
+      "option_four": "Kentucky",
+      "answer": "B",
+      "id": 9
+    },
+    {
+      "added_question": "How many times has Germany won the World Cup (incl. West Germany)?",
+      "option_one": "4",
+      "option_two": "2",
+      "option_three": "5 ",
+      "option_four": "3",
+      "answer": "A",
+      "id": 10
+    },
+    {
+      "added_question": "Which of these NBA teams has never won a championship?",
+      "option_one": "Milwaukee Bucks",
+      "option_two": "Indiana Pacers",
+      "option_three": "New York Knicks",
+      "option_four": "Houston Rockets",
+      "answer": "B",
+      "id": 11
+    },
+    {
+      "added_question": "Which Big 4 team has the most championship wins with 27?",
+      "option_one": "Montreal Canadiens",
+      "option_two": "Green Bay Packers",
+      "option_three": "Boston Celtics",
+      "option_four": "New York Yankees",
+      "answer": "D",
+      "id": 12
+    },
+    {
+      "added_question": "Which position is marked as '1' on an official scorecard in Baseball?",
+      "option_one": "Pitcher",
+      "option_two": "First Base",
+      "option_three": "Left Field",
+      "option_four": "Catcher",
+      "answer": "A",
+      "id": 13
+    },
+    {
+      "added_question": "What color jacket is given to the winner of Golf Masters Tournament?",
+      "option_one": "Gold",
+      "option_two": "Brown",
+      "option_three": "Green",
+      "option_four": "Black",
+      "answer": "C",
+      "id": 14
+    },
+    {
+      "added_question": "Pete Sampras never won which of the Grand Slam Tennis tournaments?",
+      "option_one": "French Open",
+      "option_two": "US Open",
+      "option_three": "Wimbledon",
+      "option_four": "Australian Open",
+      "answer": "A",
+      "id": 15
+    },
+    {
+      "added_question": "In Cricket game, what is the official term for delivering the ball to the batsman?",
+      "option_one": "Hurling",
+      "option_two": "Pitching",
+      "option_three": "Flinging",
+      "option_four": "Bowling",
+      "answer": "D",
+      "id": 16
+    },
+    {
+      "added_question": "Who scored the first goal for Arsenal under Arsene Wenger?",
+      "option_one": "Dennis Bergkamp",
+      "option_two": "Ian Wright",
+      "option_three": "Paul Merson",
+      "option_four": "Lee Dixon",
+      "answer": "B",
+      "id": 17
+    },
+    {
+      "added_question": "Which of these clubs played in the first season of the Premier League?",
+      "option_one": "Crystal Palace",
+      "option_two": "Swindon Town ",
+      "option_three": "Newcastle United",
+      "option_four": "West Ham United",
+      "answer": "A",
+      "id": 18
+    },
+    {
+      "added_question": "Which of these teams played in the semi-finals of the first Europa League (2010)?",
+      "option_one": "Lille",
+      "option_two": "Standard Liège",
+      "option_three": "Valencia ",
+      "option_four": "Liverpool",
+      "answer": "D",
+      "id": 19
+    },
+    {
+      "added_question": "Of the following, which of these players was first to be awarded the World Cup Golden Ball award?",
+      "option_one": "Lionel Messi",
+      "option_two": "Oliver Kahn",
+      "option_three": "Diego Forlán",
+      "option_four": "Zinedine Zidane",
+      "answer": "B",
+      "id": 20
+    }
+  ],
+  "players_scores": [
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Random",
+      "played_time": "12:17:45 19/10/2019",
+      "totalScore": "2",
+      "id": 1
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Chemistry",
+      "played_time": "12:18:54 19/10/2019",
+      "totalScore": "4",
+      "id": 2
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "12:19:38 19/10/2019",
+      "totalScore": "2",
+      "id": 3
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Mathematics",
+      "played_time": "12:20:40 19/10/2019",
+      "totalScore": "1",
+      "id": 4
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Physics",
+      "played_time": "12:21:46 19/10/2019",
+      "totalScore": "4",
+      "id": 5
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Sports",
+      "played_time": "12:22:28 19/10/2019",
+      "totalScore": "2",
+      "id": 6
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "12:46:9 19/10/2019",
+      "totalScore": "7",
+      "id": 7
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "12:46:35 19/10/2019",
+      "totalScore": "0",
+      "id": 8
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "12:47:6 19/10/2019",
+      "totalScore": "0",
+      "id": 9
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "12:47:8 19/10/2019",
+      "totalScore": "0",
+      "id": 10
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:28:29 19/10/2019",
+      "totalScore": "0",
+      "id": 11
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:45:51 19/10/2019",
+      "totalScore": "2",
+      "id": 12
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:47:22 19/10/2019",
+      "totalScore": "2",
+      "id": 13
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:48:50 19/10/2019",
+      "totalScore": "0",
+      "id": 14
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:51:42 19/10/2019",
+      "totalScore": "0",
+      "id": 15
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:55:33 19/10/2019",
+      "totalScore": "0",
+      "id": 16
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "14:3:34 19/10/2019",
+      "totalScore": "0",
+      "id": 17
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "14:12:19 19/10/2019",
+      "totalScore": "0",
+      "id": 18
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:13:47 19/10/2019",
+      "totalScore": "0",
+      "id": 19
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:17:37 19/10/2019",
+      "totalScore": "0",
+      "id": 20
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:17:55 19/10/2019",
+      "totalScore": "0",
+      "id": 21
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:18:13 19/10/2019",
+      "totalScore": "0",
+      "id": 22
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:31:24 19/10/2019",
+      "totalScore": "0",
+      "id": 23
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:32:48 19/10/2019",
+      "totalScore": "0",
+      "id": 24
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:36:30 19/10/2019",
+      "totalScore": "0",
+      "id": 25
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:37:20 19/10/2019",
+      "totalScore": "0",
+      "id": 26
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:38:8 19/10/2019",
+      "totalScore": "0",
+      "id": 27
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:53:32 19/10/2019",
+      "totalScore": "1",
+      "id": 28
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "17:56:49 19/10/2019",
+      "totalScore": "0",
+      "id": 29
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "18:10:0 19/10/2019",
+      "totalScore": "0",
+      "id": 30
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "18:26:27 19/10/2019",
+      "totalScore": "0",
+      "id": 31
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "18:28:9 19/10/2019",
+      "totalScore": "0",
+      "id": 32
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "18:34:5 19/10/2019",
+      "totalScore": "0",
+      "id": 33
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "18:35:12 19/10/2019",
+      "totalScore": "0",
+      "id": 34
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:34:21 20/10/2019",
+      "totalScore": "0",
+      "id": 35
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:39:3 20/10/2019",
+      "totalScore": "0",
+      "id": 36
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Biology",
+      "played_time": "13:40:13 20/10/2019",
+      "totalScore": "0",
+      "id": 37
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Chemistry",
+      "played_time": "13:46:37 20/10/2019",
+      "totalScore": "0",
+      "id": 38
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Chemistry",
+      "played_time": "13:48:10 20/10/2019",
+      "totalScore": "0",
+      "id": 39
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Chemistry",
+      "played_time": "13:51:55 20/10/2019",
+      "totalScore": "0",
+      "id": 40
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Chemistry",
+      "played_time": "13:53:59 20/10/2019",
+      "totalScore": "0",
+      "id": 41
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Chemistry",
+      "played_time": "16:19:10 20/10/2019",
+      "totalScore": "0",
+      "id": 42
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Chemistry",
+      "played_time": "22:12:4 20/10/2019",
+      "totalScore": "0",
+      "id": 43
+    },
+    {
+      "player_email": "pastadmin@admin.com",
+      "player_userName": "emma daunca",
+      "game_played": "Random",
+      "played_time": "9:42:10 21/10/2019",
+      "totalScore": "0",
+      "id": 44
+    }
+  ]
+}

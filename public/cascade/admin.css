@@ -1,0 +1,123 @@
+
+.viewTable,.player_score{
+    background-color: #84b7ca;
+    /* color: white; */
+}
+
+ 
+*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 25px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown:hover .dropbtn {background-color: #84b7ca;; color: black}
+  .dropdown:hover .dropdown-content {display: block;}
+
+
+tr:nth-child(even) {background-color: #eeeeee}
+table, th, td {
+    border: 1px solid black;
+ }
+
+ button.nextdesign, button#next_btn{
+    margin-left: 15px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+    padding: 10px 27px;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button.nextdesign:hover, button#next_btn:hover{
+    background-color: white; /* Green */
+    color: black;
+}
+button.prevdesign, button#prev_btn{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #555555;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #555555;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+button.prevdesign:hover,button#prev_btn:hover{
+    background-color: white; 
+    color: black;
+}
+
+h3.headline{
+    margin-top: 50px;
+    text-align: center;
+}
+h5.quiz-category{
+    margin-top: 50px;
+}
+
+/* player scores */
+h5.playerscore{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#score_table{
+    margin-top: 40px;
+}
+/* table#Update{
+    margin-top: 40px;
+} */
+.modify{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.thead{
+    background: #bcdbfa;
+}
+.toggle_content{
+    display: none;
+}
+ .initial{
+    display: block;
+}

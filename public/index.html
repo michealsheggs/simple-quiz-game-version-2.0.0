@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css_lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cascade/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>sheggsDev Quiz App</title>
+</head>
+<body id="indexpage">
+
+    <div class="">
+        <!-- The navigation section -->
+        <nav id="main-nav" class="navbar navbar-dark bg-dark">
+                <!-- Navbar content -->
+                <ul class="nav" >
+                  <!-- admin loginpage -->
+                  <li class="nav-item">
+                    <a href="Admin/login.html">
+                      <img src="img/abstract-shape.jpg" alt="admin page" width="50" height="50">
+                    </a>
+                  </li>
+                  <li class="nav-item" style="color: #f1f1f1">
+                    <a  class="nav-link active" href="index.html"> <strong class="title">sheggsDev Quiz App</strong></a>
+                  </li>
+                </ul>
+              <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link nav_link_item active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_link_item active" href="#">About</a>
+                    </li>
+                     <li class="nav-item">
+                          <a class="nav-link nav_link_item active" href="#">Contact</a>
+                    </li>
+                    <li id="signup-link" class="nav-item signupbtn">
+                      <a class="nav-link nav_link_item" href="Users/signup.html">Sign Up</a>
+                    </li>
+                    <li id="login-link" class="nav-item loginbtn">
+                      <a class="nav-link nav_link_item" href="Users/login.html">Login</a>
+                    </li>
+                     <!-- dropdown menu -->
+                     <li class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     
+                       </button>
+                       <div class="dropdown-menu" aria-labelledby="userMenu">
+                          <a id="damin-panel" class="dropdown-item" href="Admin/dashboard.html">Dashboard</a>
+                          <a class="dropdown-item" href="#">Setting</a>
+                         <a id="logout-link" class="dropdown-item" href="#">Logout</a>
+                       </div> 
+                   </li> 
+               <!--- end here -->                  
+                  </ul>
+
+         </nav> 
+         <div class="container">
+           <div class="row">
+             <div class="col-md-2"></div>
+             <div class="col-md-8">
+               <p class="msg">You are welcome to sheggs quiz app, this game app is about anwering questions 
+                 on a specific topic and you get to see your scores after taking the quiz </p>
+                 <p class="msg_pre">have fun playing it... </p>
+                <button class="btn btn-primary" id="getstarted">Get Started</button>
+                
+             </div>
+             <div class="col-md-2">
+             </div>
+           </div>
+         </div>
+       <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4"  style="background: #232f3e">
+    <!-- Footer Elements -->
+    <div class="container">
+      <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <h5 class="mb-1">Register for free</h5>
+        </li>
+        <li class="list-inline-item">
+          <a href="Users/signup.html"><button class="btn sign_footer">Sign up!</button></a>
+        </li>
+      </ul>  
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="background: #1c2331">
+      <p class="text-center text-md-center">© 2019 Copyright of <strong style="color: #8c43ff"> sheggsDev</strong> 
+         : all right is reserved for this website
+    </p>
+    </div>  
+  </footer>
+    <script type="text/javascript" src="js_lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="css_lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
+    <script src="js/toggle.js"></script>
+</body>
+</html>

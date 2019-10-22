@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css_lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../cascade/styles.css">
+    <link rel="stylesheet" href="../../cascade/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>sheggsDev Quiz App</title>
+</head>
+<body>
+        <!-- The navigation section -->
+        <nav id="main-nav" class="navbar navbar-dark bg-dark">
+                <!-- Navbar content -->
+                <ul class="nav">
+                    <li class="nav-item">
+                       <a href="../../games/index.html">
+                         <img src="../../img/abstract-shape.jpg" alt="admin page" width="50" height="50">
+                       </a>
+                     </li>
+                 <li class="nav-item" style="color: #f1f1f1">
+                   <a  class="nav-link active" href="../../games/index.html"><strong class="title">sheggsDev Quiz App</strong></a>
+                 </li>
+               </ul>
+              <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                      <a class="nav-link nav_link_item active" href="../dashboard.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav_link_item active" href="../create.html">create</a>
+                    </li>
+                    <li class="dropdown">
+                      <button class="dropbtn">Update Quizzies 
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a class="dropdown-item" href="chemistry.html">Chemistry</a>
+                        <a class="dropdown-item" href="random.html">Random</a>
+                        <a class="dropdown-item" href="physics.html">Physics</a>
+                        <a class="dropdown-item" href="biology.html">Biology</a>
+                        <a class="dropdown-item" href="maths.html">Mathematics</a>
+                        <a class="dropdown-item" href="sports.html">Sports</a>
+                      </div>
+                    </li> 
+                    <li class="nav-item">
+                      <a class="nav-link nav_link_item" href="../user_score.html">View users scores</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav_link_item" href="../showscores.html">View answers</a>
+                    </li>
+                    <!-- dropdown  menue -->
+                    <li class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="userMenu" 
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                       </button>
+                       <div class="dropdown-menu" aria-labelledby="userMenu">
+                          <a id="damin-panel" class="dropdown-item" href="../dashboard.html">Dashboard</a>
+                          <a class="dropdown-item" href="#">Setting</a>
+                         <a id="logout_btn" class="dropdown-item" href="#">Logout</a>
+                       </div> 
+                   </li> 
+                   <!-- end here -->
+                  </ul>           
+         </nav> 
+
+         <!-- <button id="viw_quiz">view quiz</button> -->
+         <div class="container">
+            <div class="row">
+             <div class="col-md-8">  
+                <h5 class="modify">Edit or Delete Quiz questions</h5>            
+                <table id="Update" class="table table-hover table-bordered table-stripped table-condensed">
+                    <thead class="thead">
+                      <tr>
+                        <th scope="col">no</th>
+                        <th scope="col">Question</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="contentTable"> 
+                                       
+                    </tbody>
+                  </table> 
+                  <!-- pagination -->
+                  <ul id="backPagination" class="pagination">
+
+                      <li id="prevPage" class="page-item"><button class="btn prevdesign">Previous</button></li>
+                      <li id="nextPage" class="page-item"><button class="btn nextdesign">Next</button></li>
+                  </ul>
+              </div>                        
+             <div class="col-md-4">
+                <div id=edit_form>
+                    <div id="display_alert"></div>
+                
+                    <div class="editdisplay">
+                      
+                        <template id="editTemplate">
+                          <div class="form-group">
+                            <input id="data_id" type="hidden" value="{{id}}" name="edit-id">
+                              <label for="editquestion"> Edit question</label>
+                              <textarea class="form-control" name="question" id="editquestion" cols="10" rows="2" 
+                              placeholder="enter your question">{{added_question}}</textarea>
+                              </div>
+                              <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">A</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_one" name="option_one" placeholder="option one"
+                               value="{{option_one}}">
+                              </div>
+                              <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">B</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_two" name="option_two" placeholder="option two" 
+                              value="{{option_two}}">
+                              </div>
+                              <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">C</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_three" name="option_three" placeholder="option three"
+                               value="{{option_three}}">
+                              </div>
+                              <div class="input-group mb-2 mr-sm-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">D</div>
+                              </div>
+                              <input type="text" class="form-control" id="option_four" name="option_four" placeholder="option four"
+                               value="{{option_four}}">
+                              </div> 
+                              
+                        </template>          
+                      
+                    </div>
+    
+                <!-- the section for the answers -->
+                  <div id="toggle_edit" class="toggle_content">
+                      <h4>give the answer to the questions</h4>
+                      <div class="form-group form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="options" id="option_A" value="A">A
+                      </div>
+                      <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="options" id="option_B" value="B">B
+                    </div>
+                      <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="options" id="option_C" value="C">C
+                      </div>
+                      <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="options" id="option_D" value="D">D
+                      </div>
+                      <div class="wrapper form control">
+                        <button id="editButton" class="btn btn-primary">edit question</button>
+                        <button id="cancelbtn" class="btn btn-secondary">cancel</button>
+                      </div>
+                  </div>               
+                </div>
+         </div>
+         </div>
+      </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4" style="background: #232f3e">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">About Us</h6>
+          <p>
+             This application a simple quiz game where people can come and answer
+              questions on a particular topic and after answering, players get to see their scores.
+            </p>
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="w-100 clearfix d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold" id="quiz-top">Popular Quiz</h6>
+          <p>
+            <a href="../../games/bitzpl/bitzch.html" class="tending-quiz">Chemistry</a>
+          </p>
+          <p>
+            <a href="../../games/bitzpl/bitzbi.html" class="tending-quiz">Biology</a>
+          </p>
+          <p>
+            <a href="../../games/bitzpl/bitzpy.html" class="tending-quiz">Physics Madness</a>
+          </p>
+          <p>
+            <a href="../../games/bitzpl/bitzsp.html" class="tending-quiz">sports Trivia</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="w-100 clearfix d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold" id="quiz-top">Trending Quizzies</h6>
+          <p>
+            <a href="../../games/bitzpl/bitzrd.html" class="tending-quiz">Play Random quiz</a>
+          </p>
+          <p>
+            <a href="../../games/bitzpl/bitzch.html" class="tending-quiz">periodic table</a>
+          </p>
+          <p>
+            <a href="../../games/bitzpl/bitzmt.html" class="tending-quiz">Maths</a>
+          </p>
+          <p>
+            <a href="../../games/bitzpl/bitzbi.html" class="tending-quiz">Biological cells</a>
+          </p>
+        </div>
+  
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <i class="fas fa fa-home mr-3"></i> E45 CBN estate phase 1, Satellite Town, Lagos</p>
+          <p>
+            <i class="fas fa fa-envelope mr-3"></i> michealsheggs@gmail.com</p>
+          <p>
+            <i class="fas fa fa-phone mr-3"></i>+234-8077694097</p>
+          <p>
+            <i class="fas fa fa-print mr-3"></i>+234-8058304908</p>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Footer links -->
+    
+    </div>
+      <!-- Grid row -->
+     <div class="row" style="background: #1c2331">
+        <div class="container d-flex align-items-center" style="background:#1c2331">
+  
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8" >
+      
+              <!--Copyright-->
+              <p class="text-center text-md-center">© 2019 Copyright of <strong style="color: #8c43ff"> sheggsDev</strong>  : all right is reserved for this website
+                 
+                </a>
+              </p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+      
+              <!-- Social buttons -->
+              <div class="text-center text-md-right">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a class=" btn btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class=" btn btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa fa-google-plus"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+      
+            </div>
+            <!-- Grid column -->
+          </div>
+     </div>
+  </footer>
+    <!-- the script section -->
+    <script type="text/javascript" src="../../js_lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../css_lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/mustache/mustache.min.js"></script>
+    <script src="js/physics.js"></script> 
+    <script>
+        //log out
+        $("#logout_btn").on('click',function(){
+            sessionStorage.clear();
+            window.location = "../../index.html";
+        });
+    </script>   
+    <script src="../../js/toggle.js"></script>
+
+</body>
+</html>

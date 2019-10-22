@@ -1,3 +1,4 @@
-bootstrap
-fontawesome
-jquery
+node_modules
+css_lib
+js_lib
+backup.json 

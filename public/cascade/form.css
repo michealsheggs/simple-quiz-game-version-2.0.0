@@ -1,0 +1,40 @@
+.form_notice{
+    color: white;
+}
+.form_alert{
+    color: white;
+    padding: 0px 50px;
+    margin-left: 50px;
+}
+.form{
+    margin-top: 50px;
+}
+
+ .form_notice{
+    padding: 0px 80px;
+    margin-left: 150px;
+} 
+.playmsg{
+    margin-top: 50px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form.form{
+    background: whitesmoke;
+    border-radius: 15px;
+}
+div.wrapper{
+    margin-top: 10px;
+}
+#login-btn,#sign-up-btn, #admin_login_btn, #admin_signup_btn{
+    margin-left: 40%;
+    background: #0984e3;
+    border-radius: 18px;
+    font-size: 1.2rem;
+}
+#login-btn:hover, #sign-up-btn:hover, #admin_login_btn:hover, #admin_signup_btn:hover{
+    background: whitesmoke;
+    font-size: 1.2rem;
+    color: black;
+}
