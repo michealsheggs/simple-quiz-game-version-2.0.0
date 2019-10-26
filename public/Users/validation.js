@@ -10,6 +10,29 @@ $('#sign-up-btn').on("click",function(e) {
     const last_name = $('#lastname').val();
     const password = $('#password').val();
     const email = $('#email').val();
+
+    //get user email from database
+    //ajax request to check if the user has already registered
+  const  checkIfUserExist = $.ajax({
+    type: 'GET',
+    url: `http://localhost:3000/users`,
+    global:false,
+    async: false,
+    success: function(userEmail) {
+      return userEmail;
+      }
+  }).responseJSON; 
+  
+let userEmails = "";
+checkIfUserExist.forEach((data)=>{
+  if(email.includes(data.email)){
+    userEmails += data.email;
+  }
+  // console.log(userEmails);
+
+});
+// console.log(email);
+
     //Check if user did not fill all the field
     if (!first_name || !last_name || !password || !email) {
       $('#display_alert').html('<li class="text-danger"> please fill all the empty fields</li>');
@@ -21,20 +44,11 @@ $('#sign-up-btn').on("click",function(e) {
     }else if(!password.match(passwordformat)){
       $('#display_alert').html('<li class="text-danger">enter a password between 6 to 20 characters which contain at least one number, one uppercase and one lowercase letter</li>');
 
-    } 
-    //ajax request to check if the user has already registered
-    // $.ajax({
-    //   method: 'GET',
-    //   url: `http://localhost:3000/users?email=${email}`,
-    //   data: {
-    //     email,
-    //   },
-    //   success: function(response) {
-    //     if (response.length) {
-    //       $('#display_alert').html('User already exist');
-    //       } 
-    //     }
-    //  }); 
+    } else if(email === userEmails){
+      $('#display_alert').html('<li class="text-danger">email address already exist</li>');
+      // console.log(email);   
+  
+    }
         else {
           //Submit the user data if the user does not exist
           $.ajax({
@@ -47,7 +61,14 @@ $('#sign-up-btn').on("click",function(e) {
                 password,
             },
             success: function() {
-              $('#display_alert').html('your registration was Successfull');
+              // $('#display_alert').html('your registration was Successfull');
+              $("#display_alert").append(`<div class="alert alert-success alert-dismissible fade show" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Congratulations!</strong> you successfully  registered! wait after 4seconds </br> or click login. 
+               </div>`);
+               setTimeout(function(){
+                 window.location = "login.html";
+               },4000);
             },
           });
         }
@@ -117,9 +138,7 @@ $('#login-btn').on('click',function(e) {
 //USER LOGOUT
 
 $('.logoutBtn').click(function() {
-    //clear the localstorage and redirect to signup page
     $('.checkLogin').html('Kindly login');
-    // window.location.assign('signup.html');
     sessionStorage.clear();
     window.location = "Users/login.html";
   });

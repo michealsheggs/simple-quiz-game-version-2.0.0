@@ -142,7 +142,9 @@ $(".contentTable").delegate('#edit', 'click', function(){
                 <strong>Congratulations!</strong> you successfully  updated  quiz!
                 </div>
                 `);
-                location.reload();
+                setTimeout(function(){
+                  location.reload();
+                },4000);
               },            
               error: function() {
                 $("#display_alert").append(`<div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -172,7 +174,9 @@ $(".contentTable").delegate('#remove', 'click', function(){
         <strong>Congratulations!</strong> you successfully  deleted quiz!
         </div>
         `);
-        location.reload();
+        setTimeout(function(){
+          location.reload();
+        },4000);
        },
        error: function(){
          $("#display_alert").append(`<div class="alert alert-danger alert-dismissible fade show" role="alert">

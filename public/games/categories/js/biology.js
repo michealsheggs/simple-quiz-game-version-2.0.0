@@ -14,18 +14,15 @@ $("#logout-link").on('click',function(){
 
 });
 
-
 //check if logged in
-
-$("#getstarted").on('click',function(){
-    if(!isloggedIn){
-        window.location = "Users/signup.html";
-        // return;
-    }else{
-        window.location = "frontend/welcome.html";
-    }  
+$("#playgame").on('click',function(){
+  if(!isloggedIn){
+      window.location = "../Users/signup.html";
+      // return;
+  }else{
+      window.location = "../index.html";
+  }  
 });
-
 
 // get users  
 //  function  getUsers(){
@@ -51,10 +48,7 @@ const getUsers = $.ajax({
     userCacheDetail.push(item.email, item.first_name, item.last_name);      
    }
  });   
- if(isloggedIn.indexOf(userCacheDetail)){
-  $("#submit-link, #showscore-link").hide();
- }
-
+ 
 
 // get admin
 
@@ -80,6 +74,9 @@ getAdmin.forEach((adminItem)=>{
     adminCacheDetail.push(adminItem.email, adminItem.first_name, adminItem.last_name);      
   }
 });
+if(isloggedIn === (userCacheDetail[0])){
+  $("#submit-link, #showscore-link").hide();
+ }
 
 
 if(isloggedIn === userCacheDetail[0]){
@@ -212,7 +209,7 @@ $("#submitAnswerButon").on('click', function(e){
       htmlscore = `<span>your high score : <stron> ${correctScores} </strong> is above  average, well done!. </br> click on play again button to try again! or play the next quiz</span>`;
 
     }else{
-      htmlscore = `<span>your total score is:  <stron> ${correctScores} </strong>. bravo, paky another game</span>`
+      htmlscore = `<span>your total score is:  <stron> ${correctScores} </strong>. bravo, play another game</span>`
     }
       $(".totalscore").append(htmlscore);
       $(".total").append(total);

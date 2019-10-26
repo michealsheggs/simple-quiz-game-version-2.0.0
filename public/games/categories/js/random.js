@@ -5,8 +5,6 @@ if(isloggedIn){
 }else{
   $("li.dropdown").hide();
 }
-
-
 //log out
 $("#logout-link").on('click',function(){
     sessionStorage.clear();
@@ -14,18 +12,15 @@ $("#logout-link").on('click',function(){
 
 });
 
-
 //check if logged in
-
 $("#playgame").on('click',function(){
     if(!isloggedIn){
-        window.location = "Users/signup.html";
+        window.location = "../Users/signup.html";
         // return;
     }else{
-        window.location = "frontend/welcome.html";
+        window.location = "../index.html";
     }  
 });
-
 
 // get users  
 //  function  getUsers(){
@@ -55,9 +50,7 @@ const getUsers = $.ajax({
   $("#submit-link, #showscore-link").hide();
  }
 
-
 // get admin
-
 const getAdmin = $.ajax({
   url: `http://localhost:3000/admin`,
   type:'GET',
@@ -82,8 +75,6 @@ getAdmin.forEach((adminItem)=>{
 });
 
 // console.log(adminCacheDetail);
-
-
 if(isloggedIn === userCacheDetail[0]){
   //do this
   player.push(userCacheDetail[0], userCacheDetail[1], userCacheDetail[2])
@@ -100,8 +91,6 @@ if(isloggedIn === userCacheDetail[0]){
 }else{
   $("#userMenu").html('Guest');
 }
-
-
 
     const setdata =   $.ajax({
         url: "http://localhost:3000/Random",
@@ -201,7 +190,7 @@ $("#submitAnswerButon").on('click', function(e){
    htmlscore = `<span>your high score : <stron> ${correctScores} </strong> is above  average, well done!. </br> click on play again button to try again! or play the next quiz</span>`;
 
  }else{
-   htmlscore = `<span>your total score is:  <stron> ${correctScores} </strong>. bravo, paky another game</span>`
+   htmlscore = `<span>your total score is:  <stron> ${correctScores} </strong>. bravo, play another game</span>`
  }
    $(".totalscore").append(htmlscore);
    $(".total").append(total);
@@ -226,12 +215,10 @@ $("#submitAnswerButon").on('click', function(e){
                     totalScore
                 },
                 success: function(data){
-                    console.log(data);
-                    
+                    // console.log(data);                   
                 },
                 error:function(err){
-                    console.log(err);
-                    
+                  //  alert(err) 
                 }
             });
        });

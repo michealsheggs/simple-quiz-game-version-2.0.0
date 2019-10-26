@@ -6,13 +6,6 @@
       "email": "pastadmin@admin.com",
       "password": "Elmichealus@49",
       "id": 1
-    },
-    {
-      "first_name": "jshdjadjasf",
-      "last_name": "ajsasddam",
-      "email": "pastadmin@admin.com",
-      "password": "Elmichealus@49",
-      "id": 2
     }
   ],
   "users": [
@@ -22,6 +15,13 @@
       "email": "michealsheggs@gmail.com",
       "password": "Password1",
       "id": 1
+    },
+    {
+      "first_name": "Emanuel",
+      "last_name": "mike",
+      "email": "micheal@gmail.com",
+      "password": "Password23",
+      "id": 2
     }
   ],
   "Random": [
@@ -1177,38 +1177,6 @@
       "player_email": "pastadmin@admin.com",
       "player_userName": "emma daunca",
       "game_played": "Biology",
-      "played_time": "12:46:35 19/10/2019",
-      "totalScore": "0",
-      "id": 8
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "12:47:6 19/10/2019",
-      "totalScore": "0",
-      "id": 9
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "12:47:8 19/10/2019",
-      "totalScore": "0",
-      "id": 10
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "13:28:29 19/10/2019",
-      "totalScore": "0",
-      "id": 11
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
       "played_time": "13:45:51 19/10/2019",
       "totalScore": "2",
       "id": 12
@@ -1225,249 +1193,25 @@
       "player_email": "pastadmin@admin.com",
       "player_userName": "emma daunca",
       "game_played": "Biology",
-      "played_time": "13:48:50 19/10/2019",
-      "totalScore": "0",
+      "played_time": "17:53:32 19/10/2019",
+      "totalScore": "1",
       "id": 14
     },
     {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "13:51:42 19/10/2019",
-      "totalScore": "0",
+      "player_email": "michealsheggs@gmail.com",
+      "player_userName": "iluore  emmanuel",
+      "game_played": "Random",
+      "played_time": "15:47:48 25/10/2019",
+      "totalScore": "17",
       "id": 15
     },
     {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "13:55:33 19/10/2019",
-      "totalScore": "0",
+      "player_email": "micheal@gmail.com",
+      "player_userName": "Emanuel mike",
+      "game_played": "Chemistry",
+      "played_time": "8:43:53 26/10/2019",
+      "totalScore": "12",
       "id": 16
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "14:3:34 19/10/2019",
-      "totalScore": "0",
-      "id": 17
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "14:12:19 19/10/2019",
-      "totalScore": "0",
-      "id": 18
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:13:47 19/10/2019",
-      "totalScore": "0",
-      "id": 19
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:17:37 19/10/2019",
-      "totalScore": "0",
-      "id": 20
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:17:55 19/10/2019",
-      "totalScore": "0",
-      "id": 21
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:18:13 19/10/2019",
-      "totalScore": "0",
-      "id": 22
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:31:24 19/10/2019",
-      "totalScore": "0",
-      "id": 23
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:32:48 19/10/2019",
-      "totalScore": "0",
-      "id": 24
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:36:30 19/10/2019",
-      "totalScore": "0",
-      "id": 25
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:37:20 19/10/2019",
-      "totalScore": "0",
-      "id": 26
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:38:8 19/10/2019",
-      "totalScore": "0",
-      "id": 27
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:53:32 19/10/2019",
-      "totalScore": "1",
-      "id": 28
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "17:56:49 19/10/2019",
-      "totalScore": "0",
-      "id": 29
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "18:10:0 19/10/2019",
-      "totalScore": "0",
-      "id": 30
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "18:26:27 19/10/2019",
-      "totalScore": "0",
-      "id": 31
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "18:28:9 19/10/2019",
-      "totalScore": "0",
-      "id": 32
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "18:34:5 19/10/2019",
-      "totalScore": "0",
-      "id": 33
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "18:35:12 19/10/2019",
-      "totalScore": "0",
-      "id": 34
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "13:34:21 20/10/2019",
-      "totalScore": "0",
-      "id": 35
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "13:39:3 20/10/2019",
-      "totalScore": "0",
-      "id": 36
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Biology",
-      "played_time": "13:40:13 20/10/2019",
-      "totalScore": "0",
-      "id": 37
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Chemistry",
-      "played_time": "13:46:37 20/10/2019",
-      "totalScore": "0",
-      "id": 38
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Chemistry",
-      "played_time": "13:48:10 20/10/2019",
-      "totalScore": "0",
-      "id": 39
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Chemistry",
-      "played_time": "13:51:55 20/10/2019",
-      "totalScore": "0",
-      "id": 40
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Chemistry",
-      "played_time": "13:53:59 20/10/2019",
-      "totalScore": "0",
-      "id": 41
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Chemistry",
-      "played_time": "16:19:10 20/10/2019",
-      "totalScore": "0",
-      "id": 42
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Chemistry",
-      "played_time": "22:12:4 20/10/2019",
-      "totalScore": "0",
-      "id": 43
-    },
-    {
-      "player_email": "pastadmin@admin.com",
-      "player_userName": "emma daunca",
-      "game_played": "Random",
-      "played_time": "9:42:10 21/10/2019",
-      "totalScore": "0",
-      "id": 44
     }
   ]
 }

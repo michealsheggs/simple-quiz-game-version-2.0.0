@@ -131,3 +131,14 @@ h4.question-no{
     border-radius: 50%;
     background: white;
   }
+
+  #cancel_btn{
+    margin-top: 25px;
+    margin-left: 20%;
+    background: #555555;
+    border-radius: 20px;
+  }
+  #cancel_btn:hover{
+    background: whitesmoke;
+    color:black
+  }

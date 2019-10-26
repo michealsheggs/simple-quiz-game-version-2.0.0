@@ -4,6 +4,7 @@
   const isloggedIn = window.sessionStorage.getItem('email');
     if(isloggedIn){
       $("#login-link, #signup-link").hide();
+      $("#sign_up_link, #admin_log").hide();
       $("li.dropdown").show();
     }else{
       $("li.dropdown").hide();
@@ -46,7 +47,6 @@
 
      }).responseJSON;
 
-
      //cashe email 
      let userCacheDetail = [];
      getUsers.forEach((item)=>{
@@ -54,11 +54,7 @@
         userCacheDetail.push(item.email, item.first_name, item.last_name);      
        }
      });   
-     if(isloggedIn.indexOf(userCacheDetail)){
-      $("#submit-link, #showscore-link, #damin-panel").hide();
-    
-     }
-  
+console.log(userCacheDetail);
 
     // get admin
 
@@ -82,12 +78,13 @@
         adminCacheDetail.push(adminItem.email, adminItem.first_name, adminItem.last_name);      
       }
     });
-
-console.log(adminCacheDetail);
     // if(!isloggedIn.indexOf(userCacheDetail) || !isloggedIn.indexOf(adminCacheDetail)){
     //   window.location = "../index.html";
     // }
-
+    if(isloggedIn === userCacheDetail[0]){
+      $("#submit-link, #showscore-link, #damin-panel").hide();  
+     }
+  
     if(isloggedIn === userCacheDetail[0]){
       //do this
       const username= `${userCacheDetail[1] + " " + userCacheDetail[2]}`

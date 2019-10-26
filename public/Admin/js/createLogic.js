@@ -1,3 +1,9 @@
+//if pres cancel button
+$("#cancel_btn").on('click', function(e){
+  e.preventDefault();
+    window.location ="dashboard.html"
+});
+
 let answer = "";
 $('#createbtn').on('click',function(e){
   e.preventDefault();
